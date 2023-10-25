@@ -60,4 +60,4 @@ A fin de lograr este propósito, se deben tener en cuenta firmemente los princip
 Además de estos principios de actuación, el personal técnico encargado de salvaguardar las evidencias electrónicas debería seguir las pautas siguientes:
 
 - Todas las evidencias encontradas deben precintarse y sellarse en soportes adecuados, poniendo atención a los dispositivos que requieran ser alimentados por una fuente de energía externa
-- Todas las evidencias 
+- Todas las evidencias a analizar deben ser almacenadas en un lugar seguro destinado a dicho fin, y en caso de no disponer de uno, utilizar una caja fuerte
