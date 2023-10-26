@@ -1,0 +1,351 @@
+# Development of a Forensic Analysis Methodology
+![proyecto1](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/assets/119593938/02b0f1b1-014a-44ff-bc3b-77f296b4db9e)
+
+**Autores:** *Grupo 3*
+
+**Integrantes:**
+- Raúl Ladrón de Guevara García
+- Juan Manuel Cumbrera López
+- Christian Romero Oliva
+- Sergio Guerrero Merlo
+
+## Índice
+
+- [Introducción](#introducción)
+- [Investigación de Normas y Estándares Forenses](#investigación-de-normas-y-estándares-forenses)
+    - [Norma UNE 71505/2013 (Sistemas de gestión de evidencias electrónicas)](#norma-une-715052013-sistemas-de-gestión-de-evidencias-electrónicas)
+    - [Norma UNE 71505/2013 (Análisis forense de las evidencias electrónicas)](#norma-une-715062013-análisis-forense-de-las-evidencias-electrónicas)
+    - [ISO 27037](#iso-27037)
+    - [Norma RFC 3227](#norma-rfc-3227)
+- [Comparativa y selección de Normas/Estándares](#comparativa-y-selección-de-normasestándares)
+- [Desarrollo de Metodología Propia](#desarrollo-de-metodología-propia)
+- [Resumen](#resumen)
+- [Conclusión](#conclusión)
+- [Referencias](#referencias)
+
+## Introducción
+
+## Investigación de Normas y Estándares Forenses
+
+### Norma UNE 71505/2013 (Sistemas de gestión de evidencias electrónicas)
+
+#### Descripción:
+
+Esta norma se centra garantizar los principios de la información de las evidencias electrónicas o digitales estableciendo un ciclo de vida de las mismas.
+
+**Estos principios son:**
+
+- **Confidencialidad:** Se refiere a la protección de la información para que solo las personas autorizadas puedan acceder a ella.
+  
+- **Autenticación e integridad:** Garantiza que la evidencia es auténtica, es decir, que proviene de la fuente que se afirma y que no ha sido modificada de ninguna manera. 
+
+- **Disponibilidad y completitud:** Asegura que la información esté disponible cuando sea necesaria y que esté completa, es decir, que incluya todos los datos.
+
+- **Calidad y gestión:** Se refiere a la necesidad de mantener estándares de calidad en la recopilación, almacenamiento y uso de la información. También implica una gestión de los datos, lo que incluye su actualización y eliminación en el momento adecuado.
+
+**Los objetivos esta norma son:**
+
+- Definir y describir los conceptos de seguridad de información relacionados con evidencias electrónicas.
+- Identificar las relaciones entre el sistema de Gestión de Evidencias electrónicas (SGEE) y el Sistema de Gestión de Seguridad de la Información.
+- Especificar los controles de seguridad aplicables a la gestión de evidencias electrónicas.
+
+**Ciclo de vida de las evidencias:**
+
+- **Generación:** Este es el primer paso donde se crean los datos. Puede ser a través de varias actividades como la creación de un documento, el envío de un correo electrónico, la navegación por la web, etc.
+
+- **Almacenamiento:** Una vez generados los datos, se almacenan en algún tipo de medio de almacenamiento. Esto podría ser un disco duro, un pendrive, la nube, etc.
+
+- **Transmisión:** Los datos a menudo necesitan ser enviados de un lugar a otro. Esto puede implicar la transmisión a través de una red, como Internet.
+
+- **Recuperación:** Extraer datos de los medios de almacenamiento y exportarlos para su análisis.
+
+- **Tratamiento:** Los datos extraídos se procesan para obtener información útil.
+
+- **Comunicación:** Los resultados del análisis de la evidencias se comunican a las partes pertinentes. 
+
+<br>
+
+### Norma UNE 71506/2013 (Análisis forense de las evidencias electrónicas)
+
+#### Descripción:
+
+El objetivo de esta norma es definir el proceso de análisis forense dentro del ciclo de gestión de las evidencias (Norma UNE 71506/2013 anteriormente descrita).
+
+**La norma está compuesta por 5 fases:**
+
+**1. Preservación:** En esta fase se pretende mantener en todo momento la validez y confiabilidad de las evidencias. Siempre se debe mantener la integridad de las evidencias, para ello se deben aplicar una serie de medidas como evitar la exposición a campos magnéticos o ha otras interferencias. Los informáticos que encuentren la evidencia deberán almacenarlas, precintarlas y sellarlas en soportes adeacuados para preservar las huellas, restos orgánicos que contengan ADN, etc..., además de almacenarlas en un lugar seguro. También es muy importante que lleven la indumentaria adeacuada para evitar descargas electrostáticas.
+
+**2. Adquisición:** En esta fase se realiza un clonado a bajo nivel de los datos originales, siguiendo un procedimiento documentado para asegurar que el proceso de adquisición es reproducible y repetible, calculando el código hash de cada evidencia. Es importante el estado en el que se encuentran los sistemas, ya que el proceso de adquisición no será el mismo si los sistemas están apagados o si están encendidos.
+
+Medidas a tener en cuenta:
+
+- Documentar todo el proceso de adquisición detalladamente.
+- Mantener el estado de los dispositivos. (Apagado/Encendido)
+- Hacer fotos a las evidencias para luego poder documentarlas correctamente.
+- Etiquetar dispositivos y cableado.
+- No desconectar fuentes de alimentación cuando las evidencias estén almacenadas en soportes volátiles. (RAM, caché, swap, etc..)
+
+**3. Documentación:** En esta fase se documentará el procedimiento completo de una forma detallada y concisa que siga una linea temporal correcta (Fecha, hora, ubicación, etc..). También se documentarán todos los procesos llevados a cabo (técticas de adquisición, tipos de hardware o software, configuraciones, etc...) y las herramientas que se utilizaron. En la cadena de custodia es muy importante reflejar un registro detallado de todas las personas que han tenido acceso a las evidencias desde el momento en que se recolectaron hasta su presentación. Esto debe incluir los nombres de las personas, las fechas y horas en que se manejaron las evidencias y el propósito de cada manipulación. Toda esta documentación es muy importante para demostrar que las evidencias no han sido modificadas ante un tribunal si fuera el caso.
+
+**4. Análisis:** En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán dar respuesta a preguntas relacionadas con el evento que se está investigando.
+
+Esto incluye:
+
+- Revisar la hora de la BIOS del dispositivo.
+- Recuperar ficheros borrados.
+- Analizar los metadatos.
+- Analizar los registros de red.
+- Estudiar las particiones y sistemas de ficheros.
+- Analizar el sistema operativo.
+- Estudiar la seguridad implementada en el sistema.
+- Analizar los registros de autenticación.
+- etc...
+
+**5. Presentación:** En esta fase se escribirá un informe pericial con toda la información obtenida a lo largo del proceso de análisis. Dicho informe deberá escribirse con un lenguaje entendible para un público no técnico y tener una estructura uniforme. El informe debe incluir documentación de la cadena de custodia. Cuando el informe esté finalizado, éste será remitido al organismo solicitante.
+<br>
+
+### ISO 27037
+
+#### Descripción
+
+Esta normativa busca crear una línea base para la normalización internacional de prácticas digitales forenses, su objetivo es facilitar la usabilidad de la evidencia en distintas jusrisdicciones, por procesos legales.
+
+Esta normativa solo cubre el proceso inicial del trabajo forense digital y son las siguientes fases las que representa:
+
+#### 1. Identificar
+
+El análisis forense comienza con la identificación de los elementos que pueden ser o contener evidencia digital potencial. Este proceso implica la búsqueda, el reconocimiento y la documentación de posible evidencia digital.
+
+#### 2. Recolectar y adquirir
+
+Una vez se haya identificado la posible evidencia digital, debe ser recogida u adquirida para su procesamiento.
+
+La copia creada durante la adquisición puede ser desde la creación de una imagen forense de una unidad de disco, a una copia de los contenidos de la memoria de un servidor, hasta los contenidos lógicos de casilla de correo electrónico de un usuario individual, dependiendo del propósito y alcance de la investigación.
+
+Las copias deben hacerse mediante un proceso bien conocido, defendible y bien documentado. El proceso debe incluir medidas de intregridad para asegurar que la copia no se ha modificado desde la adquisición.
+
+#### 3. Preservar
+
+Cuando la potencial evidencia digital ha sido recolectada o adquirida, debe ser preservada. Esta norma define que la consevación como el proceso de mantener y salvaguardar la integridad y/o el estado original del potencial de la evidencia digital.
+
+La preservación del potencial de evidencia digital es un proceso complejo e importante, ayuda a asegurar la preservación de prueba admisible ante un tribunal de justicia.
+
+Este almacenamiento requiere estrictos controles de acceso para proteger los artículos de la modificación accidental o deliberada, así como los controles de entorno apropiados.
+
+### Norma RFC 3227
+
+#### Descripción
+
+La metodología RFC 3227, titulada como “Directrices para la Recopilación y Archivado de Evidencia” (*Guidelines for Evidence Collection and Archiving*) es una guía creada con el propósito de proporcionar un conjunto de pautas y recomendaciones orientadas al uso por parte de administradores de sistemas y profesionales de seguridad. Este abanico de directrices buscan ofrecer una manera estructurada y detallada de recopilar y preservar evidencias informáticas relacionadas con eventos de seguridad, tales como intrusiones de la política de seguridad de un sistema. Además, este documento presenta las mejores prácticas que permiten determinar la volatilidad de los datos, ofrece los conocimientos para saber priorizar las evidencias que recolectar y como desarrollar la recolección y definir cómo almacenar y documentar los datos.
+
+#### Introducción
+
+Como parte introductoria del documento, comienza definiendo "incidente de seguridad" como un evento en el que se viola la política de seguridad de un sistema, subrayando que la recopilación adecuada de evidencia es fundamental para identificar a los atacantes y presentar las pruebas en procesos legales. 
+
+Además de esto, se incentiva a los administradores de sistemas a hacer uso de las pautas establecidas en el documento, a fin de usarlas como base para desarrollar procedimientos de recopilación de evidencia más específicos y concretos. 
+
+Finalmente, se hace referencia a las convenciones de palabras clave usadas en el documento.
+
+#### Principios Rectores durante la Recopilación de Evidencia
+
+En esta sección se establecen las pautas generales para la recolección de evidencia durante un incidente de seguridad. En estas se establece la necesidad de adherirse a la política de seguridad del sitio y colaborar con el personal, a fin de manejar el incidente correctamente. 
+
+Luego de esto, comienza con las normas establecidas para el proceso de recopilación de evidencia, en el que se dicta lo siguiente:
+
+- Capturar una imagen precisa del sistema
+- Minimizar cambios en los datos durante la recopilación
+- Eliminar vías externas que puedan alterar la evidencia
+- Dar prioridad a la recopilación sobre el análisis cuando se enfrenten a elecciones
+- Implementar procedimientos que sean factibles y probados, preferiblemente automatizados
+- Adoptar un enfoque metódico para recopilar evidencia de dispositivos siguiendo las pautas establecidas en los procedimientos de recopilación
+- Proceder desde lo más volátil a lo menos volátil, siguiendo el "Orden de Volatilidad" recomendado
+
+Además se hace hincapié en la importancia de mantener notas con fechas y horas, registrando también la diferencia entre la hora del sistema y la hora universal (UTC) en las marcas de tiempo. Otros puntos importantes que se subrayan son las cosas a evitar, como apagar el sistema antes de completar la recopilación de evidencia o confiar en programas del sistema para la recopilación.
+
+El orden de volatilidad anteriormente descrito queda de la siguiente manera:
+
+1. Registros, caché
+2. Tabla de enrutamiento, caché ARP, tabla de procesos, estadísticas del núcleo y memoria
+3. Sistemas de archivos temporales
+4. Disco duro
+5. Datos de registro remoto y monitorización relevantes para el sistema en cuestión
+6. Configuración física y topología de la red
+7. Medios de archivo
+
+#### Procedimiento de Recolección
+
+La fase de recolección de evidencia es presentada como un proceso meticuloso, el cual debe seguir los principios siguientes, siendo el primero la transparencia de los métodos utilizados durante la recolección, dado que deben ser reproducibles. Los demás principios son los siguientes:
+
+- Ubicar la evidencia, enumerando los sitemas involucrados en el incidente
+- Determinar lo que es relevante y admisible
+- Para cada sistema, seguir el orden de volatilidad
+- Eliminar posibles fuentes de cambio externas
+- Recopilar evidencia siguiendo el orden de volatilidad
+- Registrar la diferencia entre el reloj del sistema y UTC
+- Documentar cada paso
+- No olvidar a las personas involucradas
+
+Este apartado también incide en considerar generar checksums y firmas criptográficas para la evidencia recopilada, ya que esto facilita preservar una cadena de evidencia fuerte, siendo muy importante no alterar las pruebas durante este proceso.
+
+#### Procedimiento de Archivado
+
+Para lograr un correcto almacenamiento de la evidencia, es crucial registrar una cadena de custodia de manera exhaustiva, lo que incluye:
+
+- Dónde, cuándo y quién descubrió y recopiló la evidencia
+- Dónde, cuándo y quién manejó o examinó la evidencia
+- Quién tuvo custodia de la evidencia, durante cuánto tiempo y cómo se almacenó
+- Cómo se realizó la transferencia de custodia, incluyendo números de envío, en caso de cambio
+
+La evidencia debe archivarse en medioscomunes, además de restringirse el acceso a la misma, documentándolo, a fin de prevenir accesos no autorizados.
+
+#### Herramientas que necesitarás
+
+Con el fin de llevar a cabo la recolección de evidencia y análisis forense, esta sección recomienda una lista de herramientas preparadas para dicho fin. Entre estas herramientas se deben incluir:
+
+- Un programa para examinar procesos, como 'ps'
+- Programas para examinar el estado del sistema, como 'showrev', 'ifconfig', 'netstat' y 'arp'
+- Un programa para realizar copias de bits a bits, como 'dd' o 'SafeBack'
+- Programas para generar checksums y firmas, como 'sha1sum', 'dd' habilitado para checksum, 'SafeBack' o 'pgp'
+- Programas para generar imágenes de núcleo y examinarlas, como 'gcore' y 'gdb'
+- Scripts para automatizar la recolección de evidencia, como el "The Coroner's Toolkit" 
+
+Es necesario que sus herramientas sean completamente autónomas y no dependan de librerías externas en el medio de sólo lectura, ya que en algunos casos, las herramientas pueden no revelar la totalidad de la información del sistema, debido a la capacidad de los rootkits actuales de ocultarse en módulos de kernel cargables.
+
+#### Referencias
+
+Sección de referencias utilizadas en la confección de esta metodología
+
+### Metodología NIST
+
+La metodología NIST, desarrollada por el Instituto Nacional de Estándares y Tecnología (NIST) de los Estados Unidos, es un enfoque sistemático para llevar a cabo investigaciones forenses en el ámbito de la seguridad informática. Esta metodología se describe en la guía "Guide to Integrating Forensic Techniques into Incident Response" (Guía para la Integración de Técnicas Forenses en la Respuesta a Incidentes), específicamente en la Publicación Especial 800-86 del NIST.
+
+La metodología se compone de varias fases interrelacionadas que guían el proceso de investigación forense. Estas fases incluyen la recopilación de evidencia relevante, el examen y análisis detallado de los datos, y la generación de informes que resuman los hallazgos y conclusiones de la investigación.
+
+A continuación las detallamos:
+
+1. *Collection*: En esta fase, se recopilan y preservan todos los datos relevantes y potencialmente útiles para la investigación forense. Esto incluye la identificación de posibles fuentes de datos, la adquisición de la evidencia de manera forense y la documentación adecuada de la cadena de custodia.
+2. *Examination*: Durante esta fase, se lleva a cabo un examen detallado de los datos recopilados. Se utiliza una combinación de herramientas y técnicas forenses para analizar la evidencia y extraer información relevante. Esto puede incluir la recuperación de archivos eliminados, el análisis de registros de eventos y la reconstrucción de actividades sospechosas.
+3. *Analysis*: En esta fase, se realiza un análisis exhaustivo de los datos examinados. Se buscan patrones, relaciones y anomalías que puedan ayudar a comprender cómo ocurrió el incidente y quién puede haber estado involucrado. También se pueden utilizar técnicas de correlación de datos para identificar conexiones entre diferentes eventos o entidades.
+4. *Reporting*: La fase final implica la presentación de los hallazgos y resultados de la investigación en un informe forense. Este informe debe ser claro, conciso y basado en evidencia sólida. Debe proporcionar una descripción detallada de los métodos utilizados, los resultados obtenidos y las conclusiones derivadas del análisis forense. Además, se pueden incluir recomendaciones para mejorar la seguridad y prevenir futuros incidentes.
+
+El valor probable, la volatilidad y la cantidad de esfuerzo requerido son consideraciones importantes en el contexto de la metodología NIST para investigaciones forenses.
+
+**El valor probable** se refiere a la evaluación de la importancia y relevancia de la investigación forense en relación con el incidente de seguridad informática. Se debe determinar si la inversión de tiempo, recursos y esfuerzo en la investigación producirá resultados significativos y beneficios para la organización. Esta evaluación ayuda a priorizar adecuadamente las investigaciones forenses y asignar los recursos necesarios de manera efectiva.
+
+**La volatilidad** se refiere a la naturaleza temporal de la evidencia digital y su susceptibilidad a cambios o pérdida. Algunas fuentes de evidencia pueden ser altamente volátiles, lo que significa que pueden cambiar o desaparecer rápidamente. Es crucial actuar con prontitud y capturar la evidencia digital de manera forense antes de que se modifique o se vuelva inaccesible. La volatilidad de la evidencia afecta la planificación y ejecución de las fases de recopilación y examen en la metodología NIST.
+
+**La cantidad de esfuerzo requerido** se refiere a los recursos humanos, técnicos y temporales necesarios para llevar a cabo una investigación forense. El esfuerzo requerido puede variar según la complejidad del incidente, la cantidad de evidencia involucrada y la experiencia del equipo forense. Al evaluar la cantidad de esfuerzo necesario, se deben considerar factores como la disponibilidad de personal capacitado, herramientas forenses adecuadas y plazos o restricciones de tiempo. Una adecuada asignación de recursos y una planificación efectiva son fundamentales para llevar a cabo una investigación forense exitosa.
+
+En resumen, el valor probable, la volatilidad y la cantidad de esfuerzo requerido son elementos clave que influyen en la toma de decisiones y la ejecución de investigaciones forenses utilizando la metodología NIST. Evaluar el valor probable, comprender la volatilidad de la evidencia y asignar la cantidad adecuada de esfuerzo son aspectos fundamentales para maximizar la eficiencia y efectividad de la investigación forense.
+
+##  Comparativa y selección de Normas/Estándares
+
+En este apartado compararemos y justificaremos la elección de las normas que hemos escogido para hacer nuestra metodología. En primer lugar haremos la comparación de las normas que hemos podido investigar de manera completa y detallada.
+
+Une 71505/2013 se centra en garantizar los principios de la información siendo los siguientes, confidencialidad, autenticación e integridad, disponibilidad y completitud, calidad y gestión. Esta normativa no tiene unas fases para la metodología forense pero es en la que se basa la normativa UNE 71506/2013.
+
+La UNE 71506/2013 es una norma centrada en todas las fases para el análisis forense siendo las ya mencionadas anteriormente, preservación, adquisición, documentación, análisis y presentación. Puesto que esta norma abarca las 5 fases de un análisis forense, puede ser utilizada independientemente de la actividad para la que se lleve a cabo en el ámbito profesional.
+
+Mientras tanto la norma ISO 27037 es una norma que define las fases relacionadas con la identificación, adquisición y preservación. La mayor diferencia de esta norma sobre la norma UNE 71506/2013 es que define una fase de identificación. Esta fase indica como identificar los elementos que pueden ser o contener evidencias digitales.
+
+La normativa RFC 3227 es una guía dedicada a proporcionar número de pautas y recomendaciones para los administradores de sistemas y profesionales de seguridad. Estas pautas ofrecen una serie de fases orientadas a la recopilación y preservación de las evidencias informáticas. 
+
+NIST es un enfoque sistematico que describe una guía de 4 fases que van orientadas a la respuesta e incidentes. Estas 4 fases son, colección, examinación, análisis y reporte. Estas fases intentan completar de forma completa un análisis forense al igual que la UNE 71506/2013 pero con una fase menos.
+
+En conclusión, cada norma está orientada a una serie de fases y no al conjunto exceptuando la norma UNE 71506/2013 y la NIST que determina las 5 fases que debería tener como mínimo cada metodología forense. Y la norma 71505/2013 no es más que garantizar los principios fundamentales de la información.
+
+#### Justificación de elección
+
+Se ha decidido escoger como metodología base la norma UNE 71506/2013 puesto que define las 5 fases que debe tener como mínimo un análisis forense. Para una mejor comprensión de los elementos que pueden ser útiles para llegar a resolver el caso se ha añadido como primera fase sin eliminar las anteriores, una fase de identificación sacada de la norma ISO 27037.
+
+El orden de volatilidad que usaremos en la fase de recopilación estará basado en el orden que nos define como buena práctica la norma RFC 3227. Además cogeremos medidas que se tomarán para llevar a cabo las fases, tanto de la norma UME 71506/2013 como de la RFC 3227.
+
+No se ha escogido como base la norma NIST puesto que no tiene las 5 fases mínimas que debe tener como mínimo un análisis forense.
+
+##  Desarrollo de Metodología Propia
+
+En base a la investigación de las metodologías anteriores, hemos decido que nuestra metodología de trabajo será la siguiente:
+
+### 1. Identificación de evidencia (ISO 27037)
+
+En primer lugar comenzaremos por identificar los elementos que puedan contener evidencia digital. En esta fase trataremos de reconocer y documentar todas las potenciales evidencias.
+
+### 2. Adquisición (UNE 71506, RFC 3227, NIST)
+
+En primer lugar deberíamos planificar la adquisición. Probablemente encontremos distintas fuentes, por lo que es importante establecer prioridades en el orden de recogida basándonos en los siguientes criterios:
+
+- *Su valor probable*: La fuente de datos que más evidencias, o evidencias de mayor calidad podrían contener.
+- *Volatilidad*: Las fuentes de datos que antes puedan deteriorarse o perderse. Teniendo en cuenta este orden concreto:
+	1. Registros, caché.
+	2. Tablas de enrutamientos, caché ARP, tabla de procesos, estadísticas del núcleo y memoria.
+	3. Sistemas de archivos temporales.
+	4. Disco duro.
+	5. Datos de registro remoto (logs del sistema) y monitorización del sistema relevante en cuestión.
+	6. Configuración física y topología de la red.
+	7. Documentos y archivos.
+- *Cantidad de esfuerzo requerido*: Priorizando antes las fuentes de datos que menos esfuerzo requieran frente a las que más.
+
+En esta fase realizaremos un clonado a bajo nivel de los datos originales procurando alterarlos lo mínimamente posible siguiendo un proceso de documentación a la par, incluso realizando fotografías y etiquetado del cableado o dispositivos, para asegurar que el proceso sea repetible y reproducible. 
+
+Es importante en esta fase prestar atención al estado de los sistemas, siendo distinto el tratamiento en caso de que los equipos se encuentren encendidos o apagados.
+
+### 3. Preservación (UNE 71506)
+
+En esta fase el objetivo es mantener la integridad de las evidencias, para ello se deben aplicar una serie de medidas como: 
+
+- Evitar exposición a campos magnéticos y otras interferencias.
+- Almacenar la evidencia, precintarla y sellarla en los soportes adecuados.
+- Utilizar el material adecuado como indumentaria de protección para evitar daños por descargas electroestáticas entre otros.
+
+### 4. Documentación (UNE 71506)
+
+En esta fase se documentará el procedimiento completo de forma detallada y concisa que sigue una línea temporal (fecha, hora, ubicación...).
+
+Se documentarán todos los procesos llevados acabo:
+
+- Tácticas de adquisición
+- Tipos de hardware o software
+- Configuraciones
+- Herramientas utilizadas
+
+Es crucial detallar un registro de todas las personas que han tenido acceso a la evidencia, es decir, mantener la cadena de custodia para demostrar que las evidencias no han sido modificadas. La cadena de custodia debería de componerse de:
+
+- Nombre de la persona que manejó la evidencia
+- Fecha
+- Hora
+- Propósito de cada manipulación
+
+### 5. Análisis (UNE 71506)
+
+En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán dar respuesta a preguntas relacionadas con el evento que se está investigando.
+
+Esto incluye:
+
+- Revisar la hora de la BIOS del dispositivos
+- Recuperar ficheros borrados
+- Analizar los metadatos
+- Analizar los registros de red
+- Estudiar las particiones y sistemas de ficheros.
+- Analizar el sistema operativo
+- Estudiar la seguridad implementada en el sistema
+- Analizar los registros de autenticación
+- Etc.
+
+### 6. Presentación (UNE 71506)
+
+En esta fase se escribirá un informe pericial con toda la información obtenida a lo largo del proceso de análisis. Este informe debe escribirse en un lenguaje entendible para un público no técnico y tener una estructura uniforme. 
+
+El informe debe incluir la documentación de la cadena de custodia y al finalizar el informe será remitido al organismo solicitante.
+
+##  Resumen
+
+
+
+## Conclusión
+
+## Referencias
+
+- [https://guiacadenadecustodiadigital.wordpress.com/iso-27037/](https://guiacadenadecustodiadigital.wordpress.com/iso-27037/)
+- https://peritoinformaticocolegiado.es/blog/estandares-nacionales-e-internacionales-que-puede-seguir-un-perito-informatico-para-realizar-el-analisis-forense-de-una-evidencia-y-para-la-elaboracion-de-un-peritaje-informatico/
+- https://peritosinformaticos.es/iso-71506-2013-perito-informatico/
+- Norma RFC 3227. Se ha decidido escoger una copia de la norma como una referencia en sí, a fin de investigar sobre el documento en su idioma original, que es el inglés.
