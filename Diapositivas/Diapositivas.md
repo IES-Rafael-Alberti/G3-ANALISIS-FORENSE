@@ -121,6 +121,21 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 ---
 
+## Norma ISO 27027 (Recopilación de evidencias)
+
+ Esta norma se basa en la fases de identificación, adquisición y preservación de evidencias digitales. Esta norma está dirigida a los dispositivos actuales estando más acorde con la técnica actual.
+
+ ![ISO-27037](img/esquemaiso.png)
+
+---
+
+## Fases de la norma ISO 27037
+
+**1. Identificación:** Es la primera de las fases de esta norma y trata de buscar, reconocer y documentar posibles evidencias digitales.
+
+**2. Recolectar o adquirir:** Es la segunda de las fases e indica que la evidencia identificada debe ser recogida o adquirida para su procesamiento. Indica que deben hacerse copias de una imagen del disco, copia de los contenidos de la memoria y los contenidos de un correo eléctronico. Las copias deben hacerse mediante un proceso conocido, defendible y bien documentado.
+
+**3. Preservar:** Esta tercera fase define preservar como el proceso de mantener y salvaguardar la integridad y/o el estado original de la potencial evidencia digital, esto requiere estrictos controles de acceso para proteger los artículos de la modificación accidental o deliberada como de tener los controles de entorno apropiados.
 
 ---
 
