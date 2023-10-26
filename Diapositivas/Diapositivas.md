@@ -156,6 +156,20 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 ---
 
+## **Metodología NIST**
+
+  
+- Se desarrolló principalmente para ser usada por agencias federales.
+
+- Adopta un enfoque holístico 
+
+- Aporta un plan para adquirir los datos adecuadamente basándose en volatilidad, valor probable y cantidad de esfuerzo requerido
+
+- Pretende transformar los dispositivos en evidencia
+
+
+---
+
 ## **Fases de la norma NIST**
 
 
