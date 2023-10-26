@@ -14,11 +14,9 @@ backgroundImage: url('./img/background6.jpg')
         width: 90%;
         max-height: 300px
     }
-
-    .ciclo {
-        background: red;
-        width: 50% !important;
-        margin-left: 20%
+    .nuestra {
+        width: 115% !important;
+        
     }
 
 </style>
@@ -167,8 +165,12 @@ La metodología RFC 3227 es una guía para administradores y profesionales de se
 ## **Nuestra metodología**
 
 Este es el esquema que hemos creado para nuestra metodología basada en las normas explicadas en esta presentación.
+<br>
+<div class="nuestra">
 
 ![nuestro_esquema](img/nuestro_esquema.drawio.png)
+
+</div>
 
 ---
 
