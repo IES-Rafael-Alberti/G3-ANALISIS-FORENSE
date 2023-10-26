@@ -11,8 +11,8 @@ backgroundImage: url('./img/background6.jpg')
 <style type="text/css">
     img {
   	    background-color: transparent!important;
-        width: 100%;
-        max-height: 250px
+        width: 90%;
+        max-height: 300px
     }
 
     .ciclo {
