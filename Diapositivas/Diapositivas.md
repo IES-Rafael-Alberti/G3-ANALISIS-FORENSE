@@ -76,45 +76,6 @@ Normativas investigadas
 
 ---
 
-
-## **Norma UNE 71505/2013 (Sistemas de gestión de evidencias electrónicas)**
-
-Esta norma se centra garantizar los principios de la información de las evidencias electrónicas o digitales estableciendo un ciclo de vida de las mismas.
-
-<div class="container">
-    <img class="ciclo" src="img/ciclo.png">
-</div>
-
----
-
-## **Principios**
-
-**Confidencialidad:** Se refiere a la protección de la información para que solo las personas autorizadas puedan acceder a ella.
-
-**Autenticación e integridad:** Garantiza que la evidencia es auténtica, es decir, que proviene de la fuente que se afirma y que no ha sido modificada de ninguna manera.
-
-**Disponibilidad y completitud:** Asegura que la información esté disponible cuando sea necesaria y que esté completa, es decir, que incluya todos los datos.
-
-**Calidad y gestión:** Se refiere a la necesidad de mantener estándares de calidad en la recopilación, almacenamiento y uso de la información. También implica una gestión de los datos, lo que incluye su actualización y eliminación en el momento adecuado.
-
----
-
-## **Ciclo de vida de las evidencias**
-
-**Generación:** En este primer paso es donde se crean los datos. 
-
-**Almacenamiento:** Una vez generados los datos, se almacenan en algún tipo de medio de almacenamiento. 
-
-**Transmisión:** Los datos a menudo necesitan ser enviados de un lugar a otro. 
-
-**Recuperación:** Extraer datos de los medios de almacenamiento y exportarlos para su análisis.
-
-**Tratamiento:** Los datos extraídos se procesan para obtener información útil.
-
-**Comunicación:** Los resultados del análisis de la evidencias se comunican a las partes pertinentes.
-
----
-
 ## **Norma UNE 71506/2013 (Análisis forense de las evidencias electrónicas)**
 
 El objetivo de esta norma es definir el proceso de análisis forense dentro del ciclo de gestión de las evidencias (Norma UNE 71506/2013 anteriormente descrita).
@@ -200,6 +161,62 @@ La metodología RFC 3227 es una guía para administradores y profesionales de se
 ---
 
 ![RFC3227](img/Metodología_RFC_3227.drawio.png)
+
+---
+
+## **Nuestra metodología**
+
+
+
+---
+
+## **1. Identificación de evidencia (ISO 27037)**
+
+En esta fase identificaremos los elementos que puedan contener evidencia digital. En esta fase trataremos de reconocer y documentar todas las potenciales evidencias como pueden ser:
+<br>
+
+- **Dispositivos físicos:** Ordenadores, teléfonos, tablets, servidores, pendrives, etc...
+
+- **Redes y conexiones a Internet:** Registros de tráfico, registros de servidores, etc..
+
+- **Software:** Correos electrónicos, mensajes instantáneos, documentos. etc...
+
+- **Datos en la nube:** Servicios en la nube como Google drive, Dropbox, etc...
+
+---
+
+## **3. Preservación (UNE 71506)**
+
+En esta fase el objetivo es mantener la integridad de las evidencias, para ello se deben aplicar una serie de medidas como:
+<br>
+- Evitar exposición a campos magnéticos y otras interferencias.
+- Almacenar la evidencia, precintarla y sellarla en los soportes adecuados.
+- Utilizar el material adecuado como indumentaria de protección para evitar daños por descargas electroestáticas entre otros.
+
+---
+
+## **5. Análisis (UNE 71506)**
+
+En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán dar respuesta a preguntas relacionadas con el evento que se está investigando.
+
+Esto incluye:
+
+- Revisar la hora de la BIOS del dispositivos.
+- Recuperar ficheros borrados.
+- Analizar los metadatos.
+- Analizar los registros de red.
+- Estudiar las particiones y sistemas de ficheros.
+- Analizar el sistema operativo.
+
+---
+
+## **6. Presentación (UNE 71506)**
+
+En esta fase se escribirá un informe pericial con toda la información obtenida a lo largo del proceso de análisis. Este informe debe escribirse en un lenguaje entendible para un público no técnico y tener una estructura uniforme.
+
+El informe debe incluir la documentación de la cadena de custodia y al finalizar el informe será remitido al organismo solicitante.
+
+---
 
 ---
 
