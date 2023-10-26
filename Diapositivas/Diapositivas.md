@@ -66,7 +66,7 @@ Normativas investigadas
 
 Esta norma se centra garantizar los principios de la información de las evidencias electrónicas o digitales estableciendo un ciclo de vida de las mismas.
 
-![Alt text](img/ciclo.png)
+<center>![Alt text](img/ciclo.png)</center>
 
 ---
 
