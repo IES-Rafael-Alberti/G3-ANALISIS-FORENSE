@@ -166,7 +166,9 @@ La metodología RFC 3227 es una guía para administradores y profesionales de se
 
 ## **Nuestra metodología**
 
+Este es el esquema que hemos creado para nuestra metodología basada en las normas explicadas en esta presentación.
 
+![nuestro_esquema](img/nuestro_esquema.drawio.png)
 
 ---
 
@@ -185,6 +187,27 @@ En esta fase identificaremos los elementos que puedan contener evidencia digital
 
 ---
 
+## **2. Adquisición (UNE 71506, RFC 3227, NIST)**
+
+En esta fase planificaremos la adquisición. Posiblemente encontremos distintas fuentes por lo que es importante establecer prioridades en el orden de la recogida basandonos en los siguientes criterior.
+
+- *Su valor probable*: La fuente de datos que más evidencias, o evidencias de mayor calidad podrían contener.
+- *Cantidad de esfuerzo requerido*: Priorizando antes las fuentes de datos que menos esfuerzo requieran frente a las que más.
+Se realizará un clonado a bajo nivel, se harán fotos y se etiquetarán el cableado y los dispositivos. 
+
+---
+
+- *Volatilidad*: Las fuentes de datos que antes puedan deteriorarse o perderse. Teniendo en cuenta este orden concreto:
+	1. Registros, caché.
+	2. Tablas de enrutamientos, caché ARP, tabla de procesos, estadísticas del núcleo y memoria.
+	3. Sistemas de archivos temporales.
+	4. Disco duro.
+    5. Datos de registro remoto (logs del sistema) y monitorización del sistema relevante en cuestión.
+	6. Configuración física y topología de la red.
+	7. Documentos y archivos.
+
+---
+
 ## **3. Preservación (UNE 71506)**
 
 En esta fase el objetivo es mantener la integridad de las evidencias, para ello se deben aplicar una serie de medidas como:
@@ -192,6 +215,28 @@ En esta fase el objetivo es mantener la integridad de las evidencias, para ello 
 - Evitar exposición a campos magnéticos y otras interferencias.
 - Almacenar la evidencia, precintarla y sellarla en los soportes adecuados.
 - Utilizar el material adecuado como indumentaria de protección para evitar daños por descargas electroestáticas entre otros.
+
+---
+
+## **4. Documentación (UNE 71506)**
+
+En esta fase documentaremos el procedimiento completo de forma detallada y concisa siguiendo una línea temporal.
+
+Los procesos llevados a cabo son:
+
+- Tácticas de adquisición
+- Tipos de hardware o software
+- Configuraciones
+- Herramientas utilizadas
+
+---
+
+Además de los procedimientos, detallaremos en un regitro todas las personas que han tenido acceso a la evidencia. Este registro debe componerse de:
+
+- Nombre de la persona que manejó la evidencia
+- Fecha
+- Hora
+- Propósito de cada manipulación
 
 ---
 
@@ -217,6 +262,12 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 El informe debe incluir la documentación de la cadena de custodia y al finalizar el informe será remitido al organismo solicitante.
 
 ---
+
+## **Conclusión**
+
+Después de una exhaustiva investigación de normas y estándares, y desarrollar nuestra metodología de análisis forsense, nos hemos dado cuenta de la importancía de seguir una serie de procedimientos y las medidas a tomar para asegurar la integridad, autenticidad y validez de las evidencias digitales para el ámbito legal. Al haber comparado una serie de normas nos hemos dado cuenta cuales deberían ser las mejores prácticas que debemos llevar a cabo en nuestra metodología.
+
+Por ello las normas en las que nos hemos basado para crear esta metodología son las que hemos explicado en esta presentación.
 
 ---
 
