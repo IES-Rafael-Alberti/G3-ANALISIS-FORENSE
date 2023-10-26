@@ -12,7 +12,7 @@ backgroundImage: url('./img/background6.jpg')
     img {
   	    background-color: transparent!important;
         width: 100%;
-        max-height: 300px
+        max-height: 250px
     }
 
     .ciclo {
