@@ -82,9 +82,13 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 ## Fases de la norma UNE 71506/2013:
 
 **1. Preservación:** En esta fase se pretende mantener en todo momento la validez y confiabilidad de las evidencias.
+
 **2. Adquisición:** En esta fase se realiza un clonado a bajo nivel de los datos originales, siguiendo un procedimiento documentado para asegurar que el proceso de adquisición es reproducible y repetible, calculando el código hash de cada evidencia.
+
 **3. Documentación:** En esta fase se documentará el procedimiento completo de una forma detallada y concisa que siga una linea temporal correcta (Fecha, hora, ubicación, etc..).
+
 **4. Análisis:** En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán dar respuesta a preguntas relacionadas con el evento que se está investigando.
+
 **5. Presentación:** En esta fase se escribirá un informe pericial con toda la información obtenida a lo largo del proceso de análisis. 
 
 ---
