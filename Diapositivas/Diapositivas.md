@@ -8,6 +8,21 @@ color: white
 backgroundImage: url('./img/background6.jpg')
 ---
 
+<style type="text/css">
+    img {
+  	    background-color: transparent!important;
+        width: 100%;
+        max-height: 300px
+    }
+
+    .ciclo {
+        background: red;
+        width: 50% !important;
+        margin-left: 20%
+    }
+
+</style>
+
 ![bg left:30% 50%](./img/imago-iesra-1.png)
 
 # Análisis Forense
@@ -66,7 +81,9 @@ Normativas investigadas
 
 Esta norma se centra garantizar los principios de la información de las evidencias electrónicas o digitales estableciendo un ciclo de vida de las mismas.
 
-![Alt text](img/ciclo.png)
+<div class="container">
+    <img class="ciclo" src="img/ciclo.png">
+</div>
 
 ---
 
@@ -136,6 +153,13 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 **2. Recolectar o adquirir:** Es la segunda de las fases e indica que la evidencia identificada debe ser recogida o adquirida para su procesamiento. Indica que deben hacerse copias de una imagen del disco, copia de los contenidos de la memoria y los contenidos de un correo eléctronico. Las copias deben hacerse mediante un proceso conocido, defendible y bien documentado.
 
 **3. Preservar:** Esta tercera fase define preservar como el proceso de mantener y salvaguardar la integridad y/o el estado original de la potencial evidencia digital, esto requiere estrictos controles de acceso para proteger los artículos de la modificación accidental o deliberada como de tener los controles de entorno apropiados.
+
+---
+
+## **Fases de la norma NIST**
+
+
+![NIST](img/Metodologia_NIST.drawio.png)
 
 ---
 
