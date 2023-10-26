@@ -64,13 +64,13 @@ Normativas investigadas
 
 - Establecer un marco de referencia.
 
-- Garantizar un nivel de integridad y fiabilidad
+- Garantizar un nivel de integridad y fiabilidad.
 
-- Mejorar la calidad y consistencia
+- Mejorar la calidad y consistencia.
 
-- Aumentar la credibilidad
+- Aumentar la credibilidad.
 
-- Facilitar la colaboración y comunicación
+- Facilitar la colaboración y comunicación.
 
 ---
 
@@ -91,7 +91,10 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 **3. Documentación:** En esta fase se documentará el procedimiento completo de una forma detallada y concisa que siga una linea temporal correcta (Fecha, hora, ubicación, etc..).
 
+---
+
 **4. Análisis:** En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán dar respuesta a preguntas relacionadas con el evento que se está investigando.
+<br>
 
 **5. Presentación:** En esta fase se escribirá un informe pericial con toda la información obtenida a lo largo del proceso de análisis. 
 
@@ -120,11 +123,11 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
   
 - Se desarrolló principalmente para ser usada por agencias federales.
 
-- Adopta un enfoque holístico 
+- Adopta un enfoque holístico. 
 
-- Aporta un plan para adquirir los datos adecuadamente basándose en volatilidad, valor probable y cantidad de esfuerzo requerido
+- Aporta un plan para adquirir los datos adecuadamente basándose en volatilidad, valor probable y cantidad de esfuerzo requerido.
 
-- Pretende transformar los dispositivos en evidencia
+- Pretende transformar los dispositivos en evidencia.
 
 
 ---
@@ -166,6 +169,7 @@ La metodología RFC 3227 es una guía para administradores y profesionales de se
 
 Este es el esquema que hemos creado para nuestra metodología basada en las normas explicadas en esta presentación.
 <br>
+
 <div class="nuestra">
 
 ![nuestro_esquema](img/nuestro_esquema.drawio.png)
@@ -179,13 +183,13 @@ Este es el esquema que hemos creado para nuestra metodología basada en las norm
 En esta fase identificaremos los elementos que puedan contener evidencia digital. En esta fase trataremos de reconocer y documentar todas las potenciales evidencias como pueden ser:
 <br>
 
-- **Dispositivos físicos:** Ordenadores, teléfonos, tablets, servidores, pendrives, etc...
+- **Dispositivos físicos:** Ordenadores, teléfonos, tablets, servidores, pendrives.
 
-- **Redes y conexiones a Internet:** Registros de tráfico, registros de servidores, etc..
+- **Redes y conexiones a Internet:** Registros de tráfico, registros de servidores.
 
-- **Software:** Correos electrónicos, mensajes instantáneos, documentos. etc...
+- **Software:** Correos electrónicos, mensajes instantáneos, documentos.
 
-- **Datos en la nube:** Servicios en la nube como Google drive, Dropbox, etc...
+- **Datos en la nube:** Servicios en la nube como Google drive o Dropbox.
 
 ---
 
@@ -214,9 +218,9 @@ Se realizará un clonado a bajo nivel, se harán fotos y se etiquetarán el cabl
 
 En esta fase el objetivo es mantener la integridad de las evidencias, para ello se deben aplicar una serie de medidas como:
 <br>
-- Evitar exposición a campos magnéticos y otras interferencias.
-- Almacenar la evidencia, precintarla y sellarla en los soportes adecuados.
-- Utilizar el material adecuado como indumentaria de protección para evitar daños por descargas electroestáticas entre otros.
+- Evitar exposición a campos magnéticos y otras interferencias
+- Almacenar la evidencia, precintarla y sellarla en los soportes adecuados
+- Utilizar el material adecuado como indumentaria de protección para evitar daños por descargas electroestáticas entre otros
 
 ---
 
