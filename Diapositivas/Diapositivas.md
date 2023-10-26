@@ -77,7 +77,7 @@ Normativas investigadas
 ---
 
 
-## Norma UNE 71505/2013 (Sistemas de gestión de evidencias electrónicas)
+## **Norma UNE 71505/2013 (Sistemas de gestión de evidencias electrónicas)**
 
 Esta norma se centra garantizar los principios de la información de las evidencias electrónicas o digitales estableciendo un ciclo de vida de las mismas.
 
@@ -87,7 +87,7 @@ Esta norma se centra garantizar los principios de la información de las evidenc
 
 ---
 
-## Principios
+## **Principios**
 
 **Confidencialidad:** Se refiere a la protección de la información para que solo las personas autorizadas puedan acceder a ella.
 
@@ -99,7 +99,7 @@ Esta norma se centra garantizar los principios de la información de las evidenc
 
 ---
 
-## Ciclo de vida de las evidencias:
+## **Ciclo de vida de las evidencias**
 
 **Generación:** En este primer paso es donde se crean los datos. 
 
@@ -115,7 +115,7 @@ Esta norma se centra garantizar los principios de la información de las evidenc
 
 ---
 
-## Norma UNE 71506/2013 (Análisis forense de las evidencias electrónicas)
+## **Norma UNE 71506/2013 (Análisis forense de las evidencias electrónicas)**
 
 El objetivo de esta norma es definir el proceso de análisis forense dentro del ciclo de gestión de las evidencias (Norma UNE 71506/2013 anteriormente descrita).
 <br>
@@ -124,7 +124,7 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 ---
 
-## Fases de la norma UNE 71506/2013:
+## **Fases de la norma UNE 71506/2013**
 
 **1. Preservación:** En esta fase se pretende mantener en todo momento la validez y confiabilidad de las evidencias.
 
@@ -138,7 +138,7 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 ---
 
-## Norma ISO 27027 (Recopilación de evidencias)
+## **Norma ISO 27027 (Recopilación de evidencias)**
 
  Esta norma se basa en la fases de identificación, adquisición y preservación de evidencias digitales. Esta norma está dirigida a los dispositivos actuales estando más acorde con la técnica actual.
 
@@ -146,7 +146,7 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 ---
 
-## Fases de la norma ISO 27037
+## **Fases de la norma ISO 27037**
 
 **1. Identificación:** Es la primera de las fases de esta norma y trata de buscar, reconocer y documentar posibles evidencias digitales.
 
@@ -160,6 +160,32 @@ El objetivo de esta norma es definir el proceso de análisis forense dentro del 
 
 
 ![NIST](img/Metodologia_NIST.drawio.png)
+
+---
+
+## **Metodología RFC 3227**
+
+La metodología RFC 3227 es una guía para administradores y profesionales de seguridad que establece pautas para la recopilación y preservación de evidencia relacionada con eventos de seguridad informática, tales como intrusiones. Ofrece mejores prácticas para determinar la volatilidad de los datos, priorizar evidencia y cómo almacenar y documentar los datos.
+
+---
+
+## **Fases de la metodología RFC 3227**
+
+**1. Introducción:** La introducción destaca la importancia de recopilar evidencia en incidentes de seguridad, de una forma estructurada, metódica y organizada.
+
+**2. Pautas de Recopilación de Evidencia:** Esta fase establecen pautas para la recolección, incluyendo priorizar la captura precisa de datos, minimizar cambios, eliminar vías de alteración y proceder desde lo más volátil.
+
+**3. Procedimiento de Recolección:** Etapa que destaca la importancia de la transparencia en los métodos utilizados. Los principios clave incluyen identificar la evidencia, priorizar la relevancia, seguir un orden de volatilidad, minimizar cambios externos, documentar y considerar la generación de checksums y firmas criptográficas sin alterar las pruebas.
+
+---
+
+**4. Procedimiento de Archivado:** Para almacenar la evidencia de manera adecuada, se requiere un registro detallado de la cadena de custodia que incluye quién, cuándo y dónde descubrió, manejó o examinó la evidencia, así como quién tuvo custodia, la duración y el almacenamiento. La evidencia se almacena en medios comunes y se restringe el acceso, documentándolo para evitar accesos no autorizados.
+
+**5. Herramientas:** Este apartado recomienda una lista de herramientas preparadas para la recolección de evidencia y análisis forense.
+
+---
+
+![RFC3227](img/Metodología_RFC_3227.drawio.png)
 
 ---
 
