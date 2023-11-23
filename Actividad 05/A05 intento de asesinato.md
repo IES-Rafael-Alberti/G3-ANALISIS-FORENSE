@@ -24,7 +24,7 @@ Esta actividad sitúa a los estudiantes en el corazón de una investigación for
 
 ## Cuestiones a Resolver
 
-1. ¿Cuál es el nombre de usuario del equipo?
+1. **¿Cuál es el nombre de usuario del equipo?**
 
 El usuario es Pacopepe, y podemos encontrarlo a través de varios métodos. El primer método que podemos usar para hallar el usuario es a través de la herramienta *AccessData FTK Imager*, de modo que comenzaremos haciendo clic en 'Add Evidence Item', donde elegiremos la imagen que se nos proporciona.
 
@@ -47,7 +47,7 @@ El segundo método que hemos utilizado para encontrar el usuario es usando la ap
 Una vez exportado, abrimos el software *WRR* (Windows Registry Recovery), y abrimos el fichero anteriormente mencionado (*SAM*). Una vez allí, elegimos la opción '*Raw Data*', y luego navegaremos por las carpetas '*ROOT\SAM\Domains\Account\Users\Names*', donde hallaremos el usuario ***Pacopepe***, que es el que buscamos.
 
 
-2. ¿Qué personaje público es el posible objeto del atentado?
+2. **¿Qué personaje público es el posible objeto del atentado?**
 
 En la sección '*Data Artifacts*', hacemos clic sobre '*Web History*', y allí observamos como el sospechoso busca información sobre dos políticos, que son *Alberto Núñez Feijóo*, presidente del Partido Popular y *Alfonso Rueda Valenzuela*, ex-presidente de la Xunta de Galicia.
 
@@ -61,7 +61,7 @@ Sin embargo, cuando profundizamos más en el análisis descubrimos que el sospec
 
 Como vemos en esta última imagen, dos días después de buscar puños americanos en internet, se interesa en explorar armerías gallegas. 
 
-3. ¿En qué lugar estaba el sospechoso planeando llevar a cabo el atentado?
+3. **¿En qué lugar estaba el sospechoso planeando llevar a cabo el atentado?**
 
 Cuando accedemos a '*Data Artifacts*', y a '*Web History*', observamos que el sospechoso ha estado mirando y analizando el *Palacio de la Moncloa*, en Madrid, lo que coincide con un posible intento de atentado.
 
@@ -83,7 +83,7 @@ También podemos ver el archivo *folleto ordenado 2019.pdf*, que detalla los alr
 
 ![LugharAtentado_7](img/LugarAtentado_7.png)
 
-4. ¿Cuáles serían los posibles alojamientos del sospechoso?
+4. **¿Cuáles serían los posibles alojamientos del sospechoso?**
 
 Para hallar los posibles alojamientos debemos dirigirnos a 'Data Artifacts', y a '*Web History*'. Una vez allí, simplemente anotaremos los alojamientos buscados por el sospechoso, que son el ***Hotel Riu Plaza España***, el ***Hostal Condestable*** y el ***Hostal Alaska***.
 
@@ -95,7 +95,7 @@ Para hallar los posibles alojamientos debemos dirigirnos a 'Data Artifacts', y a
 
 ![Alojamiento2](img/Alojamiento2.png)
 
-5. El sospechoso estuvo viendo un programa en YouTube que le ha motivado para llevar a cabo el atentado. ¿Cuál es dicho programa?
+5. **El sospechoso estuvo viendo un programa en YouTube que le ha motivado para llevar a cabo el atentado. ¿Cuál es dicho programa?**
 
 Una vez más, valiéndonos del historial, vemos que el programa en YouTube que el sospechoso ha estado viendo de forma continuada, antes de proceder a planear el atentado es '*Los Minutos del Odio*', del YouTuber *Fabián C.Barrio*. Además, después de terminar de ver dichos programas, comienza a ver las noticias de política y fútbol, para luego escuchar música, lo que reduce las posibilidades al programa antes mencionado.
 
@@ -103,13 +103,13 @@ Una vez más, valiéndonos del historial, vemos que el programa en YouTube que e
 
 ![Youtube2](img/YouTube_2.png)
 
-6. Además, el sospechoso ha estado leyendo un libro que le puede ayudar en el atentado. ¿Cuál es dicho libro?
+6. **Además, el sospechoso ha estado leyendo un libro que le puede ayudar en el atentado. ¿Cuál es dicho libro?**
 
 El libro que estaba leyendo es ***El Libro de Cocina del Anarquista***, el cual podemos encontrar gracias al software *Autopsy*. Para ello debemos acceder a 'Data Artifacts' y a 'Recent Documents', donde podemos ver que, efectivamente el sospechoso estaba mirando el libro en cuestión.
 
 ![Libro](img/Vestigio_Libro.png)
 
-7. El sospechoso ha estado buscando armas en varias páginas de armerías de Galicia. Sin embargo, sólo ha anotado los precios del material de dos de las armerías que ha visitado. ¿Cuáles son dichas armerías?
+7. **El sospechoso ha estado buscando armas en varias páginas de armerías de Galicia. Sin embargo, sólo ha anotado los precios del material de dos de las armerías que ha visitado. ¿Cuáles son dichas armerías?**
 
 Mirando el historial hemos podido averiguar la lista de armerías que el sospechoso tuvo en cuenta, que son:
 
@@ -140,7 +140,7 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 ![NotasArmeria2](img/Notas_Armeria2.png)
 
-8. ¿Existe alguna imagen cuyos metadatos EXIF nos puedan ayudar en el caso?
+8. **¿Existe alguna imagen cuyos metadatos EXIF nos puedan ayudar en el caso?**
 
 ## Línea temporal
 
