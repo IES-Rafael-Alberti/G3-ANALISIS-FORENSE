@@ -31,7 +31,17 @@ Una vez exportado, abrimos el software *WRR* (Windows Registry Recovery), y abri
 
 2. ¿Qué personaje público es el posible objeto del atentado?
 
+En la sección '*Data Artifacts*', hacemos clic sobre '*Web History*', y allí observamos como el sospechoso busca información sobre dos políticos, que son *Alberto Núñez Feijóo*, presidente del Partido Popular y *Alfonso Rueda Valenzuela*, ex-presidente de la Xunta de Galicia.
 
+Sin embargo, cuando profundizamos más en el análisis descubrimos que el sospechoso planea atentar en la Moncloa, por lo que las posibilidades se reducen a *Feijóo*, además después de ver noticias sobre el susodicho político, comienza a buscar armas en internet.
+
+![Politico1](img/Politico_1.png)
+
+![Politico2](img/Politico_2.png)
+
+![Politico3](img/Politico_3.png)
+
+Como vemos en esta última imagen, dos días después de buscar puños americanos en internet, se interesa en explorar armerías gallegas. 
 
 3. ¿En qué lugar estaba el sospechoso planeando llevar a cabo el atentado?
 
@@ -114,3 +124,10 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 8. ¿Existe alguna imagen cuyos metadatos EXIF nos puedan ayudar en el caso?
 
+[...]
+
+<br/>
+
+## Cronología
+
+[...]
