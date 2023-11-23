@@ -3,6 +3,11 @@
 
 ## Índice
 
+1. [Descripción](#descripción)
+2. [Cuestiones a resolver](#cuestiones-a-resolver)
+3. [Línea temporal](#línea-temporal)
+
+
 ## Descripción
 
 Esta actividad sitúa a los estudiantes en el corazón de una investigación forense digital, en la que deben desentrañar un complot contra un político utilizando una imagen de disco duro incautada. Los estudiantes aplicarán técnicas forenses para explorar pistas ocultas, descubrir la identidad y los planes del sospechoso, y rastrear su actividad digital. A través de un análisis detallado, deberán conectar los puntos entre varios elementos del caso, desde los intereses en línea del sospechoso hasta sus posibles ubicaciones y preparativos.
@@ -131,6 +136,6 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 <br/>
 
-## Cronología
+## Línea temporal
 
 [...]
