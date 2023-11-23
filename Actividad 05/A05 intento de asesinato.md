@@ -133,5 +133,10 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 ## Línea temporal
 
-
 ## Conclusión
+
+Tras una exhaustiva investigación, hemos encontrado claros indicios de que el usuario Pacopepe ha planeado un intento de asesinato contra el político Alberto Núñez Feijóo. Entre los artefactos encontrados, nos hemos apoyado en el historial del navegador más usado por el individuo para descubrir el plan.
+
+Este plan incluía el uso de armas compradas en un par de armerías, cuyos detalles fueron posteriormente anotados en un documento de LibreOffice, además de la ubicación donde se planteaba alojar. Además, el individuo ha investigado minuciosamente el Palacio de la Moncloa, que sería el lugar donde se contemplaba llevar a cabo este intento.
+
+Gracias a esta investigación, hemos conseguido trazar una línea temporal de los pasos que ha llevado a cabo el usuario Pacopepe en este plan para asesinar al político mencionado.
