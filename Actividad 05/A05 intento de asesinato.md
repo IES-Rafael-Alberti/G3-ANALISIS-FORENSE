@@ -6,6 +6,7 @@
 1. [Descripción](#descripción)
 2. [Cuestiones a resolver](#cuestiones-a-resolver)
 3. [Línea temporal](#línea-temporal)
+4. [Conclusión](#conclusión)
 
 
 ## Descripción
@@ -132,10 +133,7 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 8. ¿Existe alguna imagen cuyos metadatos EXIF nos puedan ayudar en el caso?
 
-[...]
-
-<br/>
-
 ## Línea temporal
 
-[...]
+
+## Conclusión
