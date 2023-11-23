@@ -124,16 +124,6 @@ Mirando el historial hemos podido averiguar la lista de armerías que el sospech
 - Deportes Toribio
 - Armería Miragaya
 
-![Armeria1](img/Armeria_1.png)
-
-![Armeria2](img/Armeria_2.png)
-
-![Armeria3](img/Armeria_3.png)
-
-![Armeria4](img/Armeria_4.png)
-
-![Armeria5](img/Armeria_5.png)
-
 Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar por las carpetas de la imagen hasta llegar a '*Documents*', donde veremos el archivo *Armas.ods*. Haremoc clic sobre él, y elegiremos la opción '*View Item in New Window*'. Viendo el archivo, vemos que las armerías elegidas son ***Santos Cao*** y ***Jardín***.
 
 ![NotasArmeria1](img/Notas_Armeria.png)
