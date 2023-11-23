@@ -46,7 +46,6 @@ El segundo método que hemos utilizado para encontrar el usuario es usando la ap
 
 Una vez exportado, abrimos el software *WRR* (Windows Registry Recovery), y abrimos el fichero anteriormente mencionado (*SAM*). Una vez allí, elegimos la opción '*Raw Data*', y luego navegaremos por las carpetas '*ROOT\SAM\Domains\Account\Users\Names*', donde hallaremos el usuario ***Pacopepe***, que es el que buscamos.
 
-
 2. **¿Qué personaje público es el posible objeto del atentado?**
 
 En la sección '*Data Artifacts*', hacemos clic sobre '*Web History*', y allí observamos como el sospechoso busca información sobre dos políticos, que son *Alberto Núñez Feijóo*, presidente del Partido Popular y *Alfonso Rueda Valenzuela*, ex-presidente de la Xunta de Galicia.
