@@ -130,4 +130,5 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 ## Cronología
 
-[...]
+Para arrojar claridad sobre los hechos analizados, es necesario y conveniente confeccionar una línea cronológica que detalle los acontecimientos que han ido sucediendo. Esta línea temporal servirá como herramienta fundamental en nuestra investigación forense de la imagen del ordenador del sospechoso de atentado. 
+
