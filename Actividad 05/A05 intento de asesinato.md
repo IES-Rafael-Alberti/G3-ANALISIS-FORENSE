@@ -1,5 +1,14 @@
 # A05 - Intento de Asesinato
 
+![Portada](img/portada.png)
+
+**Autores:** *Grupo 3*
+
+**Integrantes:**
+
+- Juan Manuel Cumbrera López
+- Christian Romero Oliva
+- Sergio Guerrero Merlo
 
 ## Índice
 
