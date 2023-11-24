@@ -38,14 +38,6 @@ Una vez que se cargue la imagen, accederemos a la segunda partición, que es la 
 
 ![FTK4](img/FTK_Partition2_User_PacoPepe.png)
 
-El segundo método que hemos utilizado para encontrar el usuario es usando la aplicación *Windows Registry Recovery* y *AccessData FTK Imager*. De la misma forma que en la manera anterior, seguimos todos los pasos hasta llegar a la carpeta *root*, luego nos dirigiremos a *Windows*, *System32* y *config*, donde buscaremos el fichero 'SAM', 'SAM.LOG1' Y 'SAM.LOG2', con la finalidad de exportarlos. 
-
-![FTK5](img/FTK_System32_Config.png)
-
-![FTK6](img/FTK_System32_Config_SAM.png)
-
-Una vez exportado, abrimos el software *WRR* (Windows Registry Recovery), y abrimos el fichero anteriormente mencionado (*SAM*). Una vez allí, elegimos la opción '*Raw Data*', y luego navegaremos por las carpetas '*ROOT\SAM\Domains\Account\Users\Names*', donde hallaremos el usuario ***Pacopepe***, que es el que buscamos.
-
 2. **¿Qué personaje público es el posible objeto del atentado?**
 
 En la sección '*Data Artifacts*', hacemos clic sobre '*Web History*', y allí observamos como el sospechoso busca información sobre dos políticos, que son *Alberto Núñez Feijóo*, presidente del Partido Popular y *Alfonso Rueda Valenzuela*, ex-presidente de la Xunta de Galicia.
@@ -57,8 +49,6 @@ Sin embargo, cuando profundizamos más en el análisis descubrimos que el sospec
 ![Politico2](img/Politico_2.png)
 
 ![Politico3](img/Politico_3.png)
-
-Como vemos en esta última imagen, dos días después de buscar puños americanos en internet, se interesa en explorar armerías gallegas. 
 
 3. **¿En qué lugar estaba el sospechoso planeando llevar a cabo el atentado?**
 
@@ -131,7 +121,15 @@ Pero sólo anota precios de dos de ellas, y para ello debemos volver a navegar p
 
 8. **¿Existe alguna imagen cuyos metadatos EXIF nos puedan ayudar en el caso?**
 
+Después de esperar a que cargase por completo el análisis, no hemos encontrado ninguna foto con metadatos que puedan ser relevantes para este caso.
+
 ## Línea temporal
+
+Después de haber investigado el historial del navegador y varios archivos y sus metadatos, hemos podido crear una línea de tiempo con los pasos que creemos ha seguido el usuario Pacopepe desde que empezó a sentirse interesado por el programa de YouTube llamado "Los minutos del odios", pasando por el proceso de creación del plan hasta que terminó por descargar el libro mencionado anteriormente.
+
+Puesto que el ordenador se encontraba en horario de verano CEST que es una hora superior a el horario que tenemos en este momento que es CET, hemos decidido crear esta línea temporal usando este último horario.
+
+![Línea temporal](img/timeline.png)
 
 ## Conclusión
 
