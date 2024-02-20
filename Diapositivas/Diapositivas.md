@@ -28,7 +28,6 @@ backgroundImage: url('./img/background6.jpg')
 # **Proyecto 1 - Nuestra Metodología**
 ## Grupo 3
 
-Raúl Ladrón de Guevara García
 Juan Manuel Cumbrera López
 Sergio Guerrero Merlo
 Christian Romero Oliva
