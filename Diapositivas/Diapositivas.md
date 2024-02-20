@@ -49,7 +49,6 @@ Christian Romero Oliva
 
 Normativas investigadas
 
-- Norma UNE 71505/2013 (Sistemas de gestión de evidencias electrónicas)
 - Norma UNE 71506/2013 (Análisis forense de las evidencias electrónicas)
 - ISO 27037
 - Metodología RFC 3227
@@ -70,15 +69,6 @@ Normativas investigadas
 - Aumentar la credibilidad.
 
 - Facilitar la colaboración y comunicación.
-
----
-
-## **Norma UNE 71506/2013 (Análisis forense de las evidencias electrónicas)**
-
-El objetivo de esta norma es definir el proceso de análisis forense dentro del ciclo de gestión de las evidencias (Norma UNE 71506/2013 anteriormente descrita).
-<br>
-
-![Alt text](img/UNE-71506.png)
 
 ---
 
