@@ -18,7 +18,7 @@ backgroundImage: url('./img/background6.jpg')
         height: 2000px;
         width: 715px;
         max-height: 2000px;
-        text-align: center;
+        margin: 0 auto;
 
     }
 
@@ -149,8 +149,6 @@ La metodología RFC 3227 es una guía para administradores y profesionales de se
 
 **4. Procedimiento de Archivado:** Para almacenar la evidencia de manera adecuada, se requiere un registro detallado de la cadena de custodia que incluye quién, cuándo y dónde descubrió, manejó o examinó la evidencia, así como quién tuvo custodia, la duración y el almacenamiento. La evidencia se almacena en medios comunes y se restringe el acceso, documentándolo para evitar accesos no autorizados.
 
-**5. Herramientas:** Este apartado recomienda una lista de herramientas preparadas para la recolección de evidencia y análisis forense.
-
 ---
 
 ![RFC3227](img/Metodología_RFC_3227.drawio.png)
@@ -185,6 +183,8 @@ En esta fase identificaremos los elementos que puedan contener evidencia digital
 ## **2. Adquisición (UNE 71506, RFC 3227, NIST)**
 
 En esta fase planificaremos la adquisición. Posiblemente encontremos distintas fuentes por lo que es importante establecer prioridades en el orden de la recogida basandonos en los siguientes criterior.
+
+Herramientas: **FTK Imager, Belkasoft RamCapturer**
 
 - *Su valor probable*: La fuente de datos que más evidencias, o evidencias de mayor calidad podrían contener.
 - *Cantidad de esfuerzo requerido*: Priorizando antes las fuentes de datos que menos esfuerzo requieran frente a las que más.
@@ -238,6 +238,8 @@ Además de los procedimientos, detallaremos en un regitro todas las personas que
 ## **5. Análisis (UNE 71506)**
 
 En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán dar respuesta a preguntas relacionadas con el evento que se está investigando.
+
+Herramientas: **WRR, IRTriage, Autopsy, Volatility**
 
 Esto incluye:
 
