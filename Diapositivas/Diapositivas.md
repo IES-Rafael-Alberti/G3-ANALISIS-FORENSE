@@ -12,11 +12,14 @@ backgroundImage: url('./img/background6.jpg')
     img {
   	    background-color: transparent!important;
         width: 90%;
-        max-height: 300px
+        
     }
     .nuestra {
-        width: 115% !important;
-        
+        height: 2000px;
+        width: 715px;
+        max-height: 2000px;
+        text-align: center;
+
     }
 
 </style>
@@ -156,12 +159,9 @@ La metodología RFC 3227 es una guía para administradores y profesionales de se
 
 ## **Nuestra metodología**
 
-Este es el esquema que hemos creado para nuestra metodología basada en las normas explicadas en esta presentación.
-<br>
-
 <div class="nuestra">
 
-![nuestro_esquema](img/nuestro_esquema.drawio.png)
+![nuestro_esquema](img/esquema2.png)
 
 </div>
 
@@ -260,9 +260,9 @@ El informe debe incluir la documentación de la cadena de custodia y al finaliza
 
 ## **Conclusión**
 
-Después de una exhaustiva investigación de normas y estándares, y desarrollar nuestra metodología de análisis forsense, nos hemos dado cuenta de la importancía de seguir una serie de procedimientos y las medidas a tomar para asegurar la integridad, autenticidad y validez de las evidencias digitales para el ámbito legal. Al haber comparado una serie de normas nos hemos dado cuenta cuales deberían ser las mejores prácticas que debemos llevar a cabo en nuestra metodología.
 
-Por ello las normas en las que nos hemos basado para crear esta metodología son las que hemos explicado en esta presentación.
+El objetivo de nuestra metodología es realizar un proceso de destilación de la evidencia, en el que se parte de materia en bruto y se termina sacando de ella toda la información de valor, pulida, en forma de un informe forense con sus respectivos anexos en el que se ha eliminado toda información no relevante y queda un producto útil en el proceso judicial.
+
 
 ---
 
