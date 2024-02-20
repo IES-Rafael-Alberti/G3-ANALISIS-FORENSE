@@ -28,8 +28,8 @@ backgroundImage: url('./img/background6.jpg')
 # **Proyecto 1 - Nuestra Metodología**
 ## Grupo 3
 
-Juan Manuel Cumbrera López
-Sergio Guerrero Merlo
+Juan Manuel Cumbrera López<br>
+Sergio Guerrero Merlo<br>
 Christian Romero Oliva
 
 
