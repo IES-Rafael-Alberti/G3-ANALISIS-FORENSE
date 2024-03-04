@@ -215,18 +215,12 @@ En esta fase el objetivo es mantener la integridad de las evidencias, para ello 
 
 ## **4. Documentación (UNE 71506)**
 
-En esta fase documentaremos el procedimiento completo de forma detallada y concisa siguiendo una línea temporal.
+No una fase como tal, sino un proceso que se lleva a cabo paralelamente durante todo el análisis, para repartir mas equitativamente la carga de trabajo que conlleva la documentación durante todo el análisis.
 
-Los procesos llevados a cabo son:
-
-- Tácticas de adquisición
-- Tipos de hardware o software
-- Configuraciones
-- Herramientas utilizadas
 
 ---
 
-Además de los procedimientos, detallaremos en un regitro todas las personas que han tenido acceso a la evidencia. Este registro debe componerse de:
+Además de los procedimientos, detallaremos en un regitro todas las personas que han tenido acceso a la evidencia. Es decir, la cadena de custodia. Este registro debe componerse de:
 
 - Nombre de la persona que manejó la evidencia
 - Fecha
