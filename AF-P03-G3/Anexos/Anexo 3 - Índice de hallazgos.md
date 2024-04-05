@@ -32,18 +32,18 @@ El archivo *.msf* guarda información sobre la ubicación y el estado de los men
 
 | ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| 5  | | 65536 bytes | C:\\Windows\\System32\\config\\SAM | 22/02/2023 21:58:05 |  | | 987BE3C4E2E1708CEC9338572D5C1C3ED811536AA136E164ECD5F862B989B254 |
+| 5  | - | 65536 bytes | C:\\Windows\\System32\\config\\SAM | 22/02/2023 21:58:05 | - | - | 987BE3C4E2E1708CEC9338572D5C1C3ED811536AA136E164ECD5F862B989B254 |
 
 ## Registro SYSTEM
 
 | ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| 6  | |  11285 bytes | C:\\Windows\\System32\\config\\SYSTEM | 22/02/2023 22:00:00 |  |  | 38EB9A2FE26BDE4650E0828F553FC4573FA3CC0D2120046EF3A014E9DCBEAB86 |
+| 6  | - |  11285 bytes | C:\\Windows\\System32\\config\\SYSTEM | 22/02/2023 22:00:00 | - | - | 38EB9A2FE26BDE4650E0828F553FC4573FA3CC0D2120046EF3A014E9DCBEAB86 |
 
 ## Registro SOFTWARE
 
 | ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| 7  | | 32768 bytes | C:\\Windows\\System32\\config\\SOFTWARE| 22/02/2023 22:00:00 |  |  | 916BDC88020B29B4E3B822E4ABA928B54E774832E738E06AC088406B2E9A331D |
+| 7  | - | 32768 bytes | C:\\Windows\\System32\\config\\SOFTWARE| 22/02/2023 22:00:00 | - | - | 916BDC88020B29B4E3B822E4ABA928B54E774832E738E06AC088406B2E9A331D |
 
 
