@@ -50,7 +50,7 @@ Investigando en los eventos de windows, en los eventos de Microsoft-Windows-Devi
 
 5. **Dado el interés conocido de Richard por el fútbol y la música rock y heavy, investigar su actividad en línea relacionada con estos intereses. Además, verificar si ha visualizado contenido en línea que pueda justificar un despido procedente, como la visualización de una película online. Documentar cualquier hallazgo relevante.**
 
-Haciendo uso del software *FTK Imager v4.7.1.2* montamos la imagen forense del disco duro de Richard. Luego navegamos por los directorios hasta llegar a `C:\\Users\\Richard\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\mt13hmmn.default-release`, siendo este su perfil del navegador Mozilla Firefox. Si entramos en esa carpeta y bajamos, veremos una base de datos llamada **places.sqlite**, que es la que almacena el historial del navegador, así que la descargamos también.
+Haciendo uso del software *FTK Imager v4.7.1.2* montamos la imagen forense del disco duro de Richard. Luego navegamos por los directorios hasta llegar a `C:\Users\Richard\AppData\Roaming\Mozilla\Firefox\Profiles\mt13hmmn.default-release`, siendo este su perfil del navegador Mozilla Firefox. Si entramos en esa carpeta y bajamos, veremos una base de datos llamada **places.sqlite**, que es la que almacena el historial del navegador, así que la descargamos también.
 
 ![Mozilla-1](img/4-Mozilla-Firefox.png)
 
@@ -104,11 +104,11 @@ El vestigio de este hecho puede encontrarse en el siguiente artefacto del sistem
 
 8. **Buscar evidencia de que Richard haya asistido a competidores o terceros mediante la exfiltración de datos por correo electrónico.**
 
-Con el software *FTK Imager v4.7.1.2* montamos la imagen forense del disco duro de Richard. Luego navegamos por los directorios hasta llegar a `C:\\Users\\Richard\\AppData\\Roaming\\Thunderbird`, donde vemos que tenía instalado el cliente de correo electrónico Mozilla Thunderbird. 
+Con el software *FTK Imager v4.7.1.2* montamos la imagen forense del disco duro de Richard. Luego navegamos por los directorios hasta llegar a `C:\Users\Richard\AppData\Roaming\Thunderbird`, donde vemos que tenía instalado el cliente de correo electrónico Mozilla Thunderbird. 
 
 ![FTK-1](img/1-Evidence-Tree.png)
 
-Sabiendo esto, ahondamos más y encontramos un perfil de correo electrónico en la carpeta \\Thunderbird\\Profiles\\tvtlv94f.default-release, así que extraemos el perfil entero, a fin de poder procesarlo con el software *SysTools MBOX Viewer v4.0*.
+Sabiendo esto, ahondamos más y encontramos un perfil de correo electrónico en la carpeta `\Thunderbird\Profiles\tvtlv94f.default-release`, así que extraemos el perfil entero, a fin de poder procesarlo con el software *SysTools MBOX Viewer v4.0*.
 
 ![MBOX-Viewer](img/2-SysTools-MBOX-Viewer.png)
 
