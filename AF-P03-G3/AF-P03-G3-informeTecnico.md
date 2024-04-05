@@ -214,6 +214,21 @@ Finalmente, 4 minutos más tarde, a las 15:10:23, el usuario proba2 afirma haber
 
 ![Mail-8](./img/3-Mail-8.png)
 
+Revisando su historial de búsqueda del navegador _Opera Browser_ mediante la herramienta _DB Browser_, utilizando el archivo referenciado en el **ANEXO 3, ID 4,** se encuentra historia de búsqueda y visitas de web referentes a la creación de una cartera de Bitcoin y la búsqueda de varios vuelos y hoteles en Las Palmas de Gran Canaria:
+
+![alt text](<./img/4.jpeg>)
+_Historias de búsqueda de Opera Browser relacionadas con vuelos y hoteles_
+
+![alt text](image.png)
+_Historias de búsqueda de Opera Browser relacionadas con creación de cartera de bitcoin_
+
+Se verifican que los parámetros en la URL pertenecen a los acrónimos utilizados por las agencias de vuelos para identificar las ciudades de Vigo y Las Palmas de Gran Canaria.
+
+![alt text](<./img/3.jpeg>)
+
+![alt text](<./img/2.jpeg>)
+
+
 ## Conclusiones
 
 En base a los hallazgos y análisis realizados durante la investigación forense, se llega a las siguientes conclusiones:
