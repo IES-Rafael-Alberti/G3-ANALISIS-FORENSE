@@ -31,7 +31,7 @@ A continuación indicamos la metodología utilizada para el proceso:
 1. Identificación de hallazgos o vestigios.
 
 En primer lugar comenzamos por identificar los elementos que puedan tener hallazgos o vestigios de forma digital documentandolos:
-- Dipositivos fisico.
+- Dispositivos fisico.
 - Redes y conexiones a internet.
 - Software.
 - Datos en la nube.
