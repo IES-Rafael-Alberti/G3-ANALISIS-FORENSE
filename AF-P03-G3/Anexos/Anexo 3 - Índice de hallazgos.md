@@ -6,7 +6,7 @@ Este archivo es el archivo de carpetas de correo propiamente dicho, y contiene l
 
 | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| ![MAIL]([img/mail-todos.png](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/mail-todos.png)) | 721.317 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Thunderbird\\Profiles\\tvtlv94f.default-release\\lmap Mail\\imap.gmail.com\\[Gmail].sbd\\Todos | 22/02/2023 14:26:03 | 22/02/2023 14:26:03 | 20/02/2023 19:49:31 | 042decdb9493260d8c95dd03e0262293097f62dfd255fbfe320dedaa162f6925 |
+| ![MAIL](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/mail-todos.png) | 721.317 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Thunderbird\\Profiles\\tvtlv94f.default-release\\lmap Mail\\imap.gmail.com\\[Gmail].sbd\\Todos | 22/02/2023 14:26:03 | 22/02/2023 14:26:03 | 20/02/2023 19:49:31 | 042decdb9493260d8c95dd03e0262293097f62dfd255fbfe320dedaa162f6925 |
 
 ## Tabla 2: Totalidad de los correos del usuario Richard con el cliente Mozilla Thunderbird
 
@@ -14,7 +14,7 @@ El archivo *.msf* guarda información sobre la ubicación y el estado de los men
 
 | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| ![MAIL]([img/mail-todos.png](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/mail-todos.png)) | 24.915 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Thunderbird\\Profiles\\tvtlv94f.default-release\\lmap Mail\\imap.gmail.com\\[Gmail].sbd\\Todos.msf | 22/02/2023 16:30:51 | 22/02/2023 21:34:16 | 20/02/2023 19:45:55 | 71b6a1595c471f15e834f72d4a7436ad2d791ac1ca11b8be08d4dea8c21650ac |
+| ![MAIL](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/mail-todos.png) | 24.915 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Thunderbird\\Profiles\\tvtlv94f.default-release\\lmap Mail\\imap.gmail.com\\[Gmail].sbd\\Todos.msf | 22/02/2023 16:30:51 | 22/02/2023 21:34:16 | 20/02/2023 19:45:55 | 71b6a1595c471f15e834f72d4a7436ad2d791ac1ca11b8be08d4dea8c21650ac |
 
 ## Tabla 3: Historial del navegador Mozilla Firefox
 
