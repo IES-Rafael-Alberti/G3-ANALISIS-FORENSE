@@ -28,3 +28,22 @@ El archivo *.msf* guarda información sobre la ubicación y el estado de los men
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
 | 4  | ![Opera](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/history-opera.png) | 262.144 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Opera\\Software\\Opera Stable\\History | 22/02/2023 21:41:19 | 22/02/2023 21:55:44 | 20/02/2023 18:42:16 | 250ccd09755814b8e5fbf33b0b92a3eacca5c42bba896d08b03000d542fd6c62 |
 
+## Registro SAM
+
+| ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
+|----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
+| 5  | | 65536 bytes | C:\\Windows\\System32\\config\\SAM | 22/02/2023 21:58:05 |  | | 987BE3C4E2E1708CEC9338572D5C1C3ED811536AA136E164ECD5F862B989B254 |
+
+## Registro SYSTEM
+
+| ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
+|----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
+| 6  | |  11285 bytes | C:\\Windows\\System32\\config\\SYSTEM | 22/02/2023 22:00:00 |  |  | 38EB9A2FE26BDE4650E0828F553FC4573FA3CC0D2120046EF3A014E9DCBEAB86 |
+
+## Registro SOFTWARE
+
+| ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
+|----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
+| 7  | | 32768 bytes | C:\\Windows\\System32\\config\\SOFTWARE| 22/02/2023 22:00:00 |  |  | 916BDC88020B29B4E3B822E4ABA928B54E774832E738E06AC088406B2E9A331D |
+
+
