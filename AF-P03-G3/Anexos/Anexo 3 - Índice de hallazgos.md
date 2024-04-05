@@ -20,10 +20,10 @@ El archivo *.msf* guarda información sobre la ubicación y el estado de los men
 
 | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| ![PLACES](img/firefox-places-sqlite.png) | 5.242.880 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\mt13hmmn.default-release\\places.sqlite | 22/02/2023 21:55:45 | 22/02/2023 21:56:08 | 20/02/2023 18:51:56 | 6269b7b74f9699a658fd0c0ff5fd033ea19b9762a10f64fac40b620586822a5c |
+| ![PLACES](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/firefox-places-sqlite.png) | 5.242.880 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\mt13hmmn.default-release\\places.sqlite | 22/02/2023 21:55:45 | 22/02/2023 21:56:08 | 20/02/2023 18:51:56 | 6269b7b74f9699a658fd0c0ff5fd033ea19b9762a10f64fac40b620586822a5c |
 
 ## Tabla 4: Historial del navegador Opera
 
 | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| ![Opera](img/history-opera.png) | 262.144 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Opera\\Software\\Opera Stable\\History | 22/02/2023 21:41:19 | 22/02/2023 21:55:44 | 20/02/2023 18:42:16 | 250ccd09755814b8e5fbf33b0b92a3eacca5c42bba896d08b03000d542fd6c62 |
+| ![Opera](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/img/history-opera.png) | 262.144 bytes | C:\\Users\\Richard\\AppData\\Roaming\\Opera\\Software\\Opera Stable\\History | 22/02/2023 21:41:19 | 22/02/2023 21:55:44 | 20/02/2023 18:42:16 | 250ccd09755814b8e5fbf33b0b92a3eacca5c42bba896d08b03000d542fd6c62 |
