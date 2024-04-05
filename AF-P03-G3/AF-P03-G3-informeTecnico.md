@@ -24,8 +24,6 @@ Aclarar las acciones del empleado llamado Richard en las semanas previas a su sa
 
 Loss datos del disco duro a partir del cual se creó la imagen, el usuario de Richard, recuperación y análisis de archivos que se encuentran en la imagen, correos electrónicos del usuario Richard y el historial del navegador utilizado por el propio usuario teniendo en cuenta sus búsquedas en internet y marcadores.
 
-## Objetivos
-
 ## Metodología
 
 ## Investigación
