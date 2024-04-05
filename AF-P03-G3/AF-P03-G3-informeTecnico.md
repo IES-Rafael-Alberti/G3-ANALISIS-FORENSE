@@ -177,6 +177,13 @@ Luego, unos 8 minutos más tarde, a las 1:06:44, vemos que Richard envía 4 arch
 
 ![Mail-4-Attachments](./img/3-Mail-4-Attachments.png)
 
+Se ha contrastado que estos archivos **pom.xml** pertenecen a la carpeta `C:\Users\Richard\Proyectos`. Estos se encuentran, más concretamente en las subcarpetas:
+
+- `C:\Users\Richard\Proyectos\jgloss-2.1.1-src\jgloss-parent-2.1.1\pom.xml`
+- `C:\Users\Richard\Proyectos\mallet-2.0.8RC3\mallet-2.0.8RC3\pom.xml`
+- `C:\Users\Richard\Proyectos\reverb-master\reverb-master\core\pom.xml`
+- `C:\Users\Richard\Proyectos\selenium-master\selenium-master\maven\pom.xml`
+
 36 minutos más tarde, a las 1:40:17 Richard envía un correo a otro usuario con email **phy.reg@gmail.com**, en el que le avisa que planea abandonar la empresa.
 
 ![Mail-5](./img/3-Mail-5.png)
