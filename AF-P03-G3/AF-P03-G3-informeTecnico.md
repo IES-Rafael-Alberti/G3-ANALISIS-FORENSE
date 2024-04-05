@@ -219,7 +219,7 @@ Revisando su historial de búsqueda del navegador _Opera Browser_ mediante la he
 ![alt text](<./img/4.jpeg>)
 _Historias de búsqueda de Opera Browser relacionadas con vuelos y hoteles_
 
-![alt text](image.png)
+![alt text](./img/image.png)
 _Historias de búsqueda de Opera Browser relacionadas con creación de cartera de bitcoin_
 
 Se verifican que los parámetros en la URL pertenecen a los acrónimos utilizados por las agencias de vuelos para identificar las ciudades de Vigo y Las Palmas de Gran Canaria.
