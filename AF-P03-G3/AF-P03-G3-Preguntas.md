@@ -32,6 +32,14 @@ Los tres primeros recuadros amarillos indican el Device Class ID y el segundo el
 
 ![usbstorg](./img/usbstorg.png)
 
+Analizando los parámetros del dispositivo USB he encontrado el id disk del mismo que nos ha servido para compararlo con el id disk del registro MountedDevice para saber que letra ha tenido al conectarlo.
+
+![usbid](./img/usbid.png)
+
+En el registro de MountedDevices vemos que el id disk marcado con un cuadro en rojo es igual al encontrado en los parametros del dispositivo USB y que la letra que obtuvo del Sistema Operativo al momento de conectarse fue la letra E:
+
+![letrausb](./img/letrausb.png)
+
 [Falta nombre del dispositivo]
 
 Investigando en los eventos de windows, en los eventos de Microsoft-Windows-DeviceSetupManager%4Admin.evtx a través de la herramienta Event Log Explorer he encontrado un evento que indica que un USB de nombre DataTraveler 3.0 fue conectado a las 21:09:51 del 20 de Febrero de 2023. Además indica que estuvo conectado por 791 millisegundos. 
