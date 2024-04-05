@@ -108,17 +108,21 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 Utilizando FTK Imager se ha extraído los registros SYSTEM, SAM y SOFTWARE para su análisis. Estos registros se encuentran en `C:\Windows\System32\config` y se han analizado en busca de vestigios de que el usuario Richard existe en la imagen proporcionada y si se ha introducido un dispositivo USB con sus características y el punto de montaje recibido.
 
 Analizando el registro `System\ControlSet001\Enu,\USBSTOR`se ha encontrado que se ha conectado un USB con el número de serie 002618525C8EF0B0E87D2853& marcado con un recruadro rojo y con un Device Class ID llamado Ven_Kingston Prod_DataTraveler_3.0 Rev_ como podemos ver en la siguiente captura marcado con un recrado amarillo.
+
 ![usbstorg](./img/usbstorg.png)
 
 En el propio registro se ha utilizado el id disk del USB encontrado para compararlo con el id disk que se encuentra en el registro `System\MountedDevices` para saber que punto de montaje recibió el dispositivo USB al momento de su conexión indicandonos que fue la letra E: la recibida.
+
 ![usbid](./img/usbid.png)
 
 Teniendo en cuenta que tenemos la letra E: se ha analizado el registro `SOFTWARE\Microsoft\Windows Search\VolumeInfoCache\` para comprobar el nombre del dispositivo. El nombre del volumen es Mantemento.
+
 ![usbname](./img/usbname.png)
 
 Después de encontrar las características del dispositivo USB se ha utilizado la herramienta Event Log Explorer para analizar los logs extraidos con FTK Imager de la ruta `C:\Windows\System32\winevt\logs`. El log analizado es Microsoft-Windows-DeviceSetupManager%4Admin.ectx y se ha encontrado un evento de id 112 que indica en su descripción que un dispositivo DataTraveler 3.0 que concuerda con el dispositivo encontrado en el reigstro SYSTEM con fecha de utilización en el día 20 de Febrero de 2023 a las 21:09:5 horas de la noche. 
 
 El dispositivo estuvo trabajando durante 791 milisegundos.
+
 ![eventusb](./img/eventusb.png)
 
 ## Conclusiones
