@@ -7,10 +7,24 @@
 5. [Objetivos](#objetivos)
 6. [Metodología](#metodología)
 7. [Investigación](#investigación)
+
+   7.1 [Timeline](#timeline)
 8. [Conclusiones](#conclusiones)
 9. [Anexos](#anexos)
 
 ## Resumen ejecutivo
+
+En el presente informe se detallan los hechos acontecidos entre el **20 y el 22 de Febrero de 2023**, en los cuáles se investiga la actividad del empleado **_Richard Eduardo Wagner_** en las semanas previas a su despido a partir de una imagen de disco suministrada por InnovaTech Solutions. 
+
+A partir de la imagen suministrada, se ha encontrado una serie de vestigios que indican que _**Richard Eduardo Wagner**_ mantuvo conversaciones con lo que parecen dos personas externas a InnovaTech Solutions, una a la que se refiere como "_Tom_" y otra la que se refiere como "_Phy_", con las cuáles expresaba descontento con su situación actual como empleado,hay vestigios que indican que comparte archivos de metadatos que parecen pertenecer al proyecto "_Social Query_" de InnovaTech Solutions.
+
+Se encuentran vestigios de que Richard lleva acabo una serie de acciones planeadas y comunicaciones con estos agentes, y que a cambio estas personas ofrecen una serie de compensaciones, entre ellas una supuesta transacción de Bitcoin, que se ha intentado ratificar, y de la que no hay registro de que se haya producido en la fecha indicada.
+
+Según una serie de correos electrónicos encontrados y su historial de búsquedas online, Richard planeaba su salida de la empresa, un intercambio de información que se ha comprobado perteneciente a la empresa a cambio de dinero (_a través de bitcoin, previamente mencionada_) y la toma de unas vacaciones a Las Palmas de Gran Canaria. El usuario Richard también comparte un enlace con un archivo subido a Google Drive el cual no se ha podido determinar su contenido. 
+
+Además se encuentran indicios de actividad no relacionada con su trabajo en su historial de búsqueda, como visitas a webs de periódicos deportivo o sitios de streaming de películas online en horario laboral que podría justificar un despido procedente.
+
+Estos acontecimientos se relacionan y ordenan en una línea de tiempo incluida en este mismo documento.
 
 ## Introducción
 
@@ -104,6 +118,10 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 | SysTools MBOX Viewer     | Systool      | 4.0            |
 
 ## Investigación
+
+### Timeline
+
+![timeline](./img/timeline.png)
 
 Utilizando FTK Imager se ha extraído los registros SYSTEM, SAM y SOFTWARE para su análisis. Estos registros se encuentran en `C:\Windows\System32\config` y se han analizado en busca de vestigios de que el usuario Richard existe en la imagen proporcionada y si se ha introducido un dispositivo USB con sus características y el punto de montaje recibido.
 
