@@ -40,7 +40,7 @@ En el registro de `SYSTEM\MountedDevices` vemos que el id disk marcado con un cu
 
 ![letrausb](./img/letrausb.png)
 
-Una vez encontrada la letra que el dispositivo USB usó como punto de montaje, hemos comprobado el nombre del dispositivo en `SOFTWARE\Microsoft\Windows Search\VolumeInfoCache\`. En el punto de montaje E: se conectó un dispositivo de nombre Mantenimiento.
+Una vez encontrada la letra que el dispositivo USB usó como punto de montaje, hemos comprobado el nombre del dispositivo en `SOFTWARE\Microsoft\Windows Search\VolumeInfoCache\`. En el punto de montaje E: se conectó un dispositivo de nombre Mantemento.
 
 ![usbname](./img/usbname.png)
 
