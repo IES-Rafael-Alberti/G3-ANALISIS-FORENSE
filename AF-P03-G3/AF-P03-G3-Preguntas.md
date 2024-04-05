@@ -48,6 +48,10 @@ Investigando en los eventos de windows, en los eventos de Microsoft-Windows-Devi
 
 ![eventusb](./img/eventusb.png)
 
+Se ha comprobado a través del registro NTUSER.DAT que se encuentra en `C:\Users\Richard` si el usuario es el responsable de la conexión de este dispositivo. Investigando en `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2` se ha descubierto que el usuario ha conectado un dispositivo USB que concuerda con el disk id mencionado anteriormente.
+
+![userusb](./img/userusb.png)
+
 5. **Dado el interés conocido de Richard por el fútbol y la música rock y heavy, investigar su actividad en línea relacionada con estos intereses. Además, verificar si ha visualizado contenido en línea que pueda justificar un despido procedente, como la visualización de una película online. Documentar cualquier hallazgo relevante.**
 
 Haciendo uso del software *FTK Imager v4.7.1.2* montamos la imagen forense del disco duro de Richard. Luego navegamos por los directorios hasta llegar a `C:\Users\Richard\AppData\Roaming\Mozilla\Firefox\Profiles\mt13hmmn.default-release`, siendo este su perfil del navegador Mozilla Firefox. Si entramos en esa carpeta y bajamos, veremos una base de datos llamada **places.sqlite**, que es la que almacena el historial del navegador, así que la descargamos también.
