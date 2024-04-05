@@ -143,6 +143,10 @@ El dispositivo estuvo trabajando durante 791 milisegundos.
 
 ![eventusb](./img/eventusb.png)
 
+Como anteriormente se ha mencionado, tenemos el disk id y se ha utilizado para conectarlo con el usuario Richard. Para ello se ha extraído el registro NTUSER.DAT que se encuentra en `C:\Users\Richard` y se ha analizado el registro `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2` y se ha detectado que el usuario conectó un dispositivo USB que encaja con el disk id mencionado anteriormente.
+
+![userusb](./img/userusb.png)
+
 Luego investigamos su historial de internet, encontrando su perfil del navegador Mozilla Firefox en la carpeta `C:\Users\Richard\AppData\Roaming\Mozilla\Firefox\Profiles\mt13hmmn.default-release`. En esta encontramos el fichero *places.sqlite*, el cual contiene el historial del susodicho navegador.
 
 ![Mozilla-1](./img/4-Mozilla-Firefox.png)
