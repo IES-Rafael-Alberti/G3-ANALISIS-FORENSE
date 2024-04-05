@@ -186,6 +186,10 @@ Horas más tarde, a las 15:06:09, el usuario Richard envía un enlace de Google 
 
 ![Mail-6](./img/3-Mail-6.png)
 
+Si buscamos la dirección de la cartera de Bitcoin en blockchain.com, vemos que el 22 de febrero no hubo transacciones de dicha criptomoneda.
+
+![Bitcoin]()
+
 Finalmente, 4 minutos más tarde, a las 15:10:23, el usuario proba2 afirma haber realizado el pago Richard, solicitándole la contraseña. También vemos un último correo de Richard a las 15:25:27, de nuevo a phy.reg@gmail.com, en el que le termina de avisar de su inminente salida de la empresa.
 
 ![Mail-7](./img/3-Mail-7.png)
