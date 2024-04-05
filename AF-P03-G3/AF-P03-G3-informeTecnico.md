@@ -216,6 +216,14 @@ Finalmente, 4 minutos más tarde, a las 15:10:23, el usuario proba2 afirma haber
 
 ## Conclusiones
 
+En base a los hallazgos y análisis realizados durante la investigación forense, se llega a las siguientes conclusiones:
+
+- El usuario Richard ha buscado a través del navegador Mozilla Firefox la película Trabajo Basura (1999), a las 14:29. Además, ha buscado discos duros entre 4 y 10 TB de espacio, así como demás información aparentemente no relacionada con su empleo, todo a través del mismo navegador. 
+- Se ha conectado un dispositivo USB denominado "Mantemento", a las 21:09:51 horas.
+- El usuario Richard ha iniciado y propuesto mediante su cliente de correo electrónico Mozilla Thunderbird, un aparente intercambio de información con un tercero.
+- En el susodicho y aparente intercambio de información, el usuario Richard ha realizado la entrega de 4 archivos pom.xml pertenecientes al proyecto de empresa social query. 
+- A las 15:06:09, Richard envía por correo electrónico al mismo sujeto, cuyo nickcame es proba2, un enlace de Google Drive protegido por contraseña. Esta es enviada en otro correo a las 15:10:23.
+
 ## Anexos
 
 [- Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.ods)<br>
