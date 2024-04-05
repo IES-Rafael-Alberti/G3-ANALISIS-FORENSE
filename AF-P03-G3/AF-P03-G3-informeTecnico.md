@@ -93,9 +93,15 @@ En esta fase se llevarán a cabo una serie de procesos y tareas que intentarán 
 
 En esta fase se escribirá un informe pericial con toda la información obtenida a lo largo del proceso de análisis. Este informe debe escribirse en un lenguaje entendible para un público no técnico y tener una estructura uniforme. El informe debe incluir la documentación de la cadena de custodia y al finalizar el informe será remitido al organismo solicitante.
 
-*Herramientas usadas*
+**Herramientas usadas**
 
-
+| Nombre de la herramienta | Empresa      | Versión        |
+|--------------------------|--------------|----------------|
+| Windows Registry Recovery| MiTeC        | 1.6.1.0        |
+| Event Log Explorer       | FSPro Labs   | 5.5 (Build 5.5.0.5011) |
+| AccessData® FTK® Imager  | Exterro      | 4.7.1.2        |
+| DB Browser for Sqlite    | Sqlitebrowser| 3.12.2         |
+| SysTools MBOX Viewer     | Systool      | 4.0            |
 
 ## Investigación
 
