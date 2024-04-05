@@ -28,7 +28,7 @@ Además con el registro SOFTWARE podemos encontrar la versión del Sistema Opera
 
 Investigando en el registro `System\ControlSet001\Enum\USBSTOR` encontramos que se ha conectado un USB con número de serie 002618525C8EF0B0E87D2853&0.
 
-Los tres primeros recuadros amarillos indican el Device Class ID y el segundo el número de serie del dispositivo.
+Los tres primeros recuadros amarillos indican el Device Class ID y el recuadro rojo el número de serie del dispositivo.
 
 ![usbstorg](./img/usbstorg.png)
 
