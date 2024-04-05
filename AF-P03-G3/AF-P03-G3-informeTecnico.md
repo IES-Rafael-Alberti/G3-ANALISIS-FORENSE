@@ -109,6 +109,6 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 ## Anexos
 
-[Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.ods)
-[Anexo 2 - Registro de cadena de custodia](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/Anexos/Anexo%202-%20Registro%20de%20cadena%20de%20custodia.ods)
+[Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.ods)<br>
+[Anexo 2 - Registro de cadena de custodia](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P03-G3/Anexos/Anexo%202-%20Registro%20de%20cadena%20de%20custodia.ods)<br>
 [Anexo 3 - Índice de hallazgos]()
