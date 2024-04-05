@@ -1,8 +1,8 @@
 # Índice
 
 1. [Resumen ejecutivo](#resumen-ejecutivo)
-2. [Presentación del firmante](#presentación-del-firmante)
-   2.1. [Declaración de abstención y tachas](#declaración-de-abstención-y-tachas)
+2. [Presentación del firmante](#presentación-del-firmante)<\br>
+   2.1. [Declaración de abstención y tachas](#declaración-de-abstención-y-tachas)<\br>
    2.2. [Juramento de Promesa](#juramento-de-promesa)
 3. [Antecedentes](#antecedentes)
 4. [Alcance](#alcance)
