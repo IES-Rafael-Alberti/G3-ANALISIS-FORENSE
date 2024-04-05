@@ -107,7 +107,7 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 Utilizando FTK Imager se ha extraído los registros SYSTEM, SAM y SOFTWARE para su análisis. Estos registros se encuentran en `C:\Windows\System32\config` y se han analizado en busca de vestigios de que el usuario Richard existe en la imagen proporcionada y si se ha introducido un dispositivo USB con sus características y el punto de montaje recibido.
 
-Analizando el registro `System\ControlSet001\Enu,\USBSTOR`se ha encontrado que se ha conectado un USB con el número de serie 002618525C8EF0B0E87D2853& marcado con un recruadro rojo y con un Device Class ID llamado Ven_Kingston Prod_DataTraveler_3.0 Rev_ como podemos ver en la siguiente captura marcado con un recrado amarillo.
+Analizando el registro `System\ControlSet001\Enum\USBSTOR`se ha encontrado que se ha conectado un USB con el número de serie 002618525C8EF0B0E87D2853& marcado con un recruadro rojo y con un Device Class ID llamado Ven_Kingston Prod_DataTraveler_3.0 Rev_ como podemos ver en la siguiente captura marcado con un recrado amarillo.
 
 ![usbstorg](./img/usbstorg.png)
 
