@@ -22,7 +22,7 @@ Se encuentran vestigios de que Richard lleva acabo una serie de acciones planead
 
 Según una serie de correos electrónicos encontrados y su historial de búsquedas online, Richard planeaba su salida de la empresa, un intercambio de información que se ha comprobado perteneciente a la empresa a cambio de dinero (_a través de bitcoin, previamente mencionada_) y la toma de unas vacaciones a Las Palmas de Gran Canaria. El usuario Richard también comparte un enlace con un archivo subido a Google Drive el cual no se ha podido determinar su contenido. 
 
-Además se encuentran indicios de actividad no relacionada con su trabajo en su historial de búsqueda, como visitas a webs de periódicos deportivo o sitios de streaming de películas online en horario laboral que podría justificar un despido procedente.
+Además se encuentran indicios de actividad no relacionada con su trabajo en su historial de búsqueda, como visitas a webs de periódicos deportivo o sitios de streaming de películas online con el ordenador del que se suministra la imagen de disco, que podría justificar un despido procedente.
 
 Estos acontecimientos se relacionan y ordenan en una línea de tiempo incluida en este mismo documento.
 
