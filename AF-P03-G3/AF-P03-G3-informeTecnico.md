@@ -1,7 +1,7 @@
 # Índice
 
 1. [Resumen ejecutivo](#resumen-ejecutivo)
-2. [Introducción](#introduccion)
+2. [Introducción](#introducción)
 3. [Objetivos](#objetivos)
 4. [Alcance](#alcance)
 5. [Objetivos](#objetivos)
