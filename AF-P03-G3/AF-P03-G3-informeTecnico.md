@@ -11,7 +11,7 @@
 
 ## Resumen ejecutivo
 
-## Introducción
+## Antecedentes
 
 ## Alcance
 
