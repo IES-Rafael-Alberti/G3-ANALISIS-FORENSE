@@ -212,7 +212,9 @@ En base a los hallazgos y análisis realizados al volcado de memoria proporciona
 
 - El ordenador, de nombre DESKTOP-01S7HH9 posee un único usuario de nombre Pacopepe, sin contar con los usuarios predeterminados del sistema.
 - El usuario Pacopepe tenía abierto un archivo pdf de nombre Trabajo historia Pacopepe.pdf.
-- EL usuario Pacopepe posee una cuenta de Discord, cuyo nickname es pakopepe88#7454. En esta cuenta, se tiene constancia de una conversación con otro usuario denominado como marcosheredia666 en la que le pregunta a Pacopepe por la autoría de los hechos, respondiendo éste de manera afirmativa.
+- Se ha encontrado una cadena de caracteres denominada como pakopepe88, la cual coincide con el patrón que suelen seguir los nicknames de las cuentas de Discord.
+- La aplicación Discord se encuentra instalada en el equipo, y además se hallaba en ejecución.
+- Ha sido localizada una conversación de Discord en la que el usuario pakopepe88 pregunta a otro usuario denominado como marcosheredia666 acerca de la autoría de los hechos, a lo que le responde textualmente "me dijo el Tom que habian llamado jajaj".
 
 # Anexos
 
