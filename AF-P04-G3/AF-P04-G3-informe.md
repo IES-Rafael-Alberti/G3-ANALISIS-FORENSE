@@ -221,6 +221,14 @@ Leyendo la conversación puede llegarse a una conclusión lógica de que clarame
 
 # Conclusiones
 
+En base a los hallazgos y análisis realizados al volcado de memoria proporcionado, se llega a las siguientes conclusiones:
+
+- El ordenador, de nombre DESKTOP-01S7HH9 posee un único usuario de nombre Pacopepe, sin contar con los usuarios predeterminados del sistema.
+- El usuario Pacopepe tenía abierto un archivo pdf de nombre Trabajo historia Pacopepe.pdf.
+- Se ha encontrado una cadena de caracteres denominada como pakopepe88, la cual coincide con el patrón que suelen seguir los nicknames de las cuentas de Discord.
+- La aplicación Discord se encuentra instalada en el equipo, y además se hallaba en ejecución.
+- Ha sido localizada una conversación de Discord en la que el usuario pakopepe88 pregunta a otro usuario denominado como marcosheredia666 acerca de la autoría de los hechos, a lo que le responde textualmente "me dijo el Tom que habian llamado jajaj".
+
 # Anexos
 
 - [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
