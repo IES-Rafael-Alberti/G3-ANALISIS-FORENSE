@@ -217,7 +217,7 @@ Leyendo la conversación puede llegarse a una conclusión lógica de que clarame
 
 ## Timeline
 
-![timeline](image.png)
+![timeline](./img/timeline.png)
 
 # Conclusiones
 
