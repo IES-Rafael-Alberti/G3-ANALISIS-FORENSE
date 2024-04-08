@@ -102,10 +102,12 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 **Herramientas usadas**
 
-| Nombre de la herramienta | Empresa      | Versión        |
+| Nombre de la herramienta | Distribuidor      | Versión        |
 |--------------------------|--------------|----------------|
 | Volatility| Volatility Foundation        | 2.0       |
 | Python| Python       | 3.11.6      |
+| ChatGPT | OpenAI       | 3.5 Turbo     |
+
 # Investigación
 
 Se ha analizado con el plugin handles de Volatility los handles que se encuentran en el volcado. 
@@ -150,13 +152,18 @@ Utilizamos un filtro en el resultado que busque coincidencias con la palabra "bo
 
 Sin embargo, la información carece de contexto y no es clara, estando mezclada en un conjunto mayor de datos. Analizando esta información podemos deducir que es una especie de registro o historial de algún tipo de aplicación de mensajería. 
 
-Realizamos varias búsquedas hasta que se encuentra una cadena de interés la cual es "_pakopepe88#7454_", la cual corresponde al formato de nombre de usuario habitual en la aplicación discord. A través de esta búsqueda, se encuentra más información que parece corresponder a un historial de mensajes, pero los datos siguen estando sucios y poco legibles.
+Realizamos varias búsquedas hasta que se encuentra una cadena de interés la cual es "_pakopepe88#7454_", la cual corresponde al formato de nombre de usuario habitual en la aplicación de mensajería y comunicaciones _**Discord**_. 
+
+
+
+A través de esta búsqueda, se encuentra más información que parece corresponder a un historial de mensajes, pero los datos siguen estando sucios y poco legibles.
 
 ![alt text](img/pakopepe88.png)
 
 Debido a las características de los datos, parece corresponder con un formato de archivo estructurado `.json`, que contiene varios campos de tipo clave-valor los cuáles contienen información. Teniendo estos datos, podemos elaborar un script con python 3.11.6 que filtre los datos, los limpie y nos lo muestre de forma ordenada para ver si podemos sacar alguna información de calidad. Para ello almacenamos la salida del comando en un fichero `conversacion.txt`, el cual será utilizado por el script para generar un archivo estructurado `chat.json` ordenado cronológicamente, el cual nos descubre una conversación entre los usuarios "_pakopepe88_" y "_marcosheredia666_", adjuntamos aquí un fragmento clave de la conversación:
 
 ```json
+(...)
     {
         "username": "pakopepe88",
         "timestamp": "2022-04-08T16:25:22.568000+00:00",
@@ -202,9 +209,15 @@ Debido a las características de los datos, parece corresponder con un formato d
 ]
 ```
 
-Leyendo la conversación puede llegarse a una conclusión lógica de que claramente ambos usuarios tienen conocimiento y conciencia de los hechos acontecidos. La conversación completa se adjunta como "**ANEXO 4 Reconstrucción del Chat**", así como el script y los ficheros de texto adjuntos como "**ANEXO 5 Datos brutos**".
+Leyendo la conversación puede llegarse a una conclusión lógica de que claramente ambos usuarios tienen conocimiento y conciencia de los hechos acontecidos. La conversación completa se adjunta como "**ANEXO 4 Reconstrucción del Chat**", así como el script y los ficheros de texto adjuntos como "**ANEXO 5 Datos brutos**" y "**ANEXO 6 Script Python cleaner.py**". 
+
+> [!NOTE]  
+> El json final adjuntado en el ANEXO 6 ha sido retocado por ChatGPT para traducir códigos de caracteres a iconos y añadir una propiedad order que facilite la lectura.
+
 
 ## Timeline
+
+![timeline](image.png)
 
 # Conclusiones
 
