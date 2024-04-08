@@ -4,13 +4,12 @@
 2. [Introducción](#introducción)
 3. [Objetivos](#objetivos)
 4. [Alcance](#alcance)
-5. [Objetivos](#objetivos)
-6. [Metodología](#metodología)
-7. [Investigación](#investigación)
+5. [Metodología](#metodología)
+6. [Investigación](#investigación)
 
-   7.1 [Timeline](#timeline)
-8. [Conclusiones](#conclusiones)
-9. [Anexos](#anexos)
+   6.1 [Timeline](#timeline)
+7. [Conclusiones](#conclusiones)
+8. [Anexos](#anexos)
 
 # Resumen ejecutivo
 
