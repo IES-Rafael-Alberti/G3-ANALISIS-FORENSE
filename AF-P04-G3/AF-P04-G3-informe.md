@@ -208,6 +208,12 @@ Leyendo la conversación puede llegarse a una conclusión lógica de que clarame
 
 # Conclusiones
 
+En base a los hallazgos y análisis realizados al volcado de memoria proporcionado, se llega a las siguientes conclusiones:
+
+- El ordenador, de nombre DESKTOP-01S7HH9 posee un único usuario de nombre Pacopepe, sin contar con los usuarios predeterminados del sistema.
+- El usuario Pacopepe tenía abierto un archivo pdf de nombre Trabajo historia Pacopepe.pdf.
+- EL usuario Pacopepe posee una cuenta de Discord, cuyo nickname es pakopepe88#7454. En esta cuenta, se tiene constancia de una conversación con otro usuario denominado como marcosheredia666 en la que le pregunta a Pacopepe por la autoría de los hechos, respondiendo éste de manera afirmativa.
+
 # Anexos
 
 - [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
