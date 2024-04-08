@@ -13,7 +13,11 @@
 
 # Resumen ejecutivo
 
+En esta documento se recoge el proceso de análisis por parte _Netmancer Inc._ de una captura de la memoria RAM (de tipo volátil, no persistente) de un equipo intervenido por las autoridades competentes. 
 
+En el proceso de investigación se hace uso de herramientas como Volatility y Python para realizar un excrutinio de la memoria con el propósito de aportar información capaz de relacionar al alumno Francisco José Jiménez con una falsa amenaza de bomba recibida en su instituto. 
+
+Aplicando técnicas forenses, se recopila información diversa de la máquina del implicado a partir de la captura de memoria, hasta que finalmente se concluye que existe relación de Francisco José con el altercado, habiendo presencia en la captura de memoria volátil de ciertas conversaciones pertenecientes a una aplicación de comunicaciones en la que un usuario "pakopepe88", alias del alumno investigado, confiesa en una conversación grupal la autoría de la supuesta llamada.
 
 # Introducción
 
@@ -101,7 +105,7 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 | Nombre de la herramienta | Empresa      | Versión        |
 |--------------------------|--------------|----------------|
 | Volatility| Volatility Foundation        | 2.0       |
-| Python| Python       | 3.0      |
+| Python| Python       | 3.11.6      |
 # Investigación
 
 Se ha analizado con el plugin handles de Volatility los handles que se encuentran en el volcado. 
@@ -139,3 +143,6 @@ Se ha intentado dumpear dicho fichero pdf pero no se ha conseguido con la direcc
 # Conclusiones
 
 # Anexos
+
+- [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
+- [Anexo 2 - Registro de cadena de custodia](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%202%20-%20Registro%20de%20cadena%20de%20custodia.xlsx)
