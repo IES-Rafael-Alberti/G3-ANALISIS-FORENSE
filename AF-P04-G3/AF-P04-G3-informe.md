@@ -110,7 +110,7 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 Se ha analizado con el plugin handles de Volatility los handles que se encuentran en el volcado. 
 
-Para facilitar este trabajo se han exportado los handles a un fichero handles.txt
+El plugin handles lista una sucesión de archivos que están siendo utilizados por los programas en la memoria RAM.
 
 ![handlestext](./img/handlestext.png)
 
