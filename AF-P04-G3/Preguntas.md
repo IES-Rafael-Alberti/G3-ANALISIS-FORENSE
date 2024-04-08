@@ -1,7 +1,7 @@
 1. Confirmar si la imagen de memoria pertenece al ordenador del alumno, identificado como "DESKTOP-01S7HH9".
 
 Sí, puede confirmarse mediante la investigación en la imagen de 
-![alt text](image.png)
+![equipo](./img/equipo.png)
 
 2. Determinar el PID del proceso de la aplicación utilizada para visualizar documentos PDF y establecer cuál es su proceso padre.
 
