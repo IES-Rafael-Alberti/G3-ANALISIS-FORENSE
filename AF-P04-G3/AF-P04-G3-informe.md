@@ -160,7 +160,9 @@ A través de esta búsqueda, se encuentra más información que parece correspon
 
 ![alt text](img/pakopepe88.png)
 
-Debido a las características de los datos, parece corresponder con un formato de archivo estructurado `.json`, que contiene varios campos de tipo clave-valor los cuáles contienen información. Teniendo estos datos, podemos elaborar un script con python 3.11.6 que filtre los datos, los limpie y nos lo muestre de forma ordenada para ver si podemos sacar alguna información de calidad. Para ello almacenamos la salida del comando en un fichero `conversacion.txt`, el cual será utilizado por el script para generar un archivo estructurado `chat.json` ordenado cronológicamente, el cual nos descubre una conversación entre los usuarios "_pakopepe88_" y "_marcosheredia666_", adjuntamos aquí un fragmento clave de la conversación:
+Debido a las características de los datos, parece corresponder con un formato de archivo estructurado `.json`, que contiene varios campos de tipo clave-valor los cuáles contienen información. Teniendo estos datos, podemos elaborar un script con python 3.11.6 que filtre los datos, los limpie y nos lo muestre de forma ordenada para ver si podemos sacar alguna información de calidad. Para ello almacenamos la salida del comando en un fichero `conversacion.txt`, el cual está adjunto como ANEXO 5, y en caso de querer recrear el archivo, se debe ubicar en el mismo directorio en el que se ejecute el script adjunto como ANEXO 6 y renombrarse a "datosbrutos.txt". 
+
+Una vez ejecutado, el script generará un archivo llamado `chat.json`, que son los registros de la conversación ordenados cronológicamente, el cual nos descubre una conversación entre los usuarios "_pakopepe88_" y "_marcosheredia666_", adjuntamos aquí un fragmento clave de la conversación:
 
 ```json
 (...)

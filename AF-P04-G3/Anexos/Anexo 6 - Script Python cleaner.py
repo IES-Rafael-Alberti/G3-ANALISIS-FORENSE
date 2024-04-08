@@ -2,7 +2,7 @@ import json
 import re
 
 # Abre el archivo y lee los datos
-with open('megaconver.txt', 'r') as f:
+with open('datosbrutos.txt', 'r') as f:
     data = f.read()
 
 # Busca los patrones que corresponden a los campos que quieres extraer
