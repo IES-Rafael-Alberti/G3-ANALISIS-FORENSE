@@ -1,13 +1,13 @@
-1. Confirmar si la imagen de memoria pertenece al ordenador del alumno, identificado como "DESKTOP-01S7HH9".
+1. **Confirmar si la imagen de memoria pertenece al ordenador del alumno, identificado como "DESKTOP-01S7HH9".**
 
 Sí, puede confirmarse mediante la investigación en la imagen de 
 ![equipo](./img/equipo.png)
 
-2. Determinar el PID del proceso de la aplicación utilizada para visualizar documentos PDF y establecer cuál es su proceso padre.
+2. **Determinar el PID del proceso de la aplicación utilizada para visualizar documentos PDF y establecer cuál es su proceso padre.**
 
-AcroCEF.exe tiene el PID 7376 y su proceso padre tiene el PID
+AcroCEF.exe tiene el PID 7376 y su proceso padre tiene el PID 8664
 
-3. A través de los manejadores, identificar qué documento estaba siendo editado por el alumno durante la intervención policial.
+3. **A través de los manejadores, identificar qué documento estaba siendo editado por el alumno durante la intervención policial.**
 
 Se ha analizado con el plugin handles de Volatility los handles que se encuentran en el volcado. 
 
@@ -27,7 +27,7 @@ Analizando detalladamente la salida del comando mostrado en la captura anterior 
 
 ![handlesdocumento](./img/handlesdocumento.png)
 
-4. Buscar en el volcado de memoria pruebas que vinculen al usuario del equipo con la realización de la falsa amenaza de bomba.
+**4. Buscar en el volcado de memoria pruebas que vinculen al usuario del equipo con la realización de la falsa amenaza de bomba.**
 
 Existe una conversación de una aplicación de mensajería que relaciona a Francisco José Jiménez alias "Pacopepe" con la realización de la llamada de aviso de bomba falsa. Para llegar a estos datos se ha seguido el siguiente procedimiento:
 
@@ -94,4 +94,4 @@ Debido a las características de los datos, parece corresponder con un formato d
     },
 ```
 
-Leyendo la conversación puede llegarse a una conclusión lógica de que claramente ambos usuarios tienen conocimiento y conciencia de los hechos acontecidos. La conversación completa se adjunta como "ANEXO 4 Reconstrucción del Chat", así como el script y los ficheros de texto adjuntos como "ANEXO 5 Datos brutos".
+Leyendo la conversación puede llegarse a una conclusión lógica de que claramente ambos usuarios tienen conocimiento y conciencia de los hechos acontecidos. La conversación completa se adjunta como "**ANEXO 4 Reconstrucción del Chat**", así como el script y los ficheros de texto adjuntos como "**ANEXO 5 Datos brutos**".
