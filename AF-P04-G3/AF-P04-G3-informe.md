@@ -104,6 +104,36 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 | Python| Python       | 3.0      |
 # Investigación
 
+Se ha analizado con el plugin handles de Volatility los handles que se encuentran en el volcado. 
+
+Para facilitar este trabajo se han exportado los handles a un fichero handles.txt
+
+![handlestext](./img/handlestext.png)
+
+Una vez realizada la extracción se ha utilizado el comando grep con la cadena "Users" para comprobar que usuarios hay en la máquina.
+
+![handlesuser](./img/handlesuser.png)
+
+Una vez encontrada la existencia de un usuario Pacopepe, se ha decidido utilziar el comando mencionado en el párrafo anterior llamado grep para buscar los ficheros que haya podido abrir el usuario.
+
+![handlespacopepe](./img/handlespacopepe.png)
+
+Analizando detalladamente la salida del comando mostrado en la captura anterior se ha encontrado que el usuario Pacopepe abrió un fichero llamado "Trabajo de historia Pacopepe.odt".
+
+![handlesdocumento](./img/handlesdocumento.png)
+
+Una vez encontrado el fichero se ha exportado a un fichero .txt la salida del plugin filescan para luego utilizar el comando grep y buscar el fichero encontrado anteriormente.
+
+![filescantxt](./img/filescantxt.png)
+
+Se ha utilizado el comando grep para intentar encontrar el fichero y dumpearlo. No se ha encontrado el fichero como tal pero si su versión .pdf.
+
+![filescanpdf](./img/filescanpdf.png)
+
+Se ha intentado dumpear dicho fichero pdf pero no se ha conseguido con la dirección de memoria dada por filescan, con el plugin dumpfiles y en el directorio que se encuentra en la misma carpeta del proyecto llamado dumpfiles.
+
+![dumpfilespdf](./img/dumpfilepdf.png)
+
 ## Timeline
 
 # Conclusiones
