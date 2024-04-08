@@ -1,7 +1,10 @@
 1. **Confirmar si la imagen de memoria pertenece al ordenador del alumno, identificado como "DESKTOP-01S7HH9".**
 
-Sí, puede confirmarse mediante la investigación en la imagen de 
+Sí, puede confirmarse mediante la investigación de las variables de entorno presentes en la captura de memoria halladas mediante el plugin `envars` de la herramienta Volatility y aplicando el filtro `grep` con la palabra "desktop" con las flags `-i -I` que permite realizar coincidencias sin distinguir entre mayúsculas y minúsculas.
+
 ![equipo](./img/equipo.png)
+
+Puede hallarse como la variable de entorno COMPUTERNAME nos confirma la coincidencia del nombre.
 
 2. **Determinar el PID del proceso de la aplicación utilizada para visualizar documentos PDF y establecer cuál es su proceso padre.**
 
