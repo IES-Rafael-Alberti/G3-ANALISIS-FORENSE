@@ -212,7 +212,7 @@ Debido a las características de los datos, parece corresponder con un formato d
 Leyendo la conversación puede llegarse a una conclusión lógica de que claramente ambos usuarios tienen conocimiento y conciencia de los hechos acontecidos. La conversación completa se adjunta como "**ANEXO 4 Reconstrucción del Chat**", así como el script y los ficheros de texto adjuntos como "**ANEXO 5 Datos brutos**" y "**ANEXO 6 Script Python cleaner.py**". 
 
 > [!NOTE]  
-> El json final adjuntado en el ANEXO 6 ha sido retocado por ChatGPT para traducir códigos de caracteres a iconos y añadir una propiedad order que facilite la lectura.
+> El json final adjuntado en el ANEXO 4 ha sido retocado por ChatGPT para traducir códigos de caracteres a iconos y añadir una propiedad order que facilite la lectura.
 
 
 ## Timeline
