@@ -44,9 +44,9 @@ Al pensar en las cuestiones legales referidas al análisis forense en la nube se
 
 Bien, para comenzar debemos tener en cuenta que la normativa general que se aplica al análisis forense en las infraestructuras cloud es la misma que a nivel internacional, es decir:
 
-- *El convenio de Budapest*: Un marco de normas y estándares que sirve como guía internacional para desarrollar legislación en materia de cibercrimen. Cualquier país puede adherirse a él
-- *Reglamento general de protección de datos*: Es la  normativa general europea cuyo objetivo es proteger la privacidad y datos personales de los ciudadanos. Establece una serie de requisitos para tratar nuestra información digital y define sanciones por su incumplimiento.
-- 
+- **El convenio de Budapest**: Un marco de normas y estándares que sirve como guía internacional para desarrollar legislación en materia de cibercrimen. Cualquier país puede adherirse a él
+- **Reglamento general de protección de datos**: Es la  normativa general europea cuyo objetivo es proteger la privacidad y datos personales de los ciudadanos. Establece una serie de requisitos para tratar nuestra información digital y define sanciones por su incumplimiento.
+- **Directiva NIS**: 
 
 # Recomendaciones para facilitar el análisis forense
 
@@ -65,3 +65,5 @@ Tener muy en cuenta los dispositivos ya encendidos
 - Tidmarsh, D. (s.f.). What do you need to know about cloud forensics? *CybersecurityExchange*. Recuperado de [https://www.eccouncil.org/cybersecurity-exchange/computer-forensics/what-is-cloud-forensics/](https://www.eccouncil.org/cybersecurity-exchange/computer-forensics/what-is-cloud-forensics/)
 
 - https://rm.coe.int/cyber-buda-benefits-junio2021a-es/1680a2e4de
+
+- https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new
