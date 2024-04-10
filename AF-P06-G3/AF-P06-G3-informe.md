@@ -55,9 +55,9 @@ Otra dificultad nos la encontramos al momento de utilizar herramientas tradicion
 
 Además, los proveedores tienen distintas formas de proceder y entender la nube teniendo que aprender como funciona cada plataforma gestionada por cada proveedor y como la manejan.
 
-Viéndolo desde la perspectiva del forense podemos comprobar que se complica mucho la recuperacion de "evidencias" y podemos verlo con un ejemplo sobre la mesa, si los datos que se encuentran en el disco duro que está como servicio en la nube se le borran sus datos, complica la recuperación de los mismos si no se han creado snapshots o copias de seguridad de estos datos. 
+Viéndolo desde la perspectiva del forense podemos comprobar que se complica mucho la recuperacion de "evidencias" y podemos verlo con un ejemplo sobre la mesa, si los datos que se encuentran en el disco duro que está como servicio en la nube se le borran, complica la recuperación de los mismos si no se han creado snapshots o copias de seguridad de ellos. 
 
-Y como se ha mencionado anteriormente el hecho de que los servicios sean accesibles de manera pública, la movilidad de los datos a través de internet y añadiendo, la elasticidad de los servicios ampliándolos o disminuyéndolos, complica mucho la recuperación de los datos borrados y el análisis de los mismos.
+Y como se ha mencionado anteriormente el hecho de que los servicios sean accesibles de manera pública, la movilidad de los datos a través de internet cosa que posibilita la contaminación de las pruebas y añadiendo, la elasticidad de los servicios ampliándolos o disminuyéndolos, complica mucho la recuperación de los datos borrados y el análisis de los mismos.
 
 # Estrategias
 
