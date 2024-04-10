@@ -81,6 +81,35 @@ La tecnología empleada para ofrecer el servicio, como la infraestructura usada 
 
 ## Algunos tipos de metodología
 
+Como tal existen las metodologías clásicas para el análisis forense informático convecional, como la Norma UNE 71506:2013, el NIST, el modelo DFRWS (_Digital Forensic Research Workshop_) o las fases del SANS (_SysAdmin, Audit, Network y Security_).
+
+Aún así, podremos modificar ligeramente alguna de las metodologías que elijamos para llevar a cabo un análisis forense de una manera correcta y adecuada sobre un entorno cloud. Para lograr esto, si queremos alcanzar una adquisición y el análisis de pruebas digitales completo, tendremos que tener en cuenta, como primer paso, obtener los siguientes datos:
+
+- Paquetes de red para el análisis de tráfico.
+- Memoria de la carga de trabajo.
+- Volúmenes de disco de la carga de trabajo.
+- Registros y datos de eventos de las cargas de trabajo y entornos en la nube.
+
+Las técnicas y herramientas de informática forense utilizadas dependen directamente del lugar desde el cual los analistas forenses recopilen la evidencia, incluyendo cargas de trabajo, contenedores y otras áreas en la red.
+
+## Recopilación de cargas de trabajo en la nube
+
+Esta varía según los tipos de cargas de trabajo utilizadas. Capturar el disco en una instancia en ejecución es similar a realizar una captura de disco en entornos virtuales internos. Esto se debe a que los principales proveedores de infraestructura como servicio (IaaS) permiten a los clientes realizar una captura instantánea de una carga de trabajo de máquina virtual (VM). Los analistas pueden convertir la instantánea en un volumen de análisis en vivo y adjuntarlo a una estación de trabajo forense en la nube o en las instalaciones. En la mayoría de los entornos en la nube, los clientes pueden capturar los sistemas operativos (SO) y las unidades de datos de IaaS directamente desde el portal de administración.
+
+La captura de la memoria en un entorno compartido requiere un método de captura por instancia. Para adquirir la memoria en ejecución de las instancias, los equipos de seguridad necesitan herramientas separadas, ya sea remotas o locales.
+
+## Recopilación de evidencia en entornos basados en contenedores 
+
+En entornos de contenedores donde la organización controla el motor de ejecución subyacente, herramientas como Docker Forensics Toolkit y Docker Explorer pueden ayudar a evaluar el sistema de archivos compartido de la unión con los registros individuales de los contenedores y su historial.
+
+Para la infraestructura de contenedores en la nube, como Amazon Elastic Kubernetes Service, Azure Kubernetes Service y Google Kubernetes Engine, una nueva característica en Kubernetes conocida como API de Punto de Control de Kubelet permite a los analistas crear una copia o una imagen de contenedor en ejecución para su análisis sin conexión. Es importante señalar que esta capacidad podría no estar disponible en todos los modelos de Plataforma como Servicio (PaaS) en la actualidad.
+
+## Recopilación de evidencia en la informática forense de redes
+
+La recopilación de evidencia en la informática forense de redes es posible en la mayoría de los entornos en la nube gracias a las capacidades emergentes de mirroring de tráfico de red y captura de paquetes. Los equipos pueden utilizar datos de registros de flujo (flow log data) para construir modelos de comportamiento del tráfico de red.
+
+Además, cualquier cliente puede utilizar el Mirroring de Tráfico de Red de Virtual Private Cloud (VPC) en AWS y el Mirroring de Paquetes de Google Cloud. Estos servicios permiten al cliente copiar automáticamente el tráfico hacia un sistema de detección de intrusiones en la red o una ubicación de almacenamiento para el análisis forense.
+
 # Requirimientos legales y regulaciones aplicables a entornos de nube
 
 Al pensar en las cuestiones legales referidas al análisis forense en la nube podemos plantearnos una serie de preguntas:
