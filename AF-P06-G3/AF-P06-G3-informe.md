@@ -143,6 +143,4 @@ Además, es importante fomentar la colaboración entre equipos de seguridad, adm
 
 - Cloud Audit & Forensics. Análisis de retos y estrategias de Auditoría y Análisis Forense en entornos Cloud - Recuperado de [https://www.ismsforum.es/ficheros/descargas/cloudauditforensics2018v41544463021.pdf](https://www.ismsforum.es/ficheros/descargas/cloudauditforensics2018v41544463021.pdf) 
 
-- Análisis Forense Cloud - Recuperado de -[https://www.arsys.es/blog/analisis-forense-cloud](https://www.arsys.es/blog/analisis-forense-cloud)
-
 - Introducción al Análisis Forense en Entornos Cloud - Recuperado de [https://www.redseguridad.com/especialidades-tic/cloud-y-virtualizacion/introduccion-al-analisis-forense-en-entornos-cloud_20201028.html](https://www.redseguridad.com/especialidades-tic/cloud-y-virtualizacion/introduccion-al-analisis-forense-en-entornos-cloud_20201028.html)
