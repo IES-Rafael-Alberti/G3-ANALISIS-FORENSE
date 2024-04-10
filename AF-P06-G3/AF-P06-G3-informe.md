@@ -140,3 +140,5 @@ Además, es importante fomentar la colaboración entre equipos de seguridad, adm
 - Departamento de Seguridad Nacional (España). (s.f.). Publicación Directiva NIS. Recuperado de [https://www.dsn.gob.es/es/actualidad/sala-prensa/publicacion-directiva-nis](https://www.dsn.gob.es/es/actualidad/sala-prensa/publicacion-directiva-nis)
 
 - Unión Europea. (2016). Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016. Boletín Oficial del Estado. Recuperado de https://www.boe.es/doue/2016/119/L00001-00088.pdf
+
+- Cloud Audit & Forensics. Análisis de retos y estrategias de Auditoría y Análisis Forense en entornos Cloud - Recuperado de [https://www.ismsforum.es/ficheros/descargas/cloudauditforensics2018v41544463021.pdf](https://www.ismsforum.es/ficheros/descargas/cloudauditforensics2018v41544463021.pdf) 
