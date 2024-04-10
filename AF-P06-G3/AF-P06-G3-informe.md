@@ -2,14 +2,14 @@
 
 1. [Resumen ejecutivo](#resumen-ejecutivo)
 2. [Introducción](#introducción)
-3. [Objetivos](#objetivos)
-4. [Alcance](#alcance)
-5. [Metodología](#metodología)
-6. [Investigación](#investigación)
+3. [Características de la nube y su impacto en el análisis forense](#características-de-la-nube-y-su-impacto-en-el-análisis-forense)
+4. [Estrategias](#estrategias)
 
-   6.1 [Timeline](#timeline)
-7. [Conclusiones](#conclusiones)
-8. [Anexos](#anexos)
+    4.1 [Algunos tipos de metodología](#algunos-tipos-de-metodología)
+5. [Metodología](#metodología)
+6. [Requerimientos legales y regulaciones aplicables a entornos en la nube](#requirimientos-legales-y-regulaciones-aplicables-a-entornos-de-nube)
+7. [Recomendaciones](#recomendaciones-para-facilitar-el-análisis-forense)
+8. [Referencias](#referencias)
 
 # Resumen ejecutivo
 
