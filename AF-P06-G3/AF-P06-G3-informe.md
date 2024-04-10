@@ -78,9 +78,9 @@ Al pensar en las cuestiones legales referidas al análisis forense en la nube se
 
 Bien, para comenzar debemos tener en cuenta que la normativa general que se aplica al análisis forense en las infraestructuras cloud es la misma que a nivel internacional, es decir:
 
-- *El convenio de Budapest*: Un marco de normas y estándares que sirve como guía internacional para desarrollar legislación en materia de cibercrimen. Cualquier país puede adherirse a él
-- *Reglamento general de protección de datos*: Es la  normativa general europea cuyo objetivo es proteger la privacidad y datos personales de los ciudadanos. Establece una serie de requisitos para tratar nuestra información digital y define sanciones por su incumplimiento.
-- 
+- **El convenio de Budapest**: Un marco de normas y estándares que sirve como guía internacional para desarrollar legislación en materia de cibercrimen. Cualquier país puede adherirse a él
+- **Reglamento general de protección de datos**: Es la  normativa general europea cuyo objetivo es proteger la privacidad y datos personales de los ciudadanos. Establece una serie de requisitos para tratar nuestra información digital y define sanciones por su incumplimiento.
+- **Directiva NIS**: 
 
 # Recomendaciones para facilitar el análisis forense
 
@@ -100,6 +100,7 @@ Tener muy en cuenta los dispositivos ya encendidos
 
 - https://rm.coe.int/cyber-buda-benefits-junio2021a-es/1680a2e4de
 
+<<<<<<< HEAD
 - ¿Qué es la nube y como funciona internet? (s.f). Recuperado de [https://www.implika.es/blog/que-es-nube-internet](https://www.implika.es/blog/que-es-nube-internet)
 
 - Fuentes, F. (7 de Noviembre de 2022). Análisis forense en la nube ¿Qué es y en qué consiste?. Recuperado de [https://www.arsys.es/blog/analisis-forense-cloud](https://www.arsys.es/blog/analisis-forense-cloud)
@@ -108,3 +109,6 @@ Tener muy en cuenta los dispositivos ya encendidos
 
 - Técnicas para Análisis Forense Digital en la Nube: Guía completa. (s.f) Recuperado de [https://newformacion.com/seguridad-2/tecnicas-analisis-forense-digital-nube/](https://newformacion.com/seguridad-2/tecnicas-analisis-forense-digital-nube/)
 
+=======
+- https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new
+>>>>>>> dd54575533c00e074362f139f51bdbee9fee3d2b
