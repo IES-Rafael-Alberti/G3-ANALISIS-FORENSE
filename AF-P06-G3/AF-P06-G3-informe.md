@@ -39,7 +39,7 @@ Obviamente tener nuestros datos en la nube tiene una serie de inconvenientes par
 
 En el caso del software como servicio o SaaS, el software y los datos se encuentran disponibles constantemente en la nube, siendo el usuario el que accede directamente a la misma. El proveedor del servicio será el responsable de gestionar los datos y el software.
 
-En el caso de la plataforma como servicio o Paas, el propietario de la plataforma es el responsable de los datos y aplicaciones que contienen, sin serlo referente al almacenamiento, la red, los servidores o el sistema operativo.
+En el caso de la plataforma como servicio o PaaS, el propietario de la plataforma es el responsable de los datos y aplicaciones que contienen, sin serlo referente al almacenamiento, la red, los servidores o el sistema operativo.
 
 Y por último en el caso de infraestructura como servicio o Iaas, se aloja en un proveedor de nube externo. El proveedor es el propietario de la red y del almacenamiento, pero el desarrollador del servicio final es el responsable de la integridad de los datos, las aplicaciones y el sistema operativo.
 
@@ -54,6 +54,10 @@ La dificultad para recuperar por ejemplo datos borrados se complica dada la vola
 Otra dificultad nos la encontramos al momento de utilizar herramientas tradicionales siendo necesaria la creación de herramientas específicas para las plataformas como Google Drive, AWS etc..
 
 Además, los proveedores tienen distintas formas de proceder y entender la nube teniendo que aprender como funciona cada plataforma gestionada por cada proveedor y como la manejan.
+
+Viéndolo desde la perspectiva del forense podemos comprobar que se complica mucho la recuperacion de "evidencias" y podemos verlo con un ejemplo sobre la mesa, si los datos que se encuentran en el disco duro que está como servicio en la nube se le borran sus datos, complica la recuperación de los mismos si no se han creado snapshots o copias de seguridad de estos datos. 
+
+Y como se ha mencionado anteriormente el hecho de que los servicios sean accesibles de manera pública, la movilidad de los datos a través de internet y añadiendo, la elasticidad de los servicios ampliándolos o disminuyéndolos, complica mucho la recuperación de los datos borrados y el análisis de los mismos.
 
 # Estrategias
 
