@@ -118,3 +118,6 @@ Además, es importante fomentar la colaboración entre equipos de seguridad, adm
 
 - Técnicas para Análisis Forense Digital en la Nube: Guía completa. (s.f) Recuperado de [https://newformacion.com/seguridad-2/tecnicas-analisis-forense-digital-nube/](https://newformacion.com/seguridad-2/tecnicas-analisis-forense-digital-nube/)
 
+- European Union Agency for Cybersecurity. (s.f.). NIS Directive - New. Recuperado de [https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new)
+
+- Departamento de Seguridad Nacional (España). (s.f.). Publicación Directiva NIS. Recuperado de [https://www.dsn.gob.es/es/actualidad/sala-prensa/publicacion-directiva-nis](https://www.dsn.gob.es/es/actualidad/sala-prensa/publicacion-directiva-nis)
