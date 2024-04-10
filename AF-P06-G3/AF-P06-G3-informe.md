@@ -92,19 +92,19 @@ Aún así, podremos modificar ligeramente alguna de las metodologías que elijam
 
 Las técnicas y herramientas de informática forense utilizadas dependen directamente del lugar desde el cual los analistas forenses recopilen la evidencia, incluyendo cargas de trabajo, contenedores y otras áreas en la red.
 
-## Recopilación de cargas de trabajo en la nube
+### Recopilación de cargas de trabajo en la nube
 
 Esta varía según los tipos de cargas de trabajo utilizadas. Capturar el disco en una instancia en ejecución es similar a realizar una captura de disco en entornos virtuales internos. Esto se debe a que los principales proveedores de infraestructura como servicio (IaaS) permiten a los clientes realizar una captura instantánea de una carga de trabajo de máquina virtual (VM). Los analistas pueden convertir la instantánea en un volumen de análisis en vivo y adjuntarlo a una estación de trabajo forense en la nube o en las instalaciones. En la mayoría de los entornos en la nube, los clientes pueden capturar los sistemas operativos (SO) y las unidades de datos de IaaS directamente desde el portal de administración.
 
 La captura de la memoria en un entorno compartido requiere un método de captura por instancia. Para adquirir la memoria en ejecución de las instancias, los equipos de seguridad necesitan herramientas separadas, ya sea remotas o locales.
 
-## Recopilación de evidencia en entornos basados en contenedores 
+### Recopilación de evidencia en entornos basados en contenedores 
 
 En entornos de contenedores donde la organización controla el motor de ejecución subyacente, herramientas como Docker Forensics Toolkit y Docker Explorer pueden ayudar a evaluar el sistema de archivos compartido de la unión con los registros individuales de los contenedores y su historial.
 
 Para la infraestructura de contenedores en la nube, como Amazon Elastic Kubernetes Service, Azure Kubernetes Service y Google Kubernetes Engine, una nueva característica en Kubernetes conocida como API de Punto de Control de Kubelet permite a los analistas crear una copia o una imagen de contenedor en ejecución para su análisis sin conexión. Es importante señalar que esta capacidad podría no estar disponible en todos los modelos de Plataforma como Servicio (PaaS) en la actualidad.
 
-## Recopilación de evidencia en la informática forense de redes
+### Recopilación de evidencia en la informática forense de redes
 
 La recopilación de evidencia en la informática forense de redes es posible en la mayoría de los entornos en la nube gracias a las capacidades emergentes de mirroring de tráfico de red y captura de paquetes. Los equipos pueden utilizar datos de registros de flujo (flow log data) para construir modelos de comportamiento del tráfico de red.
 
