@@ -78,24 +78,26 @@ Bien, para comenzar debemos tener en cuenta que la normativa general que se apli
 - **Reglamento general de protección de datos**: Es la  normativa general europea cuyo objetivo es proteger la privacidad y datos personales de los ciudadanos. Establece una serie de requisitos para tratar nuestra información digital y define sanciones por su incumplimiento.
 - **Directiva NIS**: ES otra normativa de la unión europea con el objetivo de mejorar la ciberseguridad general europea. Esta normativa incluye obligaciones para que los operadores tomen medidas adecuadas para gestionar riesgos de seguridad y notificar los incidentes que sufran y sean significativos para la integridad, confidencialidad y disponibilidad de los datos.
 
-Estas normativas son aplicadas de forma general y a nivel internacional (convenio de Budapest) y europeo (RHPD Y NIS). 
+Estas normativas son aplicadas de forma general y a nivel internacional (convenio de Budapest) y europeo (RGPD Y NIS). 
 
 Teniéndolas en cuenta, a un nivel muy superficial se debe realizar una diferencia fundamental en la información de la nube: 
 **El hecho de necesitar contraseña para su acceso.** 
 
 Cuando un usuario sube una foto a los servidores de _Instagram_, y la publica, valga la redundancia, en el apartado público de su perfil, automáticamente podríamos referirnos a esa foto como información de fuentes abiertas y podría analizarse sin ningún tipo de orden judicial por un agente de la ley. 
 
-Sin embargo, para que esa persona pueda acceder a sus chats de _Instagram_, es necesario que acceda a su cuenta con sus credenciales de usuario. Si se quisiera consultar esos chats, aún estando en la nube, sería necesaria una orden de registro oficial por parte de las autoridades, lo que a su vez requiere de establecer una *causa probable* judicial. Por supuesto, todo ello debe tener en cuenta que los datos almacenados en aquellos dispositivos que sean catalogados como propiedad privada de una empresa requieren también de esta orden, entre ellos, los servidores que conformarían una posible nube o lo necesario para que exista **IaaS** (*Infrastructure as a service*).
+Sin embargo, para que esa persona pueda acceder a sus chats de _Instagram_, es necesario que acceda a su cuenta con sus credenciales de usuario. Si se quisiera consultar esos chats, aún estando en la nube, sería necesaria una orden de registro oficial por parte de las autoridades, lo que a su vez requiere de establecer una *causa probable* judicial. Por supuesto, todo ello debe tener en cuenta que los datos almacenados en aquellos dispositivos que sean catalogados como propiedad privada de una empresa requieren también de esta orden, entre ellos, los servidores que conformarían una posible nube o lo necesario para que exista **IaaS** (*Infrastructure as a service*). 
+
+Podríamos considerar un caso interesante: Supongamos el hecho de que se requisa un teléfono móvil y éste dispone de una cuenta ya autenticada de Instagram o cualquier red social. Al estar el télefono requisado legalmente y con orden de registro, es lícito revisar el contenido privado de esa cuenta de Instagram ya logueada, aunque esté la información como tal en los servidores de la aplicación (Barnhart, H.). Aún así, la ley de protección de datos (RGPD) debe cumplirse y por ejemplo el propietario del teléfono móvil tendría derecho a saber que sus datos se están tratando (Unión Europea, 2016, Art. 13).
 
 # Recomendaciones para facilitar el análisis forense
 
 Para conseguir ser más eficientes y tener mejores prácticas en el proceso de análisis forense podríamos tener una serie de detalles a tener en cuenta.
 
-Por ejemplo, **No siempre debemos acceder a la nube como tal para investigar... la nube**, es decir; Muchas aplicaciones, por ejemplo las de mensajería, a pesar de que almacenan en la nube muchos de sus datos, generan **logs** de que lo están haciendo: metadatos, registros, _thumbnails_... etc. Todo ello son artefactos a los que deben prestarse especial atención y pueden resultar muy útil en un caso de análisis forense en la nube.
+Por ejemplo, **no siempre debemos acceder a la nube como tal para investigar... la nube**, es decir; muchas aplicaciones, por ejemplo las de mensajería, a pesar de que almacenan en la nube muchos de sus datos, generan **logs** de que lo están haciendo: metadatos, registros, _thumbnails_... etc. Todo ello son artefactos a los que deben prestarse especial atención y pueden resultar muy útil en un caso de análisis forense en la nube (Barnhart, H.)..
 
-También, debido a lo comentado en la sección de [Requerimientos legales y regulaciones aplicables](#requirimientos-legales-y-regulaciones-aplicables-a-entornos-de-nube), deben tenerse muy en cuenta la captura, recolección y preservación de la evidencia en vivo, debido a que esta puede mantener conexiones, sesiones abiertas y caché que podría ser de gran utilidad a la hora del examen forense y deben.
+También, debido a lo comentado en la sección de [Requerimientos legales y regulaciones aplicables](#requirimientos-legales-y-regulaciones-aplicables-a-entornos-de-nube), deben tenerse muy en cuenta la captura, recolección y preservación de la evidencia en vivo, debido a que esta puede mantener conexiones, sesiones abiertas y caché que podrían ser de gran utilidad.
 
-Otra medida, esta vez como usuarios o propietarios, que podríamos tomar, es la automatización de _snapshots_ del sistema o captura del estado regular de nuestros servicios de nube, hosting o similar. Muchas de estas plataformas disponen de esta opción, y activarla nos garantizaría algo similar a una imagen de disco que puede resultar de utilidad en el proceso de análisis.
+Otra medida, esta vez como usuarios o propietarios, que podríamos tomar, es la automatización de _snapshots_ del sistema o captura del estado regular de nuestros servicios de nube, hosting o similar. Muchas de estas plataformas disponen de esta opción, y activarla nos garantizaría algo similar a una imagen de disco que puede resultar de utilidad en el proceso de análisis (Tidmarsh, D.).
 
 Además, es importante fomentar la colaboración entre equipos de seguridad, administradores de sistemas y personal forense tanto de una posible empresa como de su proveedor de servicios o IaaS es fundamental para mejorar la efectividad del análisis forense en la nube. Al establecer protocolos claros de comunicación y procedimientos de colaboración puede agilizar la respuesta a incidentes, compartir información relevante y garantizar una gestión coordinada de la seguridad.
 
@@ -121,3 +123,5 @@ Además, es importante fomentar la colaboración entre equipos de seguridad, adm
 - European Union Agency for Cybersecurity. (s.f.). NIS Directive - New. Recuperado de [https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new)
 
 - Departamento de Seguridad Nacional (España). (s.f.). Publicación Directiva NIS. Recuperado de [https://www.dsn.gob.es/es/actualidad/sala-prensa/publicacion-directiva-nis](https://www.dsn.gob.es/es/actualidad/sala-prensa/publicacion-directiva-nis)
+
+- Unión Europea. (2016). Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016. Boletín Oficial del Estado. Recuperado de https://www.boe.es/doue/2016/119/L00001-00088.pdf
