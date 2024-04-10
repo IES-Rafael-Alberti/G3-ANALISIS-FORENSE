@@ -29,7 +29,7 @@ La "nube" permite almacenar y acceder a datos a través de internet en lugar de 
 
 Como tal la componen un conjunto de servidores remotos que estan conectados y funcionan de manera coordinada como un único ecosistema.
 
-Hoy en día existen cuatro tipos de nubes, nube pública, nube comunitaria, nube privada y nube híbrida. Como bien indica su nombre, la nube pública ofrece sus servicios a cualquier usuario de itnernet.
+Hoy en día existen cuatro tipos de nubes, nube pública, nube comunitaria, nube privada y nube híbrida. Como bien indica su nombre, la nube pública ofrece sus servicios a cualquier usuario de internet.
 
 Una nube comunitaria ofrece servicios de manera exclusiva por una comunidad de consumidores de una organización.
 
@@ -61,12 +61,23 @@ Y como se ha mencionado anteriormente el hecho de que los servicios sean accesib
 
 # Estrategias
 
+El ***análisis forense en cloud*** o también conocido como ***cloud forensics*** focaliza su atención en la investigación de delitos informáticos perpetrados en entornos cloud, como su propio nombre indica. En estos entornos, la obtención de pruebas resulta más compleja, debido a la dificultad de delimitar la propietariedad de las pruebas, así como en qué tribunal son admisibles.  
 
-    Network packets for traffic analysis.
-    Workload memory.
-    Workload disk volumes.
-    Logs and event data from workloads and cloud environments.
+Si deseamos establecer una estrategia apropiada para llevar a cabo un análisis forense satisfactoriamente, debemos tener en cuenta los **modelos de servicio** en el cloud que existen, de modo que podamos determinar al responsable último de la gestión de los datos y el software. También es importante saber si estamos tratando con un cloud privado, público o híbrido. Los servicios mencionados se dividen en:
 
+- **SaaS:** En el modelo de _Software como Servicio_, tanto este como los datos se encuentran alojados permanentemente en la nube. El usuario accede a las aplicaciones directamente en la nube, por lo que será el *proveedor de servicio del cloud* (CSP) quien gestione tanto ese software como los datos asociados y generados por él.
+- **PaaS:** Las _Plataformas como Servicio_ o PaaS dependen de una gestión directa de los datos y las aplicaciones que contienen, encargándose de esta labor el propietario de la propia plataforma. Esta gestión no se extiende al ámbito del almacenamiento, la red, los servidores o el sistema operativo.
+- **IaaS:** Los modelos de cloud basados en _Infraestructura como Servicio_ se alojan en un proveedor de nube externo. En este caso, el propietario es a su ve el proveedor de la red y el almacenamiento, dejando la integridad de los datos, el middleware, las aplicaciones y el sistema operativo como trabajo al desarrollador del servicio final.
+
+![Cloud-Services](./img/imagen-accenture.jpg)
+
+Además, es crucial tener en cuenta que en los entornos en la nube, la plataforma analizada no es estable, como sí ocurre con la forensia informática tradicional, donde se congela el entorno de trabajo, para poder confiscar los activos para el análisis. También es importante tener identificado el proveedor de cloud (CSP) porque se aborda de distinta manera el análisis a ejecutar si se está en Azure, GCP, etc.
+
+Otro paso de gran importancia consiste en la recopilación de evidencias, donde debemos tener en cuenta que haablamos de ***snapshots*** o imágenes instantáneas y no de discos clonados, y que nos resultará imposible verificar la integridad de los datos. Aun así, podremos restaurar dichos snapshots en una máquina virtual local y proceder a su análisis a fin de obtener información del estado de ejecución y realizar un análisis forense tradicional. 
+
+Después de establecer el modelo de servicio cloud, identificar al CSP y tener en cuenta los detalles anteriormente mencionados, debemos enfocarnos en el **modelo de despliegue**, dado que si este es de tipo nube privada, podremos optar por un enfoque más tradicional en cuanto al análisis forense se refiere, y esto se debe a que el proceso  solo deberá adaptarse a la nube para considerar la capa de virtualización utilizada. Sin embargo, si nos encontramos ante un modelo de despliegue público o híbrido, habremos de considerar múltiples factores adicionales como la interconexión entre cliente y proveedor o a qué información puede acceder el cliente.
+
+La tecnología empleada para ofrecer el servicio, como la infraestructura usada y para soportarlo, como la capa del hipervisor, pueden incidir en la estrategia. Algunos aspectos a considerar para elaborar la estrategia son el sistema operativo instalado, la solución de virtualización empleada, los métodos de acceso en el lado del cliente y las tecnologías de almacenamiento. Además, hay que tener en cuenta la versión desplegada.
 
 ## Algunos tipos de metodología
 
