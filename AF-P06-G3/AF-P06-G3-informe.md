@@ -13,6 +13,10 @@
 
 # Resumen ejecutivo
 
+El análisis forense es la disciplina que se enfoca en recolectar, preservar, analizar y presentar evidencia digital para investigaciones legales o incidentes de seguridad. Su objetivo principal es identificar, preservar y documentar información digital que pueda ser utilizada como evidencia en procesos judiciales, investigaciones de fraude, delitos cibernéticos, disputas laborales, entre otros. 
+
+La variante de esta rama de la seguridad informática que se centra en la investigación en entornos cloud posee notables diferencias con la forensia digital tradicional, que van desde la obtención de pruebas, la autoría de las mismas, hasta las particularidades cambiadas en las metodologías usadas. En la forensia digital en cloud, además, se debe prestar atención al tipo de modelo de servicio y de depliegue que presente la plataforma a ser analizada, dado que esto cambiará la forma de operar de los analistas informáticos.
+
 # Introducción
 
 En vista al auge de la computación en la nube, la infraestructura como servicio (_IaaS_) y las nubes de almacenamiento las organizaciones están adoptando cada vez más servicios basados en la nube para almacenar y procesar datos. Si bien la nube ofrece numerosas ventajas, también plantea diferentes enfoques y aspectos a tener en cuenta para el análisis forense. 
