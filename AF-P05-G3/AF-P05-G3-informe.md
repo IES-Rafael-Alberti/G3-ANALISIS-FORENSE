@@ -101,21 +101,44 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 **Herramientas usadas**
 
-| Nombre de la herramienta | Distribuidor      | Versión        |
+| Nombre de la herramienta | Distribuidor | Versión        |
 |--------------------------|--------------|----------------|
-| Volatility| Volatility Foundation        | 2.0       |
-| Python| Python       | 3.11.6      |
-| ChatGPT | OpenAI       | 3.5 Turbo     |
+| FTK Imager               | AccessData   | 4.7.1.2        |
+| Volatility   |   Volatility Foundation  | 2.0            |
+| Python                   | Python       | 3.11.6         |
+| ChatGPT                  | OpenAI       | 3.5 Turbo      |
 
 # Investigación
 
+Comenzamos cargando la imagen del disco del servidor comprometido con el software *FTK Imager*, y empezamos a buscar pistas que arrojen luz sobre los hechos acontecidos. En la ruta */var/www* observamos un fichero **ping.php**, que resulta de gran importancia para el caso. 
+
+Su funcionalidad original consiste en realizar, como su propio nombre indica, ping a la dirección IP que escribas en el cuadro de texto, pero esto esconde una vulnerabilidad de inyección de comandos, que permite al atacante acceder al sistema.
+
+![IMG1](./img/ruta_ping.php-contenido.png)
+
+Continuando el análisis en la carpeta */var*, vemos que la aplicación web está hosteada en Apache, de modo que nos dirigimos a la carpeta */var/apache2/log*, donde encontramos los logs de Apache. Si los revisamos veremos una IP distinta al localhost, que resulta ser la 192.168.1.6. Tras esta IP, se accede a la aplicación desde un sistema operativo Linux 86x64, y se hace ping a la dirección 192.168.1.28.
+
+![IMG2](./img/ip-so-atacante.png)
+
+Además de esto, vemos un fichero passwd.txt en la carpeta /var/www que definitivamente no debería estar ahí, por lo que analizamos el volcado de memoria RAM buscando la ejecución de algún comando relacionado con este fichero.
+
+![IMG3](./img/passwd-var-ruta-contenido.png)
+
+Valiéndonos de comandos de Linux, tomamos el volcado de RAM y buscamos por el comando *cat /etc/passwd*, y encontramos que se redirigió el contenido del fichero **passwd** a través de cat utilizando una inyección de comandos con ping.php.
+
+![IMG4](./img/string_ping_passwd.png)
+
+De esto deducimos que el fichero passwd original no muestra actividad debido a la redirección del contenido de este a otro fichero passwd.txt, por lo que no se abrió el original.
 
 ## Timeline
 
+[...]
 
 # Conclusiones
 
+En base a los hallazgos recabados del volcado de memoria RAM y la imagen del disco proporcionadas, llegamos a las conclusiones siguientes:
 
+- 
 
 # Anexos
 
