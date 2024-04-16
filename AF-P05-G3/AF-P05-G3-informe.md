@@ -12,7 +12,11 @@
 
 # Resumen ejecutivo
 
+En el presente informe se recoge el proceso de análisis realizado por *Netmancer Inc.* al volcado de memoria RAM y la imagen del disco tomadas del servidor vulnerado.
 
+Durante el proceso de investigación se hace uso de herramientas como Volatility y Python para realizar un excrutinio de la memoria con el propósito de aportar información que arroje luz sobre la naturaleza y la autoría del incidente acaecido en la empresa.
+
+A partir del volcado de RAM y la imagen de disco suministrados, se ha determinado la naturaleza del ataque como una inyección de comandos a través de la página ping.php, lo que permitió exfiltrar el fichero /etc/passwd del servidor comprometido.
 
 # Introducción
 
