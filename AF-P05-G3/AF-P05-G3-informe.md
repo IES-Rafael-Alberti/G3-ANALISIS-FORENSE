@@ -5,8 +5,7 @@
 3. [Objetivos](#objetivos)
 4. [Alcance](#alcance)
 5. [Metodología](#metodología)
-6. [Investigación](#investigación)
-
+6. [Investigación](#investigación)  
    6.1 [Timeline](#timeline)
 7. [Conclusiones](#conclusiones)
 8. [Anexos](#anexos)
@@ -14,13 +13,17 @@
 # Resumen ejecutivo
 
 
+
 # Introducción
+
 
 
 # Objetivos
 
+La investigación forense del caso persigue el objetivo de seguir el rastro digital del perpetrador de la exfiltración de datos, posterior a la explotaxión de la vulnerabilidad presente en la aplicación web usada en la compañía. Como resumen, debemos lograr averiguar la identidad del atacante y descubrir sus motivaciones.
 
 # Alcance
+
 
 
 # Metodología
