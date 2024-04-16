@@ -24,7 +24,7 @@ La investigación forense del caso persigue el objetivo de seguir el rastro digi
 
 # Alcance
 
-
+El alcance de la investigación forense se extiende al volcado de RAM realizado sobre el servidor comprometido, así como a la imagen del disco del mismo.
 
 # Metodología
 
