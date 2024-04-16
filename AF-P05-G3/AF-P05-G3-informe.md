@@ -116,7 +116,7 @@ Su funcionalidad original consiste en realizar, como su propio nombre indica, pi
 
 ![IMG1](./img/ruta_ping.php-contenido.png)
 
-Continuando el análisis en la carpeta */var*, vemos que la aplicación web está hosteada en Apache, de modo que nos dirigimos a la carpeta */var/apache2/log*, donde encontramos los logs de Apache. Si los revisamos veremos una IP distinta al localhost, que resulta ser la 192.168.1.6. Tras esta IP, se accede a la aplicación desde un sistema operativo Linux 86x64, y se hace ping a la dirección 192.168.1.28.
+Continuando el análisis en la carpeta */var*, vemos que la aplicación web está hosteada en Apache, de modo que nos dirigimos a la carpeta */var/apache2/log*, donde encontramos los logs de Apache. Si los revisamos veremos una IP distinta al localhost, que resulta ser la 192.168.1.6. Tras esta IP, se accede a la aplicación desde un sistema operativo Linux x86_64, y se hace ping a la dirección 192.168.1.28.
 
 ![IMG2](./img/ip-so-atacante.png)
 
@@ -138,7 +138,9 @@ De esto deducimos que el fichero passwd original no muestra actividad debido a l
 
 En base a los hallazgos recabados del volcado de memoria RAM y la imagen del disco proporcionadas, llegamos a las conclusiones siguientes:
 
-- 
+- Desde la dirección IP 192.168.1.6 y con un sistema operativo Linux x86_64, se hace ping a la dirección 192.168.1.28 a través de la aplicación web ping.php.
+- Los ping realizados incluyen el comando *cat /etc/passwd > passwd.txt*, que permite volcar el contenido del fichero passwd en un fichero passwd.txt.
+- La aplicación web ping.php presenta una vulnerabilidad de inyección de comandos del sistema operativo.
 
 # Anexos
 
