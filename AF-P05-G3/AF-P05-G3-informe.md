@@ -145,7 +145,7 @@ De estos datos pueden inferirse también otros, como el sistema operativo del us
 
 Vemos también en el directorio principal para servir la web de apache, _var/www_, un fichero _passwd.txt_ cuyo contenido es idéntico al archivo principal de usuarios de Linux _passwd_, como puede verse en la siguiente imagen comparativa:
 
-![IMG6](image-6.png)
+![IMG6](./img/image-6.png)
 > *Ambos extraídos de la captura de disco del servidor afectado, a la izquierda el fichero original de usuarios ubicado en /etc/passwd y a la derecha el fichero passwd.txt ubicado en var/www*
 
 Debido a estos hallazgos, procedemos a analizar el volcado de memoria RAM buscando la ejecución de algún comando relacionado con este fichero.
