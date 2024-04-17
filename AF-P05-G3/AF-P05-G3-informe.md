@@ -162,7 +162,7 @@ De esto podemos deducir también que el fichero _passwd_ original no muestra act
 
 ## Timeline
 
-[...]
+![alt text](image.png)
 
 # Conclusiones
 
