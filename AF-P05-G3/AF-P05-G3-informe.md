@@ -20,15 +20,22 @@ A partir del volcado de RAM y la imagen de disco suministrados, se ha determinad
 
 # Introducción
 
-En el presente documento se detallan los hallazgos encontrados tras llevar a cabo el análisis forense del volcado de memoria RAM y la imagen del disco del servidor corporativo comprometido. Se incluyen además, anexos que hacen referencia a los hallazgos mencionados, a la cadena de custodia y un documento generado sobre la integridad de los ficheros y el volcado de memoria, comprobando y comparando dichos hashes. La metodología seguida durante la investigación y las herramientas que se han utilizado a lo largo del proceso de investigación han sido adjuntadas también.
+En el presente documento se detallan los hallazgos encontrados tras llevar a cabo el análisis forense del volcado de memoria RAM y la imagen del disco del servidor corporativo comprometido. 
+
+Se incluyen además, anexos que hacen referencia a los hallazgos mencionados, a la cadena de custodia y un documento generado sobre la integridad de los ficheros y el volcado de memoria, comprobando y comparando dichos hashes. La metodología seguida durante la investigación y las herramientas que se han utilizado a lo largo del proceso de investigación han sido adjuntadas también.
 
 # Objetivos
 
-La investigación forense del caso persigue el objetivo de seguir el rastro digital del perpetrador de la exfiltración de datos, posterior a la explotaxión de la vulnerabilidad presente en la aplicación web usada en la compañía. Como resumen, debemos lograr averiguar la identidad del atacante y descubrir sus motivaciones.
+La investigación forense del caso persigue el objetivo de seguir el rastro digital del perpetrador de la exfiltración de datos, posterior a la explotaxión de la vulnerabilidad presente en la aplicación web usada en la compañía. Como resumen, debemos lograr averiguar la identidad del atacante y descubrir sus motivaciones. Es por ello, que se establecen los siguientes objetivos:
+
+- Determinar la vulnerabilidad explotada por el atacante que a través de la cual logró su intrusión
+- Conocer la IP del atacante, su sistema operativo y el cliente utilizado como vector de ataque
+- Investigar rastros de posibles métodos de escalada de privilegios u otras técnicas ofensivas de seguridad.
+- Examinar los posibles datos que fueron exfiltrados durante el ataque
 
 # Alcance
 
-El alcance de la investigación forense se extiende al volcado de RAM realizado sobre el servidor comprometido, así como a la imagen del disco del mismo.
+El alcance de la investigación forense se extiende a la totalidad de un volcado de RAM realizado sobre el servidor comprometido, así como a la imagen de disco del mismo.
 
 # Metodología
 
@@ -110,25 +117,48 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 # Investigación
 
-Comenzamos cargando la imagen del disco del servidor comprometido con el software *FTK Imager*, y empezamos a buscar pistas que arrojen luz sobre los hechos acontecidos. En la ruta */var/www* observamos un fichero **ping.php**, que resulta de gran importancia para el caso. 
+En primer lugar se intenta determinar la IP del posible atacante. Para ello se examina con ayuda de la herramienta _volatility_ el histórico de conexiones de red para encontrar que existe una conexión establecida a través del demonio del protocolo SMB, **smbd**, a su puerto habitual **139**, desde la dirección IP **192.168.1.6**. 
 
-Su funcionalidad original consiste en realizar, como su propio nombre indica, ping a la dirección IP que escribas en el cuadro de texto, pero esto esconde una vulnerabilidad de inyección de comandos, que permite al atacante acceder al sistema.
+![alt text](image.png)
 
-![IMG1](./img/ruta_ping.php-contenido.png)
+Se verifica que la IP de la máquina analizada corresponde con **192.168.1.28** mediante el análisis de la configuración del adaptador de red proporcionado por la herramienta **volatility**.
 
-Continuando el análisis en la carpeta */var*, vemos que la aplicación web está hosteada en Apache, de modo que nos dirigimos a la carpeta */var/apache2/log*, donde encontramos los logs de Apache. Si los revisamos veremos una IP distinta al localhost, que resulta ser la 192.168.1.6. Tras esta IP, se accede a la aplicación desde un sistema operativo Linux x86_64, y se hace ping a la dirección 192.168.1.28.
+![alt text](image-1.png)
+
+Tras realizar este hallazgo, se procede al análisis de la imagen de disco proporcionada mediante el software *FTK Imager*. Se siguen buscando más trazas de esta dirección IP hasta dar con una correlación entre el archivo de registros de acceso de **Apache2** y el registro de autenticación del sistema _auth.log_.
+
+En el fichero _var/log/auth.log_, el cual es un registro de autenticación en los sistemas Linux, encontramos repetidos intentos fallidos de inicio de sesión a través de una conexión ssh por el usuario "_msfconsole_" proveniente desde la susodicha IP **192.168.1.6**, seguido de una autenticación exitosa para el usuario administrador **msfadmin**.
+
+![alt text](image-3.png)
+
+Transcurrido apenas 1 min de ese evento, encontramos que el usuario msfadmin copia un fichero llamado `ping.php` del directorio `/home/msfadmin/ping.php` al directorio `/var/www`. Se observa en la captura que se abren y se cierran sesiones para el usuario `root`. Esto se debe al funcionamiento del comando `sudo` de linux, que permite ejecutar ciertas instrucciones aisladas como usuario de máximos privilegios (_root_). Además de copiar el fichero `ping.php`, luego lo abre con el editor de texto `nano` mediante el uso de `sudo`.
+
+![alt text](image-5.png)
+
+Analizando el registro de accesos de Apache2, ubicado en */var/apache2/access.log*, vemos numerosas peticiones de tipo POST de nuevo por parte de la IP **192.168.1.6** solicitando el recurso `/ping.php`, además con códigos HTTP 200, los cuáles significan éxito en la comunicación.
 
 ![IMG2](./img/ip-so-atacante.png)
 
-Además de esto, vemos un fichero passwd.txt en la carpeta /var/www que definitivamente no debería estar ahí, por lo que analizamos el volcado de memoria RAM buscando la ejecución de algún comando relacionado con este fichero.
+De estos datos pueden inferirse también otros, como el sistema operativo del usuario con la susodicha IP, el cual corresponde con _Linux x86_64_ debido al User agent en la petición HTTP. Por las marcas de tiempo, podemos observar que en primer lugar el archivo `ping.php` fue colocado en ese directorio y luego se solicitó externamente a través de una petición HTTP.
 
-![IMG3](./img/passwd-var-ruta-contenido.png)
+![IMG1](./img/ruta_ping.php-contenido.png)
 
-Valiéndonos de comandos de Linux, tomamos el volcado de RAM y buscamos por el comando *cat /etc/passwd*, y encontramos que se redirigió el contenido del fichero **passwd** a través de cat utilizando una inyección de comandos con ping.php.
+Vemos también en el directorio principal para servir la web de apache, _var/www_, un fichero _passwd.txt_ cuyo contenido es idéntico al archivo principal de usuarios de Linux _passwd_, como puede verse en la siguiente imagen comparativa:
+
+![alt text](image-6.png)
+> *Ambos extraídos de la captura de disco del servidor afectado, a la izquierda el fichero original de usuarios ubicado en /etc/passwd y a la derecha el fichero passwd.txt ubicado en var/www*
+
+Debido a estos hallazgos, procedemos a analizar el volcado de memoria RAM buscando la ejecución de algún comando relacionado con este fichero.
+
+Utilizando el comando `strings` de Linux, que busca cadenas de texto legibles en un archivo, tomamos el volcado de RAM y realizamos varias pruebas que involucren comandos de linux habituales (`ls`, `cat`, `copy`...) y la cadena *passwd*, y encontramos una cadena de código HTML que involucra la ruta básica del archivo */etc/passwd* y el archivo *passwd.txt*.  
 
 ![IMG4](./img/string_ping_passwd.png)
 
-De esto deducimos que el fichero passwd original no muestra actividad debido a la redirección del contenido de este a otro fichero passwd.txt, por lo que no se abrió el original.
+El atributo "value" contiene lo que parece ser una cadena que podría en ciertos casos interpretarse como maliciosa, ya que añade un operador lógico `&&` junto a un comando de terminal de linux, que involucraría a `cat` y una URI de un archivo. Esto es una práctica frecuente en las denominadas inyecciones de código. 
+
+Sin intención de declarar el hecho de que el archivo `ping.php` haya sido utilizado para fines maliciosos, tan solo efectuando una suposición que quizá aporte un contexto importante, es un detalle importante mencionar que en el caso de que el archivo `ping.php` hubiese sido el que efectuara esta instrucción, debido al funcionamiento base del comando `cat` de Linux, el archivo resultante que se establece como salida, es decir *passwd.txt*, habría quedado ubicado en el mismo directorio donde estuviera el archivo `ping.php`, es decir, `/var/www`, donde se ubica. 
+
+De esto podemos deducir también que el fichero _passwd_ original no muestra actividad debido a la redirección del contenido de este a otro fichero passwd.txt, por lo que no se abrió el original.
 
 ## Timeline
 
@@ -138,9 +168,10 @@ De esto deducimos que el fichero passwd original no muestra actividad debido a l
 
 En base a los hallazgos recabados del volcado de memoria RAM y la imagen del disco proporcionadas, llegamos a las conclusiones siguientes:
 
-- Desde la dirección IP 192.168.1.6 y con un sistema operativo Linux x86_64, se hace ping a la dirección 192.168.1.28 a través de la aplicación web ping.php.
-- Los ping realizados incluyen el comando *cat /etc/passwd > passwd.txt*, que permite volcar el contenido del fichero passwd en un fichero passwd.txt.
-- La aplicación web ping.php presenta una vulnerabilidad de inyección de comandos del sistema operativo.
+- Se ha realizado una autenticación remota exitosa a través de `ssh` en la máquina tras múltiples intentos fallidos repetidos para la dirección IP **192.168.1.6**.
+- Desde la dirección IP 192.168.1.6 y con un sistema operativo Linux x86_64, a través de una petición HTTP se solicita el recurso `/ping.php` repetidas veces, tras ser ubicado previamente en el directorio `/var/www` por el usuario *msfadmin*.
+- En la memoria volátil de la máquina existe presencia de una cadena frecuentemente utilizada en los ataques de tipo inyección de código concretamente `192.168.1.28 && cat /etc/passwd > passwd.txt`, que permitiría volcar el contenido del fichero passwd en un fichero passwd.txt.
+- La actual implementación del archivo `ping.php`, presente en la captura del disco de la máquina, presenta una vulnerabilidad de inyección de comandos del sistema operativo al no tener el input del usuario sanitizado.
 
 # Anexos
 
