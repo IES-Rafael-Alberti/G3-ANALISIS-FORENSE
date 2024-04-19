@@ -1,0 +1,129 @@
+May 20 10:44:06 metasploitable sshd[4122]: Server listening on :: port 22.
+May 20 10:44:06 metasploitable sshd[4122]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+May 20 10:44:35 metasploitable login[4646]: pam_unix(login:session): session opened for user msfadmin by LOGIN(uid=0)
+May 20 10:47:39 metasploitable sshd[4771]: Accepted password for msfadmin from 192.168.1.6 port 59648 ssh2
+May 20 10:47:39 metasploitable sshd[4774]: pam_unix(sshd:session): session opened for user msfadmin by (uid=0)
+May 20 10:47:45 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/ls
+May 20 10:47:45 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:47:45 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:50:54 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=./preparar_todo.sh
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:50:54 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=./actualizar_sistema.sh
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:50:54 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp /etc/apt/sources.list ./sources.list.bck
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:50:54 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp ./deb.txt /etc/apt/sources.list
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:50:54 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/usr/bin/apt-get update
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:50:54 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:01 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/usr/bin/apt-get install -y linux-headers-2.6.24-16-server libelfg0-dev zip
+May 20 10:51:01 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:01 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:06 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=./crear_perfil_memoria.sh
+May 20 10:51:06 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:06 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:39 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2/dwarf-20140208 ; USER=root ; COMMAND=/bin/cp dwarfdump/dwarfdump /usr/bin
+May 20 10:51:39 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:39 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:39 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2/dwarf-20140208 ; USER=root ; COMMAND=/bin/chmod 755 /usr/bin/dwarfdump
+May 20 10:51:39 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:39 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:40 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/chown msfadmin:msfadmin metasploitable2.zip
+May 20 10:51:40 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:40 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:40 metasploitable sudo:     root : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/chmod 644 metasploitable2.zip
+May 20 10:51:40 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:40 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:51:40 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=./instalar_lime.sh
+May 20 10:51:40 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:51:40 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:53:01 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=./instalar_guest_additions.sh
+May 20 10:53:01 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:53:01 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:53:01 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/media/cdrom/VBoxLinuxAdditions.run
+May 20 10:53:01 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 10:53:01 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 10:53:13 metasploitable useradd[10774]: new user: name=vboxadd, UID=115, GID=1, home=/var/run/vboxadd, shell=/bin/false
+May 20 11:04:45 metasploitable sshd[11119]: Invalid user msfconsole from 192.168.1.6
+May 20 11:04:45 metasploitable sshd[11119]: Failed none for invalid user msfconsole from 192.168.1.6 port 59684 ssh2
+May 20 11:04:48 metasploitable sshd[11119]: pam_unix(sshd:auth): check pass; user unknown
+May 20 11:04:48 metasploitable sshd[11119]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.6 
+May 20 11:04:51 metasploitable sshd[11119]: Failed password for invalid user msfconsole from 192.168.1.6 port 59684 ssh2
+May 20 11:04:54 metasploitable sshd[11119]: pam_unix(sshd:auth): check pass; user unknown
+May 20 11:04:56 metasploitable sshd[11119]: Failed password for invalid user msfconsole from 192.168.1.6 port 59684 ssh2
+May 20 11:05:01 metasploitable sshd[11119]: pam_unix(sshd:auth): check pass; user unknown
+May 20 11:05:02 metasploitable sshd[11119]: Failed password for invalid user msfconsole from 192.168.1.6 port 59684 ssh2
+May 20 11:05:02 metasploitable sshd[11119]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.6 
+May 20 11:05:21 metasploitable sshd[11122]: Accepted password for msfadmin from 192.168.1.6 port 59688 ssh2
+May 20 11:05:21 metasploitable sshd[11124]: pam_unix(sshd:session): session opened for user msfadmin by (uid=0)
+May 20 11:05:21 metasploitable sshd[11124]: Received disconnect from 192.168.1.6: 11: disconnected by user
+May 20 11:05:21 metasploitable sshd[11124]: pam_unix(sshd:session): session closed for user msfadmin
+May 20 11:05:44 metasploitable sshd[11127]: Accepted password for msfadmin from 192.168.1.6 port 59690 ssh2
+May 20 11:05:44 metasploitable sshd[11129]: pam_unix(sshd:session): session opened for user msfadmin by (uid=0)
+May 20 11:05:44 metasploitable sshd[11129]: Received disconnect from 192.168.1.6: 11: disconnected by user
+May 20 11:05:44 metasploitable sshd[11129]: pam_unix(sshd:session): session closed for user msfadmin
+May 20 11:06:13 metasploitable sudo: msfadmin : TTY=pts/1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp /home/msfadmin/ping.php /var/www
+May 20 11:06:13 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:06:13 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:07:12 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/usr/bin/nano /var/www/ping.php
+May 20 11:07:12 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:07:12 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:09:01 metasploitable CRON[11150]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 20 11:09:01 metasploitable CRON[11150]: pam_unix(cron:session): session closed for user root
+May 20 11:10:27 metasploitable sshd[4774]: Received disconnect from 192.168.1.6: 11: disconnected by user
+May 20 11:10:27 metasploitable sshd[4774]: pam_unix(sshd:session): session closed for user msfadmin
+May 20 11:14:56 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=./captura_memoria.sh
+May 20 11:14:56 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:14:56 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:14:56 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/sbin/insmod lime-2.6.24-16-server.ko path=captura_ram.lime format=lime
+May 20 11:14:56 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:14:56 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:15:00 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/chown msfadmin:msfadmin captura_ram.lime
+May 20 11:15:00 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:15:00 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:15:00 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/sbin/rmmod lime
+May 20 11:15:00 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:15:00 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:17:01 metasploitable CRON[11230]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 20 11:17:01 metasploitable CRON[11230]: pam_unix(cron:session): session closed for user root
+May 20 11:17:19 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp metasploitable2.zip /media/meta2
+May 20 11:17:19 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:17:19 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:17:32 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp captura_ram.lime /media/meta2
+May 20 11:17:32 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:17:32 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:19:10 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp captura_ram.lime
+May 20 11:19:10 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:19:10 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:19:18 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp captura_ram.lime /media/sf?meta2
+May 20 11:19:18 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:19:18 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:19:26 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp captura_ram.lime /media/sf_meta2
+May 20 11:19:26 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:19:26 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:19:57 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp captura_ram.lime /var/www
+May 20 11:19:57 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:19:57 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:20:21 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/cp metasploitable2.zip /var/www
+May 20 11:20:21 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:20:21 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:21:56 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/rm /var/www/captura_ram.lime
+May 20 11:21:56 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:21:56 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 11:22:03 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/var/tmp/metasploitable2 ; USER=root ; COMMAND=/bin/rm /var/www/metasploitable2.zip
+May 20 11:22:03 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 11:22:03 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 12:00:22 metasploitable sshd[4449]: Server listening on :: port 22.
+May 20 12:00:22 metasploitable sshd[4449]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+May 20 12:00:33 metasploitable login[5022]: pam_unix(login:session): session opened for user msfadmin by LOGIN(uid=0)
+May 20 12:01:44 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/dd if=/dev/sda1 of=/media/sf_vicente/imagen.dd conv=noerror,notrunc,sync
+May 20 12:01:44 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 12:01:44 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+May 20 12:02:46 metasploitable sudo: msfadmin : TTY=tty1 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/dd if=/dev/sda of=/media/sf_vicente/imagen.dd conv=noerror,notrunc,sync
+May 20 12:02:46 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+May 20 12:02:46 metasploitable sudo: pam_unix(sudo:session): session closed for user root
