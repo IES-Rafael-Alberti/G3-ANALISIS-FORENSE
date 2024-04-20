@@ -100,9 +100,8 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 | Nombre de la herramienta | Distribuidor | Versión        |
 |--------------------------|--------------|----------------|
 | FTK Imager               | AccessData   | 4.7.1.2        |
-| Volatility   |   Volatility Foundation  | 2.0            |
-| Python                   | Python       | 3.11.6         |
-| ChatGPT                  | OpenAI       | 3.5 Turbo      |
+| DB Browser for SQLite    |     -        | 3.12.2         | 
+| Android Backup Procesor  |  Nelenkov    |  -              |
 
 # Investigación
 
