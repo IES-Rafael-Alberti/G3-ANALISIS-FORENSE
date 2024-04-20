@@ -20,11 +20,37 @@
 
 # Objetivos
 
-[...]
+Los objetivos que se persiguen cumplir en este informe son los siguientes:
+
+- Construir una línea de tiempo que clarifique y contextualicen los eventos acontecidos
+- Conseguir vestigios que indiquen acoso a la estudiante Lassandra Cordalis en aplicaciones de chat.
+- Comprobar si Atalus Grasstem está involucrado en un posible _defacement_ (modificación sin consentimiento del perfil de la víctima). 
 
 # Alcance
 
-[...]
+El alcance de este informe se limita a las siguientes fuentes de evidencia digital, organizadas según su origen o propietario:
+
+### General
+- Imagen de memoria de una tarjeta SD perteneciente a una cámara IP de una de las Aulas.
+
+### Lassandra Cordalis (Víctima)
+- Imagen del disco duro del PC de clase
+- Copia de seguridad de su teléfono móvil (ADB - Android Debug Bridge): **Xiaomi Redmi Note 11** 
+- Extracto de una copia de seguridad del servidor de google.
+- Extracto de sus conversaciones de WhatsApp
+- Extracto de sus conversaciones de Telegram
+
+### Atalus Grasstem (Principal sospechoso)
+- Extracto de sus conversaciones de WhatsApp
+- Copia de seguridad de su teléfono móvil (ADB - Android Debug Bridge): X25
+- Extracción de copia seguridad del servidor de google.
+
+### Camillo Richbald
+- Copia de seguridad de su teléfono móvil (ADB - Android Debug Bridge): Xiaomi Redmi Note 11
+- Extracción de copia de seguridad de WhatsApp
+- Extracción copia de seguridad del servidor Google
+
+Cada uno de estas fuentes será analizadas con las herramientas pertinentes en su totalidad sin restricciones.
 
 # Metodología
 
@@ -118,6 +144,6 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 # Anexos
 
-- [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
-- [Anexo 2 - Registro de cadena de custodia](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%202%20-%20Registro%20de%20cadena%20de%20custodia.xlsx)
-- [Anexo 3 - Índice de hallazgos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P04-G3/Anexos/Anexo%202%20-%20Registro%20de%20cadena%20de%20custodia.xlsx)
+- [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P07-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
+- [Anexo 2 - Registro de cadena de custodia](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P07-G3/Anexos/Anexo%202%20-%20Registro%20de%20cadena%20de%20custodia.xlsx)
+- [Anexo 3 - Índice de hallazgos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P07-G3/Anexos/Anexo%202%20-%20Registro%20de%20cadena%20de%20custodia.xlsx)
