@@ -127,7 +127,7 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 |--------------------------|--------------|----------------|
 | FTK Imager               | AccessData   | 4.7.1.2        |
 | DB Browser for SQLite    |     -        | 3.12.2         | 
-| Android Backup Procesor  |  Nelenkov    |  -              |
+| Android Backup Procesor  |  Nelenkov    |  -             |
 
 # Investigación
 
