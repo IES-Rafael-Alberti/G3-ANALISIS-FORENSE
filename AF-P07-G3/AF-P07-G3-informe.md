@@ -159,20 +159,20 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 > Teniendo esto en cuenta:
   
 
-  Básicamente partimos de un inicio de sesión en Instagram desde un dispositivo Windows (marcado por su agente de usuario) el **Viernes 28 de abril de 2023 a las 18:29** (ID). Este hecho parece verse correlacionado con múltiples hallazgos. En primer lugar encontramos en **la tarjeta SD de la cámara IP** investigada un vídeo en el que dos individuos, un chico y una chica, se sientan frente a un ordenador con lo que aparentemente resulta el sistema operativo Windows 10 (ID).   Este video tiene una marca de tiempo que indica que fue grabado a el **Viernes 28 de abril a las 18:00:32**. Sería de vital importancia determinar el origen de ésta cámara IP, ya que a pesar de que se aporta como fuente de evidencia no se especifica donde estaba ubicada ni de donde proviene.
+  Básicamente partimos de un inicio de sesión en Instagram desde un dispositivo Windows (marcado por su agente de usuario) el **Viernes 28 de abril de 2023 a las 18:29** (ID). Este hecho parece verse correlacionado con múltiples hallazgos. En primer lugar encontramos en **la tarjeta SD de la cámara IP** investigada un vídeo en el que dos individuos, un chico y una chica, se sientan frente a un ordenador con lo que aparentemente resulta el sistema operativo Windows 10 (ID). Este video tiene una marca de tiempo que indica que fue grabado a el **Viernes 28 de abril a las 18:00:32**. Sería de vital importancia determinar el origen de ésta cámara IP, ya que a pesar de que se aporta como fuente de evidencia no se especifica donde estaba ubicada ni de donde proviene.
   
-  En el PC de la víctima encontramos entre sus registros la existencia de un script en el lenguaje _powershell_ que ha sido identificado como un _keylogger_, un archivo malicioso cuya funcionalidad consiste en crear un registro de las teclas presionadas en un dispositivo. Se ha llegado a esta conclusión mediante el examen por nuestra parte de la naturaleza de su código y el servicio proporcionado por la web VirusTotal, una organización de terceros que ofrece un análisis gratuito de este tipo de archivos sospechosos de ser maliciosos, la cual determina que efectivamente existe relación con malware concretamente del tipo _keylogger_:
+  En el PC de la víctima encontramos entre sus registros la existencia de un script en el lenguaje _powershell_ que ha sido identificado como un _keylogger_ (Hallazgo 1), un archivo malicioso cuya funcionalidad consiste en crear un registro de las teclas presionadas en un dispositivo. Se ha llegado a esta conclusión mediante el examen por nuestra parte de la naturaleza de su código y el servicio proporcionado por la web VirusTotal, una organización de terceros que ofrece un análisis gratuito de este tipo de archivos sospechosos de ser maliciosos, la cual determina que efectivamente existe relación con malware concretamente del tipo _keylogger_:
 
  ![alt text](./img/image-2.png)
 
- El archivo ha sido extraído y adjunto en el índice de hallazgos para la verificación de su hash presente en la ./img/imagen o su análisis por parte del mismo servicio. En el hallazgo (ID) se muestra el historial de la terminal _powershell_ (ID) del ordenador de Lassandra, con última fecha de modificación datada en el día **28 de Abril de 2023 a las 18:28:30**, en el contenido del mismo se registran múltiples ejecuciones del anteriormente mencionado archivo. 
+ El archivo ha sido extraído y adjunto en el índice de hallazgos para la verificación de su hash presente en la ./img/imagen o su análisis por parte del mismo servicio. En el hallazgo 1 se muestra el historial de la terminal _powershell_ del ordenador de Lassandra, con última fecha de modificación datada en el día **28 de Abril de 2023 a las 18:28:30**, en el contenido del mismo se registran múltiples ejecuciones del anteriormente mencionado archivo. 
  
  Otro hallazgo importante en la cámara IP es un vídeo que muestra como un encapuchado manipula e interactúa con el mismo ordenador mencionado previamente. En las imágenes puede apreciarse como sujeta algo con la mano derecha que parece introducir en el ordenador. Se han revisado los registros del ordenador de Lassandra Cordalis para determinar si se conectó algún dispositivo USB durante las fechas de los eventos acontecidos, pero las únicas conexiones registradas datan del día **26 de Abril de 2023**. Asímismo, el último inicio de sesión del usuario "admin" contenido en este ordenador fue el día **28 de Abril del 2023 a las 18:21:37**. 
  
  Asociamos a estos eventos el siguiente hallazgo encontrado en las conversaciones de Telegram entre el sospechoso Atalus Grasstem y la víctima Lassandra Cordalis momentos después de los eventos alrededor al inicio de sesión en instagram, las imágenes de las cámaras y la ejecución del archivo malicioso, el cual consiste en varios mensajes en los que Atalus afirma, cito textualmente según el contenido de los mensajes: 
  > "Me he tomado la libertad de encontrar tus datos debido a tu pequeño desliz. No me gusta que me ignoren. Lo único que quería era un poco de tu atención (...)
 
- Puede comprobarse en el hallazgo (ID) el cual consiste en un extracto de la conversación de telegram aportada desde la fuente de evidencia **LC.5**.
+ Puede comprobarse en el hallazgo 4 el cual consiste en un extracto de la conversación de telegram aportada desde la fuente de evidencia **LC.5**.
 
  ![alt text](./img/image-3.png)
 
@@ -211,6 +211,7 @@ En estas conversaciones se menciona el término "_Rubber Ducky_", el cual es un 
 Sumado a esto, se realiza un hallazgo en las búsquedas de Google de Atalus Grasstem (Fuente de vestigios **AG.3**) en las que se encuentra la misma foto que se colocó como avatar de la cuenta de Instagram de Lassandra Cordalis el **Sábado 29 de Abril de 2023 a las 22:46**:
 
 ![alt text](./img/image-11.png)
+
 _Búsqueda encontrada en la fuente de vestigios **AG.3**_
 
 ![alt text](./img/image-12.png)
