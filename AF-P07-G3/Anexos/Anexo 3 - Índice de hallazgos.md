@@ -1,20 +1,20 @@
-# Índice de hallazgos
+ # Índice de hallazgos
 
-## Nombre del equipo
+## Keylogger
 
-Esta captura de pantalla muestra el nombre del equipo.
-
-| ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
-|----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| 1 | ![equipo](../img/equipo.png) | - | -| - | - | - | 84A08D9A11B47903EF88F963D56BB3C0E7FB716B86D9E7E85959ABF782EFDCAC |
-
-## Documento editado por Pacopepe el día de la falsa alarma
-
-Esta captura de pantalla muestra el documento editado por el usuario Pacopepe el día de la falsa alarma.
+Esta captura de pantalla muestra el malware encontrado en el equipo de Lassandra.
 
 | ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| 2 | ![handlesdocumento](../img/handlesdocumento.png) | - | - | - | - | - | 63D3F2788C5A693442CD33E511EC1F5A3E932837863F47E3262B33A7FB6C3B00 |
+| 1 | ![keylogger](../img/keylogger.png) | 2.377 bytes | C:\\Users\\admin\\keylogger.ps1| 26/04/2023 15:35:08 | 28/04/2023 16:28:30 | 28/04/2023 16:27:49 | 1889E0226E042E540B7DD28B24530D6A536EC117EFF758D24E3C607A47D68052 |
+
+## Historial de PowerShell
+
+Esta captura de pantalla muestra el historial de PowerShell en el equipo de Lassandra.
+
+| ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
+|----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
+| 2 | ![Historial-PowerShell](../img/ConsoleHost_History.png) | 288 bytes | C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadline\\ConsoleHost_history.txt | 28/04/2023 16:28:30 | 28/04/2023 16:28:30 | 26/04/2023 16:13:09 | 9C663F3981A296CBB137A8DA730E46CEA16181C345906584038B6E14358B7D7D |
 
 ## Datos brutos
 
