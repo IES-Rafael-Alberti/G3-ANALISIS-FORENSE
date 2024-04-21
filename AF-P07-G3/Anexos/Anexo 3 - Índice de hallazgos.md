@@ -16,8 +16,8 @@ Esta captura de pantalla muestra el historial de PowerShell en el equipo de Lass
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
 | 2 | ![Historial-PowerShell](../img/ConsoleHost_History.png) | 288 bytes | C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadline\\ConsoleHost_history.txt | 28/04/2023 16:28:30 | 28/04/2023 16:28:30 | 26/04/2023 16:13:09 | 9C663F3981A296CBB137A8DA730E46CEA16181C345906584038B6E14358B7D7D |
 
-## Datos brutos
+## Historial de Chrome del móvil de Atalus
 
 | ID | Contenido | Tamaño lógico | Ruta | Modification Time | Access Time | Creation Time | Hash SHA-256 |
 |----|-----------|---------------|------|-------------------|-------------|---------------|--------------|
-| 3 | ![pakopepe88](../img/pakopepe88.png) | - | - | - | - | - | 69CD6E9CDF2E30C54FAE4575A5FE80E73E7DF3B7D99632701B42D0D306A69957 |
+| 3 | ![DBChrome](../img/browser2-db.png) | 1.093.632 bytes | /storage/emulated/0/Android/apps/com.android.browser/db/browser2.db | - | - | - | A2BE3A1C3BF4F32BCEA3CFF31DDE9DE2363A5FCA2792835543B15C9654D4D1B8 |
