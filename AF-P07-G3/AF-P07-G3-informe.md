@@ -16,7 +16,11 @@
 
 # Introducción
 
-[...]
+En este documento se detallan los hallazgos encontrados a través del análisis de las adquisiciones dadas de las copias de seguridad de Whatsapp, Telegram, Google Database y las imagenes del Rubber Ducky, del disco duro del ordenador utilizado por la alumna Lassandra y de la cámara IP. 
+
+Se incluyen además una serie de anexos que hace referencia a los hallazgos que se han encontrado, la cadena de custodia y los hashes sobre la integridad de las adquisiciones que se nos ha suministrado.
+
+También incluye la metodología utilizada y una línea temporal de los hallazgos encontrados que nos permite con mayor certeza y claridad el incidente.
 
 # Objetivos
 
