@@ -138,9 +138,11 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 
 | Nombre de la herramienta | Distribuidor | Versión        |
 |--------------------------|--------------|----------------|
-| FTK ./img/imager               | AccessData   | 4.7.1.2        |
+| FTK Imager               | AccessData   | 4.7.1.2        |
 | DB Browser for SQLite    |     -        | 3.12.2         | 
 | Android Backup Procesor  |  Nelenkov    |  -             |
+| Excalidraw | Open Source    |  0.17.6         |
+| Windows Registry Recovery | MiTec    |  3.1.1.0         |
 
 # Investigación
 
