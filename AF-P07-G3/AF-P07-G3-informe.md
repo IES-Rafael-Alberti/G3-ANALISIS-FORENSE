@@ -12,7 +12,15 @@
 
 # Resumen ejecutivo
 
-[...]
+En este informe se presentan los resultados del análisis forense realizado por Netmancer Inc. sobre diversas fuentes de datos relacionadas con Lassandra Cordalis, Atalus Grasstem y Camillo Richbald. Se examinaron copias de seguridad de los servidores de Google, conversaciones de WhatsApp, copias de seguridad ADB, copias de seguridad del servidor de Instagram, conversaciones de Telegram y imágenes del disco del equipo de Lassandra en el instituto, incluyendo la imagen de la tarjeta SD de la cámara IP Imou.
+
+Durante el proceso de la investigación y a partir de los registros de conversaciones en WhatsApp y Telegram suministrados, se han encontrado un conjunto de vestigios que sugieren que Atalus y Camilo planificaron, tras informarse previamente, utilizar un dispositivo Rubber Ducky en el ordenador de Lassandra en el instituto. 
+
+Según la información recabada de la imagen proporcionada de la cámara IP, se puede ver a un sujeto encapuchado introducir un dispositivo USB en el ordenador antes mencionado. Tras revisar y analizar este equipo, se revela la presencia de malware en el mismo bajo la categoría Keylogger. Este tipo de programas buscan el objetivo de registrar las pulsaciones del teclado de un ordenador, para ser recogidas por el atacante.
+
+Además, se ha examinado el historial del navegador del SmartPhone de Atalus, en el que se puede ver búsquedas relacionadas con el uso y adquisición de un Rubber Ducky, la descarga de Telegram o la cuenta de instagram de Lassandra. 
+
+Estos acontecimientos se relacionan y ordenan en una línea de tiempo incluida en este mismo documento.
 
 # Introducción
 
