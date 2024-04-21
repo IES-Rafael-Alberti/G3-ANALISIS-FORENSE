@@ -147,7 +147,6 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
   En un primer lugar se comienza examinando los datos extraídos del servidor de Instagram de Lassandra Cordalis. En ellos se encuentran una serie de puntos de partida sobre los que cimentar nuestra investigación. 
   
   Principalmente, se hayan una serie de inicios de sesión con sus respectivas marcas de tiempo, y agentes de usuario, cada uno en un día distinto. Esto puede verse con una mayor claridad en la [timeline](#timeline) construida para este caso. 
-  
 
 >  [!WARNING] 
 >  Aclaración
@@ -158,10 +157,9 @@ En esta fase se escribirá un informe pericial con toda la información obtenida
 >
 > Teniendo esto en cuenta:
   
-
-  Básicamente partimos de un inicio de sesión en Instagram desde un dispositivo Windows (marcado por su agente de usuario) el **Viernes 28 de abril de 2023 a las 18:29** (ID). Este hecho parece verse correlacionado con múltiples hallazgos. En primer lugar encontramos en **la tarjeta SD de la cámara IP** investigada un vídeo en el que dos individuos, un chico y una chica, se sientan frente a un ordenador con lo que aparentemente resulta el sistema operativo Windows 10 (ID). Este video tiene una marca de tiempo que indica que fue grabado a el **Viernes 28 de abril a las 18:00:32**. Sería de vital importancia determinar el origen de ésta cámara IP, ya que a pesar de que se aporta como fuente de evidencia no se especifica donde estaba ubicada ni de donde proviene.
+  Básicamente partimos de un inicio de sesión en Instagram desde un dispositivo Windows (marcado por su agente de usuario) el **Viernes 28 de abril de 2023 a las 18:29** (ID). Este hecho parece verse correlacionado con múltiples hallazgos. En primer lugar encontramos en **la tarjeta SD de la cámara IP** investigada un vídeo en el que dos individuos, un chico y una chica, se sientan frente a un ordenador con lo que aparentemente resulta el sistema operativo Windows 10 (Anexos 3 - Hallazgo 5). Este video tiene una marca de tiempo que indica que fue grabado a el **Viernes 28 de abril a las 18:00:32**. Sería de vital importancia determinar el origen de ésta cámara IP, ya que a pesar de que se aporta como fuente de evidencia no se especifica donde estaba ubicada ni de donde proviene.
   
-  En el PC de la víctima encontramos entre sus registros la existencia de un script en el lenguaje _powershell_ que ha sido identificado como un _keylogger_ (Hallazgo 1), un archivo malicioso cuya funcionalidad consiste en crear un registro de las teclas presionadas en un dispositivo. Se ha llegado a esta conclusión mediante el examen por nuestra parte de la naturaleza de su código y el servicio proporcionado por la web VirusTotal, una organización de terceros que ofrece un análisis gratuito de este tipo de archivos sospechosos de ser maliciosos, la cual determina que efectivamente existe relación con malware concretamente del tipo _keylogger_:
+  En el PC de la víctima encontramos entre sus registros la existencia de un script en el lenguaje _powershell_ que ha sido identificado como un _keylogger_ (Anexo 3- Hallazgo 1), un archivo malicioso cuya funcionalidad consiste en crear un registro de las teclas presionadas en un dispositivo. Se ha llegado a esta conclusión mediante el examen por nuestra parte de la naturaleza de su código y el servicio proporcionado por la web VirusTotal, una organización de terceros que ofrece un análisis gratuito de este tipo de archivos sospechosos de ser maliciosos, la cual determina que efectivamente existe relación con malware concretamente del tipo _keylogger_:
 
  ![alt text](./img/image-2.png)
 
