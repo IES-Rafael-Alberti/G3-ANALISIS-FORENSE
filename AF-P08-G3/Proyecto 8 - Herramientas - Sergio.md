@@ -10,7 +10,11 @@
 
 ## Herramientas para IoT
 
-(Sin terminar)
+Se ha investigado sobre herramientas IoT para la adquisición de evidencias pero teniendo en cuenta los artículos en internet, se ha llegado a la conclusión de que a día de hoy no existen herramientas especificas para la adquisición de evidencias forenses de IoT.
+
+Dependiendo del tipo de dispositivo IoT se adquirirá de una manera u otra, teniendo en cuenta si el dispositivo puede conectarse a un equipo informático como un ordenador o si solo se permite de manera inalámbrica. En caso de poder conectarse a un ordenador, la adquisición de evidencias se hará vía FTK Imager o volatility.
+
+En caso de que los dispositivos IoT no puedan conectarse directamente a un equipo informático, la adquisición se hará mediante Wireshark pudiendo obtener registros de conexiones o peticiones.
 
 ## Herramientas para móviles
 
@@ -22,7 +26,7 @@ Es una herramienta mediante la cual por comandos crea un puente entre nuestro or
 
 Para poder usar ADB con el dispositivo móvil, necesitamos activar la depuración USB e instalar los drivers ADB universales. Tiene una serie de comandos sencillos que permiten desde crear una shell para el dispositivo móvil como extraer o subir archivos al dispositivo móvil.
 
-Muchas de las herramientas que se mencionarán en los siguientes puntos, utilizan o necesitan de esta herramienta instalada en nuestro ordenador.
+Muchas de las herramientas que se mencionarán en los siguientes puntos, utilizan o necesitan de esta herramienta instalada en nuestro ordenador. 
 
 ### AFLogical OSE - Open source Android Forensics app and framework
 
