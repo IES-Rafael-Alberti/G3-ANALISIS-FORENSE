@@ -12,33 +12,80 @@
 
 # Resumen ejecutivo
 
-En este informe se presentan los resultados del análisis forense realizado por Netmancer Inc. sobre diversas fuentes de datos relacionadas con Lassandra Cordalis, Atalus Grasstem y Camillo Richbald. Se examinaron copias de seguridad de los servidores de Google, conversaciones de WhatsApp, copias de seguridad ADB, copias de seguridad del servidor de Instagram, conversaciones de Telegram y imágenes del disco del equipo de Lassandra en el instituto, incluyendo la imagen de la tarjeta SD de la cámara IP Imou.
-
-Durante el proceso de la investigación y a partir de los registros de conversaciones en WhatsApp y Telegram proporcionados, se encontraron indicios que sugieren que Atalus y Camillo planearon, tras informarse previamente, manipular el ordenador de Lassandra en el instituto. Se observó en el historial del navegador del SmartPhone de Atalus búsquedas relacionadas con el uso y adquisición de un dispositivo Rubber Ducky, así como la descarga de Telegram y la cuenta de Instagram de Lassandra.
-
-La imagen proporcionada de la cámara IP muestra a un sujeto manipulando el ordenador mencionado. Tras revisar y analizar este equipo, se confirmó la presencia de malware categorizado como Keylogger, un programa diseñado para registrar las pulsaciones del teclado. Además, se detectó un inicio de sesión desde un dispositivo Android 9, coincidiendo con el user agent de Atalus, mientras que el dispositivo de Lassandra es un Android 11.
-
-Se resalta la importancia de prestar atención a la línea de tiempo detallada en este mismo documento, donde se ordenan y relacionan los eventos mencionados.
 
 # Introducción
 
-En este documento se detallan los hallazgos encontrados a través del análisis de las adquisiciones dadas de las copias de seguridad de Whatsapp, Telegram, Google Database y las imagenes del Rubber Ducky, del disco duro del ordenador utilizado por la alumna Lassandra y de la cámara IP. 
-
-Se incluyen además una serie de anexos que hace referencia a los hallazgos que se han encontrado, la cadena de custodia y los hashes sobre la integridad de las adquisiciones que se nos ha suministrado.
-
-También incluye la metodología utilizada y una línea temporal de los hallazgos encontrados que nos permite con mayor certeza y claridad el incidente.
 
 # Investigación teórica
 
-Los objetivos que se persiguen cumplir en este informe son los siguientes:
-
-- Construir una línea de tiempo que clarifique y contextualicen los eventos acontecidos
-- Conseguir vestigios que indiquen acoso a la estudiante Lassandra Cordalis en aplicaciones de chat.
-- Comprobar si Atalus Grasstem está involucrado en un posible _defacement_ (modificación sin consentimiento del perfil de la víctima). 
 
 # Evaluación de herramientas y métodos
 
-El alcance de este informe se limita a las siguientes fuentes de evidencia digital, organizadas según su origen o propietario:
+## Metodos de extracción de evidencias
+
+- **Adquisición física:** Es el método más utilizado. Consiste en realizar una réplica idéntica del original por lo que se preservan la totalidad de las evidencias potenciales. Este procedimiento presenta la ventaja de que es posible buscar elementos eliminados. Su desventaja principal es su complejidad respecto a los otros métodos y el tiempo que lleva su realización.
+
+- **Adquisición lógica:** Consiste en realizar una copia de los objetos almacenados en el dispositivo. Para ello, se utilizan los mecanismos implementados de manera nativa por el fabricante, es decir, aquellos que son utilizados de manera habitual para sincronizar el terminal con un ordenador. de modo que se solicita la información deseada al sistema operativo del dispositivo móvil.
+
+- **Adquisición del sistema de ficheros:** Permite obtener todos los ficheros visibles mediante el sistema de ficheros, lo que no incluye ficheros eliminados o particiones ocultas. Dependiendo del tipo de investigación puede resultar suficiente utilizar este método. Para llevarlo a cabo se aprovecha de los mecanismos integrados en el sistema operativo para realizar el copiado de los ficheros, Android Device Bridge (ADB) en el caso de Android. Mediante este método es posible recuperar cierta información eliminada ya que algunos sistemas operativos como es el caso de Android e iOS se valen de una estructura que utiliza bases de datos SQLite para almacenar gran parte de la información. Cuando se eliminan registros de los ficheros, únicamente se marcan como disponibles para sobrescritura, por lo que temporalmente siguen estando disponibles y por tanto es posible recuperarlos.
+
+## Herramientas para IoT
+
+Se ha investigado sobre herramientas IoT para la adquisición de evidencias pero teniendo en cuenta los artículos en internet, se ha llegado a la conclusión de que a día de hoy no existen herramientas especificas para la adquisición de evidencias forenses de IoT.
+
+Dependiendo del tipo de dispositivo IoT se adquirirá de una manera u otra, teniendo en cuenta si el dispositivo puede conectarse a un equipo informático como un ordenador o si solo se permite de manera inalámbrica. En caso de poder conectarse a un ordenador, la adquisición de evidencias se hará vía FTK Imager o volatility.
+
+En caso de que los dispositivos IoT no puedan conectarse directamente a un equipo informático, la adquisición se hará mediante Wireshark pudiendo obtener registros de conexiones o peticiones.
+
+## Herramientas para móviles
+
+En este punto se especifican una serie de herramientas Open Source y gratuitas para la adquisición de datos en dispositivos móviles.
+
+### Android Debug Bridge (ADB)
+
+Es una herramienta mediante la cual por comandos crea un puente entre nuestro ordenador y el teléfono móvil. Podemos traer archivos del móvil hacia nuestro ordenador gracias a ello. 
+
+Para poder usar ADB con el dispositivo móvil, necesitamos activar la depuración USB e instalar los drivers ADB universales. Tiene una serie de comandos sencillos que permiten desde crear una shell para el dispositivo móvil como extraer o subir archivos al dispositivo móvil.
+
+Muchas de las herramientas que se mencionarán en los siguientes puntos, utilizan o necesitan de esta herramienta instalada en nuestro ordenador. 
+
+### AFLogical OSE - Open source Android Forensics app and framework
+
+Esta herramienta es una apk que podemos instalar en nuestro dispositivo móvil para adquirir datos. Se debe ejecutar en el dispositivo o usando adb shell.
+
+En el dispositivo android del que queramos hacer la adquisición, debemos abrir la aplicación y elegir los datos que deseamos etraer, simplemente tendremos que seguir las instrucciones dadas por la propia apliación. Se debe tener una tarjeta SD en el dispositivo para extraer los datos en ella.
+
+Luego copiamos estos datos a nuestro ordenador para analizar estos datos o usamos adb pull. Los datos pueden ser registros de llamadas, contactos, aplicaciones, mensajes de texto o audiovisuales… Esta información será recuperada o bien conectada a una tarjeta en un dispositivo externo o a través del ADB.
+
+### Andriller CE
+
+Andriller CE es una herramienta para la adquisición de dispositivos móviles. Realiza adquisiciones no destructivas, solidas y de solo lectura desde dispositivos Android. Contiene decodificadores personalizados para datos de bases de datos de android para decodificar comunicaciones. Las extraciones y los decodificadors producen informes en formatos HTML y Excel.
+
+**Características:**
+
+- Extracción y decodificación de datos automatizada
+- Extracción de datos de dispositivos no rooteados mediante Android Backup (versiones de Android 4.x, soporte variado/limitado)
+- Extracción de datos con permisos de root: demonio ADB raíz, modo de recuperación CWM o binario SU (Superusuario)
+- Análisis y decodificación de datos para estructura de carpetas, archivos Tarball (de copias de seguridad de nanddroid) y copia de seguridad de Android ( archivos backup.ab )
+- Selección de decodificadores de bases de datos individuales para aplicaciones de Android Descifrado de bases de datos archivadas cifradas de WhatsApp (.crypt a .crypt12, debe tener el archivo de clave correcto )
+- Cracking de pantalla de bloqueo para patrón, PIN y contraseña.
+- Descomprimiendo los archivos de copia de seguridad de Android
+- Captura de pantalla de la pantalla de un dispositivo
+
+### LIME- Linux Memory Extractor
+
+Esta herramienta Open Source permite la adquisición de memoria volátil desde dispositivos basados en linux y android. Es la primera herramienta que permite captura de memoria completa en dispositivos Android. Minimiza su interacción entre el usuario y los procesos del espacio del kernel durante la adquisición lo que permite crear capturas de memorias más sólidas desde el punto de vista forense.
+
+**Características**
+
+- Adquisición completa de memoria de Android
+- Adquisición a través de interfaz de red
+- Huella mínima del proceso
+- Hash de memoria volcada
+
+### WhatsApp Xtract
+
+Es una herramienta que permite extraer del dispositivo móvil todas las conversaciones en el ordenador. Esta aplicación de Windows trabaja con archivos .bat utilizandolo con la ruta "/sdcard/WhatsApp/Databases/msgstore.db.crypt" desde la cual tendremos que ejecutar la herramienta. Requiere tener instalado Active Python.
 
 
 # Consideraciones legales y éticas
@@ -67,3 +114,17 @@ Con el aspecto ético podemos destacar la reciente aplicación de modelos de Mac
 - Induruwa, A. (2009). 'Mobile phone forensics: an overview of technical and legal aspects', *Int. J. Electronic Security and Digital Forensics*, Vol. 2, No. 2, pp.169–181.
 
 - Sedky, M. (2020). The Forensic Swing of Things: The Current Legal and Technical Challenges of IoT Forensics. Staffordshire University.
+
+- Asier, M. (23/02/2016) Herramientas para realizar análisis forenses a dispositivos móviles.Recuperado de [https://www.incibe.es/incibe-cert/blog/herramientas-para-realizar-analisis-forenses-dispositivos-moviles](https://www.incibe.es/incibe-cert/blog/herramientas-para-realizar-analisis-forenses-dispositivos-moviles)
+
+- Nowsecure (s.f.) Herramienta android-forensics. Recuperado de [https://github.com/nowsecure/android-forensics](https://github.com/nowsecure/android-forensics)
+
+- Den4uk (s.f.) Herramienta andriller. Recuperado de [https://github.com/den4uk/andriller](https://github.com/den4uk/andriller)
+
+- Eduardo, S. (01/10/2018) Herramientas para análisis forenses a dispositivos móviles. Recuperado de [https://peritos-informaticos.com/blog/herramientas-analisis-forense-moviles/](https://peritos-informaticos.com/blog/herramientas-analisis-forense-moviles/)
+
+- Ricardo, A. (09/04/2024) ADB en Android: qué es y para qué puedes utilizarlo. Recuperado de [https://www.xatakandroid.com/tutoriales/adb-android-que-puedes-utilizarlo](https://www.xatakandroid.com/tutoriales/adb-android-que-puedes-utilizarlo)
+
+- 504ensicsLabs (s.f.) Herramienta LiME ~ Linux Memory Extractor. Recuperado de [https://github.com/504ensicsLabs/LiME](https://github.com/504ensicsLabs/LiME)
+
+- Ideal Gente (11/04/2015) Como guardar conversaciones WhatsApp en el ordenador para leerlas cuando quieras. Recuperado de [https://www.ideal.es/sociedad/201504/11/como-guardar-conversaciones-whatsapp-20150410170133.html](https://www.ideal.es/sociedad/201504/11/como-guardar-conversaciones-whatsapp-20150410170133.html)
