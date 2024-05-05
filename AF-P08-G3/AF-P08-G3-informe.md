@@ -215,3 +215,12 @@ Con el aspecto ético podemos destacar la reciente aplicación de modelos de Mac
 - 504ensicsLabs (s.f.) Herramienta LiME ~ Linux Memory Extractor. Recuperado de [https://github.com/504ensicsLabs/LiME](https://github.com/504ensicsLabs/LiME)
 
 - Ideal Gente (11/04/2015) Como guardar conversaciones WhatsApp en el ordenador para leerlas cuando quieras. Recuperado de [https://www.ideal.es/sociedad/201504/11/como-guardar-conversaciones-whatsapp-20150410170133.html](https://www.ideal.es/sociedad/201504/11/como-guardar-conversaciones-whatsapp-20150410170133.html)
+
+- Metodologías para el Análisis Forense de IoT. Recuperado de https://publicaciones.sadio.org.ar/index.php/JAIIO/article/download/295/242#:~:text=Metodologías para el Análisis Forense de IoT&text=El proceso forense incluye seis,y Presentación de la Evidencia.
+
+- Propuesta de una guía de actuación forense para entornos de internet de las cosas (IoT). Recuperado de [https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-55462022000100441](https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-55462022000100441)
+
+- Universitat Politècnica de València - Definición de una metodología para el análisis informático
+forense en entornos IoT. Recuperado de https://riunet.upv.es/bitstream/handle/10251/186198/Sorribas - Definicion de una metodologia para el analisis informatico forense en entornos IoT.pdf?sequence=1&isAllowed=y
+
+- Universitat Oberta de Catalunya - Análisis Forense de dispositivos móviles iOS y Android. Recuperado de [https://openaccess.uoc.edu/bitstream/10609/45641/6/malvarezmuTFG0116memoria.pdf](https://openaccess.uoc.edu/bitstream/10609/45641/6/malvarezmuTFG0116memoria.pdf)
