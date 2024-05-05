@@ -178,6 +178,10 @@ Es una herramienta que permite extraer del dispositivo móvil todas las conversa
 
 # Evaluación de herramientas y métodos
 
+En la evaluación de herramientas y métodos forenses, el uso de ADB (Android Debug Bridge) se destaca por varias ventajas significativas. ADB proporciona acceso completo al sistema de archivos y a las funciones del dispositivo Android, lo que permite una amplia gama de operaciones de extracción y manipulación de datos. Además, al ser una herramienta oficial de Android, ADB es compatible con una amplia variedad de dispositivos Android, lo que garantiza su utilidad en diferentes escenarios de extracción forense. Su amplia variedad de comandos facilita acciones específicas, como copiar archivos, instalar aplicaciones y acceder a la shell del sistema, brindando flexibilidad en las operaciones forenses.
+
+Sin embargo, el uso de ADB también presenta ciertas limitaciones. Por ejemplo, para utilizar ADB, es necesario habilitar la opción de depuración USB en el dispositivo Android, lo que puede ser un desafío si el dispositivo está bloqueado o no se puede acceder físicamente. Además, la mayoría de las funciones de ADB requieren una conexión USB entre el dispositivo y la computadora, lo que puede limitar su utilidad en casos donde la conectividad USB no está disponible o es difícil de establecer. Además, en dispositivos bloqueados o dañados, el acceso a través de ADB puede estar restringido, lo que limita su efectividad en ciertos escenarios forenses.
+
 # Consideraciones legales y éticas
 
 En el aspecto legal y ético de las adquisiciones forenses de los dispositivos IoT y móviles debe considerarse que, para la extensión de su uso y presencia en nuestras vidas, existe una falta de reglas universales y regulaciones aplicables a los mismos debido al vertiginoso ritmo de avance en las nuevas tecnologías y al contrantes con el inherente ritmo más pausado que la elaboración de leyes y reglamentos requiere.
