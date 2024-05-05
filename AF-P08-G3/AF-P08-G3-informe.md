@@ -2,13 +2,13 @@
 
 1. [Resumen ejecutivo](#resumen-ejecutivo)
 2. [Introducción](#introducción)
-2. [Investigación teórica](#investigación-teórica)
-3. [Evaluación de herramientas y métodos](#evaluación-de-herramientas-y-métodos)
+3. [Investigación teórica](#investigación-teórica)
+4. [Evaluación de herramientas y métodos](#evaluación-de-herramientas-y-métodos)
    - [Métodos de extracción de vestigios](#métodos-de-extracción-de-vestigios)
    - [Herramientas para IoT](#herramientas-para-iot)
    - [Herramientas para móviles](#herramientas-para-móviles)
-6. [Consideraciones legales y éticas](#consideraciones-legales-y-éticas)
-8. [Anexos](#anexos)
+5. [Consideraciones legales y éticas](#consideraciones-legales-y-éticas)
+6. [Anexos](#anexos)
 
 # Resumen ejecutivo
 
@@ -30,6 +30,86 @@ Se discuten y exponen distintos aspectos como metodologías para realizar adquis
 
 # Investigación teórica
 
+## Metodología de Adquisición aplicable a dispositivos móviles
+
+La adquisición de evidencias digitales, especialmente en dispositivos móviles, es un proceso meticuloso que requiere atención al detalle para preservar la integridad de la información. Aunque los sistemas operativos marcan los archivos eliminados como disponibles, no los borran completamente, lo que permite su recuperación con herramientas forenses. Para garantizar la trazabilidad y el borrado seguro de datos, se siguen protocolos específicos, incluyendo la copia bit a bit.
+
+Factores Clave en la Adquisición de Evidencias:
+
+- **Características del Dispositivo:** La identificación se realiza a través de características visibles y bases de datos, utilizando información como el IMEI y el ESN para determinar el fabricante y el modelo.
+- **Modo Depuración USB:** Utilizado principalmente por desarrolladores, permite el acceso al sistema para la copia bit a bit a través de ADB, especialmente si el dispositivo tiene permisos de Root o Jailbreak.
+- **Niveles de Extracción de Datos:**
+    - ***Extracción Manual:*** Implica la visualización y grabación de la pantalla, limitada a la información visible actualmente en el dispositivo.
+    - ***Extracción Física:*** Consiste en crear una imagen completa del dispositivo para análisis forense, utilizando comandos como dd en Linux para asegurar la copia y el borrado seguro. Este método permite buscar elementos eliminados, pero presenta una clara complejidad frente a a los otros métodos de adquisición y toma un mayor tiempo en su realización.
+    - ***Extracción Lógica:*** Se realiza conectando el dispositivo a una estación de trabajo y utilizando comandos para enviar la información. Contrariamente al método anterior, es más sencillo de realizar, pero no permite el acceso a la misma cantidad de información.
+    - ***Extracción del sistema de ficheros:*** Este método de adquisición de sistema de archivos permite obtener todos los archivos visibles en el sistema, excluyendo los eliminados o las particiones ocultas. Se aprovecha de los mecanismos integrados en el sistema operativo, como Android Device Bridge (ADB) en Android, para copiar los archivos.
+    - ***Hex Dumping y JTAG:*** Acceso directo a la memoria flash para análisis y decodificación de datos.
+    - ***Chip-Off:*** Consiste en extraer físicamente el chip de memoria del dispositivo y crear una imagen binaria de su contenido.
+    - ***Micro read:*** Técnica avanzada que implica la extracción física del chip de memoria y la captura de cambios a nivel microscópico.
+
+Cada método tiene sus propias ventajas y desafíos, y la elección depende de la situación específica y los recursos disponibles. Es fundamental aplicar funciones hash como MD5 o SHA-1 para mantener la integridad de los datos y realizar el análisis a partir de copias para evitar dañar el dispositivo original. La entrega de la imagen original al juzgado y la posibilidad de un contra-peritaje son pasos finales cruciales en el proceso de adquisición de evidencias digitales.
+
+## Metodología de Adquisición aplicable a dispositivos IoT
+
+La etapa de preservación, identificación y preprocesamiento en la metodología forense para dispositivos IoT busca identificar las fuentes de evidencia, lo cual puede ser desafiante debido a la diversidad de dispositivos y la gran cantidad de datos que generan. Se propone abordar esta identificación en dos niveles, en el primero se buscará la identificación de patrones anómalos, mientras que en el segundo nos centraremos en los agentes identificados.
+
+### Fase 1
+
+Utiliza inteligencia artificial (IA), específicamente algoritmos de Machine Learning. Estos algoritmos pueden reconocer patrones y comportamientos anómalos, lo que ayuda a determinar los agentes involucrados en un incidente. Además, la aplicación de la inteligencia artificial puede redundar en nuestro beneficio, proporcionando efectividad, precisión y reducción de costes, respecto a la realización manual de esta misma labor. Dentro del Machine Learning se distinguen cuatro grupos principales: supervisados, semi-supervisados, por refuerzo y no supervisados.
+
+- **Supervisados:** Utilizan datos etiquetados para predecir nuevos eventos. Ejemplos incluyen árboles de decisión, regresión logística, SVM, Naive Bayes y Redes Neuronales.
+- **Semi-supervisados:** Usan tanto datos etiquetados como no etiquetados en el entrenamiento.
+- **Por refuerzo:** Basan su funcionamiento en prueba y error, penalizando comportamientos no deseados y recompensando los correctos.
+- **No supervisados:** Realizan predicciones sin datos etiquetados, como K-means, DBSCAN, One-Class SVM e Isolation Forests.
+
+Se selecciona el algoritmo de Isolation Forests debido a su capacidad para trabajar con grandes volúmenes de datos de manera no supervisada y su eficiencia en la detección de anomalías. Este algoritmo mejora la capacidad de manejar la heterogeneidad y gran cantidad de datos presentes en los dispositivos IoT, además de ofrecer una buena precisión de predicción y tiempos de ejecución óptimos en comparación con otros algoritmos evaluados.
+
+Hemos de remarcar la necesidad de identificar la Infraestructura IoT, lo que implica observar el entorno para detectar objetos relevantes, especialmente la infraestructura de red y servicios en las cuatro capas del modelo IoT. Se identifican los servicios en la nube consumidos, así como los recursos distribuidos bajo responsabilidad del usuario.
+
+### Fase 2
+
+La metodología propuesta introduce un nivel adicional que utiliza inteligencia artificial para identificar fuentes de evidencia en sistemas IoT, con el fin de detectar anomalías que puedan constituir evidencias para apoyar o refutar la hipótesis de un incidente. Se recomienda el uso de algoritmos de Machine Learning supervisados, como los basados en árboles de decisión, por su capacidad explicativa y facilidad de entrenamiento. Estos algoritmos procesarán datos previamente analizados y etiquetados.
+
+En esta fase, se llevarán a cabo cuatro actividades principales:
+
+- **Detección de la Infraestructura:** Identificación de los componentes del entorno IoT, ajustando la infraestructura inicialmente concebida.
+- **Extracción y Adquisición de Objetos:** Se sigue un protocolo estricto que asegura la trazabilidad de la evidencia, con tareas técnicas adecuadas para la preservación y transporte.
+- **Validación y Resguardo:** Incluye la creación de imágenes forenses, su encriptación y registro seguro.
+- **Supervisión del Transporte:** Se cuida la entrega de evidencias a terceros, asegurando el cumplimiento de los criterios de resguardo y preservación.
+
+Es crucial considerar si la adquisición de datos será en vivo, lo que permite acceder a datos en memoria o en tránsito pero con una extracción más complicada, o post-mortem, que facilita un análisis más profundo de los datos apagados. También es importante definir si se trabajará con una granularidad detallada o general de los datos.
+
+- ***Post-Mortem:*** Este permite un análisis más profundo de los datos.
+- ***Análisis en vivo:*** Esta clase de análisis brindan la oportunidad de acceder a los datos en memoria, tanto en tránsito como los no cifrados. 
+
+La privacidad y protección de datos deben respetarse de acuerdo con la legislación local y del Cloud. En España, esto implica cumplir con la Ley Orgánica 3/2018 y el RGPD en Europa. Aspectos clave incluyen el deber de confidencialidad, la transparencia y el tratamiento adecuado de los datos.
+
+En la investigación forense digital, es esencial obtener consentimiento para el uso de datos, implementar medidas de seguridad para proteger los datos y mantener la transparencia durante la investigación. Para mitigar los Data Leaks, se sugiere verificar las comunicaciones de dispositivos IoT contra bases de datos de IoC para identificar posibles compromisos.
+
+Finalmente, la normativa ISO/IEC 27037 establece que las evidencias deben ser recolectadas de manera no intrusiva, que el proceso debe ser auditable y que las técnicas utilizadas deben ser reproducibles y defensibles. Este enfoque subraya la importancia de un manejo cuidadoso de la privacidad y la legalidad en la adquisición de evidencias en investigaciones forenses digitales.
+
+## Diferencias entre ambos
+
+Las metodologías forenses de adquisición en dispositivos móviles e IoT tienen diferencias clave debido a la naturaleza de los dispositivos y los datos que manejan. Algunas de las más importantes son las siguientes:
+
+- En dispositivos móviles, la adquisición de datos volátiles puede ser más sencilla debido a la presencia de interfaces de usuario y sistemas operativos estánda, sin embargo, en los dispositivos IoT la adquisición de datos volátiles puede ser más desafiante debido a la diversidad de dispositivos y la falta de interfaces estándar.
+- La adquisición en dispositivos móviles es generalmente más directa, mientras que en IoT puede ser más compleja debido a la variedad de tecnologías y la necesidad de considerar la interconectividad de los dispositivos.
+- Los dispositivos móviles suelen tener metadatos y registros detallados de las actividades del usuario, mientras que los dispositivos IoT pueden no tener metadatos tan ricos o pueden presentar desafíos como diferencias horarias en los registros.
+
+Además, debemos remarcar los siguientes aspectos clave de ambos tipos de dispositivos. Los dispositivos móviles suelen presentar las siguientes características:
+
+- Los dispositivos móviles suelen tener una gran capacidad de almacenamiento interno y externo, lo que permite almacenar una amplia variedad de datos personales y aplicaciones.
+- Operan con sistemas operativos conocidos como Android o iOS, lo que facilita el uso de herramientas forenses estándar para la adquisición de datos.
+- Poseen interfaces de usuario que permiten la interacción directa, lo que puede simplificar la extracción de datos.
+- Sus metodologías de extracción incluyen adquisición manual, física, adquisición lógica y adquisición del sistema de ficheros, con herramientas y técnicas bien establecidas.
+
+Como veremos a continuación, los dispositivos IoT presentan características muy diferentes:
+
+- Los dispositivos IoT pueden variar desde sensores simples hasta electrodomésticos inteligentes, cada uno con diferentes capacidades de almacenamiento y procesamiento.
+- Pueden operar con una variedad de sistemas operativos, muchos de los cuales son específicos del fabricante o del dispositivo, lo que puede complicar la adquisición de datos.
+- Esta clase de dispositivos suelen estar diseñados para conectarse y comunicarse con otros dispositivos, lo que puede requerir un enfoque de adquisición que tenga en cuenta la red de dispositivos interconectados.
+- Muchos dispositivos IoT carecen de una interfaz de usuario tradicional, lo que puede requerir métodos indirectos para la adquisición de datos.
+
 ## Métodos de extracción de vestigios
 
 - **Adquisición física:** Es el método más utilizado. Consiste en realizar una réplica idéntica del original por lo que se preservan la totalidad de las evidencias potenciales. Este procedimiento presenta la ventaja de que es posible buscar elementos eliminados. Su desventaja principal es su complejidad respecto a los otros métodos y el tiempo que lleva su realización.
@@ -38,7 +118,7 @@ Se discuten y exponen distintos aspectos como metodologías para realizar adquis
 
 - **Adquisición del sistema de ficheros:** Permite obtener todos los ficheros visibles mediante el sistema de ficheros, lo que no incluye ficheros eliminados o particiones ocultas. Dependiendo del tipo de investigación puede resultar suficiente utilizar este método. Para llevarlo a cabo se aprovecha de los mecanismos integrados en el sistema operativo para realizar el copiado de los ficheros, Android Device Bridge (ADB) en el caso de Android. Mediante este método es posible recuperar cierta información eliminada ya que algunos sistemas operativos como es el caso de Android e iOS se valen de una estructura que utiliza bases de datos SQLite para almacenar gran parte de la información. Cuando se eliminan registros de los ficheros, únicamente se marcan como disponibles para sobrescritura, por lo que temporalmente siguen estando disponibles y por tanto es posible recuperarlos.
 
-## Herramientas para IoT
+### Herramientas para IoT
 
 Se ha investigado sobre herramientas IoT para la adquisición de evidencias pero teniendo en cuenta los artículos en internet, se ha llegado a la conclusión de que a día de hoy no existen herramientas especificas para la adquisición de evidencias forenses de IoT.
 
@@ -46,11 +126,11 @@ Dependiendo del tipo de dispositivo IoT se adquirirá de una manera u otra, teni
 
 En caso de que los dispositivos IoT no puedan conectarse directamente a un equipo informático, la adquisición se hará mediante Wireshark pudiendo obtener registros de conexiones o peticiones.
 
-## Herramientas para móviles
+### Herramientas para móviles
 
 En este punto se especifican una serie de herramientas Open Source y gratuitas para la adquisición de datos en dispositivos móviles.
 
-### Android Debug Bridge (ADB)
+#### Android Debug Bridge (ADB)
 
 Es una herramienta mediante la cual por comandos crea un puente entre nuestro ordenador y el teléfono móvil. Podemos traer archivos del móvil hacia nuestro ordenador gracias a ello. 
 
@@ -58,7 +138,7 @@ Para poder usar ADB con el dispositivo móvil, necesitamos activar la depuració
 
 Muchas de las herramientas que se mencionarán en los siguientes puntos, utilizan o necesitan de esta herramienta instalada en nuestro ordenador. 
 
-### AFLogical OSE - Open source Android Forensics app and framework
+#### AFLogical OSE - Open source Android Forensics app and framework
 
 Esta herramienta es una apk que podemos instalar en nuestro dispositivo móvil para adquirir datos. Se debe ejecutar en el dispositivo o usando adb shell.
 
@@ -66,7 +146,7 @@ En el dispositivo android del que queramos hacer la adquisición, debemos abrir 
 
 Luego copiamos estos datos a nuestro ordenador para analizar estos datos o usamos adb pull. Los datos pueden ser registros de llamadas, contactos, aplicaciones, mensajes de texto o audiovisuales… Esta información será recuperada o bien conectada a una tarjeta en un dispositivo externo o a través del ADB.
 
-### Andriller CE
+#### Andriller CE
 
 Andriller CE es una herramienta para la adquisición de dispositivos móviles. Realiza adquisiciones no destructivas, solidas y de solo lectura desde dispositivos Android. Contiene decodificadores personalizados para datos de bases de datos de android para decodificar comunicaciones. Las extraciones y los decodificadors producen informes en formatos HTML y Excel.
 
@@ -81,7 +161,7 @@ Andriller CE es una herramienta para la adquisición de dispositivos móviles. R
 - Descomprimiendo los archivos de copia de seguridad de Android
 - Captura de pantalla de la pantalla de un dispositivo
 
-### LIME- Linux Memory Extractor
+#### LIME- Linux Memory Extractor
 
 Esta herramienta Open Source permite la adquisición de memoria volátil desde dispositivos basados en linux y android. Es la primera herramienta que permite captura de memoria completa en dispositivos Android. Minimiza su interacción entre el usuario y los procesos del espacio del kernel durante la adquisición lo que permite crear capturas de memorias más sólidas desde el punto de vista forense.
 
@@ -92,7 +172,7 @@ Esta herramienta Open Source permite la adquisición de memoria volátil desde d
 - Huella mínima del proceso
 - Hash de memoria volcada
 
-### WhatsApp Xtract
+#### WhatsApp Xtract
 
 Es una herramienta que permite extraer del dispositivo móvil todas las conversaciones en el ordenador. Esta aplicación de Windows trabaja con archivos .bat utilizandolo con la ruta "/sdcard/WhatsApp/Databases/msgstore.db.crypt" desde la cual tendremos que ejecutar la herramienta. Requiere tener instalado Active Python.
 
