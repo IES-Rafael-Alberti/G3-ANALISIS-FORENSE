@@ -3,10 +3,13 @@
 1. [Resumen ejecutivo](#resumen-ejecutivo)
 2. [Introducción](#introducción)
 3. [Investigación teórica](#investigación-teórica)
-4. [Evaluación de herramientas y métodos](#evaluación-de-herramientas-y-métodos)
+   - [Metodología de Adquisición aplicable a dispositivos móviles](#metodología-de-adquisición-aplicable-a-dispositivos-móviles)
+   - [Metodología de Adquisición aplicable a dispositivos IoT](#metodología-de-adquisición-aplicable-a-dispositivos-iot)
+   - [Diferencias entre ambas metodologías](#diferencias-entre-ambas-metodologías)
    - [Métodos de extracción de vestigios](#métodos-de-extracción-de-vestigios)
    - [Herramientas para IoT](#herramientas-para-iot)
    - [Herramientas para móviles](#herramientas-para-móviles)
+4. [Evaluación de herramientas y métodos](#evaluación-de-herramientas-y-métodos)
 5. [Consideraciones legales y éticas](#consideraciones-legales-y-éticas)
 6. [Anexos](#anexos)
 
@@ -88,7 +91,7 @@ En la investigación forense digital, es esencial obtener consentimiento para el
 
 Finalmente, la normativa ISO/IEC 27037 establece que las evidencias deben ser recolectadas de manera no intrusiva, que el proceso debe ser auditable y que las técnicas utilizadas deben ser reproducibles y defensibles. Este enfoque subraya la importancia de un manejo cuidadoso de la privacidad y la legalidad en la adquisición de evidencias en investigaciones forenses digitales.
 
-## Diferencias entre ambos
+## Diferencias entre ambas metodologías
 
 Las metodologías forenses de adquisición en dispositivos móviles e IoT tienen diferencias clave debido a la naturaleza de los dispositivos y los datos que manejan. Algunas de las más importantes son las siguientes:
 
