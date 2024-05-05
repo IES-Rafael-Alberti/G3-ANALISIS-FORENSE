@@ -87,7 +87,6 @@ Esta herramienta Open Source permite la adquisición de memoria volátil desde d
 
 Es una herramienta que permite extraer del dispositivo móvil todas las conversaciones en el ordenador. Esta aplicación de Windows trabaja con archivos .bat utilizandolo con la ruta "/sdcard/WhatsApp/Databases/msgstore.db.crypt" desde la cual tendremos que ejecutar la herramienta. Requiere tener instalado Active Python.
 
-
 # Consideraciones legales y éticas
 
 En el aspecto legal y ético de las adquisiciones forenses de los dispositivos IoT y móviles debe considerarse que, para la extensión de su uso y presencia en nuestras vidas, existe una falta de reglas universales y regulaciones aplicables a los mismos debido al vertiginoso ritmo de avance en las nuevas tecnologías y al contrantes con el inherente ritmo más pausado que la elaboración de leyes y reglamentos requiere.
