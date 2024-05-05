@@ -2,26 +2,35 @@
 
 1. [Resumen ejecutivo](#resumen-ejecutivo)
 2. [Introducción](#introducción)
-3. [Objetivos](#objetivos)
-4. [Alcance](#alcance)
-5. [Metodología](#metodología)
-6. [Investigación](#investigación)  
-   6.1 [Timeline](#timeline)
-7. [Conclusiones](#conclusiones)
+2. [Investigación teórica](#investigación-teórica)
+3. [Evaluación de herramientas y métodos](#evaluación-de-herramientas-y-métodos)
+   - [Métodos de extracción de vestigios](#métodos-de-extracción-de-vestigios)
+   - [Herramientas para IoT](#herramientas-para-iot)
+   - [Herramientas para móviles](#herramientas-para-móviles)
+6. [Consideraciones legales y éticas](#consideraciones-legales-y-éticas)
 8. [Anexos](#anexos)
 
 # Resumen ejecutivo
 
+En el documento se aportan diferentes perspectivas del análisis forense de smartphones y dispositivos IoT. Se discuten varios métodos de adquisición de datos, incluyendo la adquisición física, la adquisición lógica y la adquisición del sistema de ficheros.
+
+Durante el proceso de investigación, se termina concluyendo que no existen herramientas específicas para la adquisición de evidencias forenses de IoT, lo cual si uno para a pensarlo es lógico teniendo en cuenta la gran variabilidad en la arquitectura y hardware de este tipo de dispositivo. Aún no habiendo herramientas específicas, debido a la sólida naturaleza general y compatible de herramientas como FTK Imager o Wireshark podemos valernos de ellas para conseguir resultados válidos a la hora de trabajar con estos dispositivos. 
+
+En cuanto a la adquisición de datos en dispositivos móviles y smartphones, se describen varias herramientas como Android Debug Bridge (ADB), AFLogical OSE, Andriller CE, LIME- Linux Memory Extractor y WhatsApp Xtract. Para la práctica de la adquisición realizada para este mismo informe, se utilizaron ADB para realizar una captura de todas las aplicaciones, datos de las aplicaciones y del sistema, además de utilizar Whatsapp Xtract para realizar la adquisición de las conversaciones de WhatsApp de un smartphone.
+
+Se abordan también las consideraciones legales y éticas de las adquisiciones forenses. Se hace referencia al Reglamento General de Protección de Datos (GDPR), a la guía de la ACPO entre otras. Se destaca la importancia de la transparencia en el proceso de recopilación de datos y se discuten las implicaciones éticas de la aplicación de modelos de Machine Learning para procesar y detectar patrones en los datos de un usuario.
+
+En resumen, el documento proporciona una visión general de las metodologías, herramientas, una pequeña práctica de adquisición de un smartphone y consideraciones éticas y legales en el análisis forense de smartphones y dispositivos IoT.
 
 # Introducción
 
+En este documento se realiza una investigación acerca del proceso de análisis forense en smartphones y dispositivos IoT. 
+
+Se discuten y exponen distintos aspectos como metodologías para realizar adquisiciones, herramientas comunes que se utilizan, tipos y variantes de adquisición, añadiendo también comentarios y ciertas referencias sobre los aspectos legales y éticos del análisis forense en este tipo de dispositivos.
 
 # Investigación teórica
 
-
-# Evaluación de herramientas y métodos
-
-## Metodos de extracción de evidencias
+## Métodos de extracción de vestigios
 
 - **Adquisición física:** Es el método más utilizado. Consiste en realizar una réplica idéntica del original por lo que se preservan la totalidad de las evidencias potenciales. Este procedimiento presenta la ventaja de que es posible buscar elementos eliminados. Su desventaja principal es su complejidad respecto a los otros métodos y el tiempo que lleva su realización.
 
@@ -87,6 +96,8 @@ Esta herramienta Open Source permite la adquisición de memoria volátil desde d
 
 Es una herramienta que permite extraer del dispositivo móvil todas las conversaciones en el ordenador. Esta aplicación de Windows trabaja con archivos .bat utilizandolo con la ruta "/sdcard/WhatsApp/Databases/msgstore.db.crypt" desde la cual tendremos que ejecutar la herramienta. Requiere tener instalado Active Python.
 
+# Evaluación de herramientas y métodos
+
 # Consideraciones legales y éticas
 
 En el aspecto legal y ético de las adquisiciones forenses de los dispositivos IoT y móviles debe considerarse que, para la extensión de su uso y presencia en nuestras vidas, existe una falta de reglas universales y regulaciones aplicables a los mismos debido al vertiginoso ritmo de avance en las nuevas tecnologías y al contrantes con el inherente ritmo más pausado que la elaboración de leyes y reglamentos requiere.
@@ -104,9 +115,6 @@ Debido a que pueden existir distintos requerimentos legales en donde un crimen s
 Según la información recaba en el artículo de Sedky, M. 2020, los usuarios tienen derecho a acceder a sus datos personales en todo momento y a que el proceso de sus datos por parte de los analistas forenses sea transparente, incluyendo aspectos sobre cómo se lleva a cabo la recopilación, el uso, divulgación y almacenamiento de su información personal. la responsabilidad en el tratamiento de estos datos recae principalmente en el investigador forense, que en caso de incumplir alguna ley de protección de datos puede enfrentar grandes multas. 
 
 Con el aspecto ético podemos destacar la reciente aplicación de modelos de Machine Learning para procesar y detectar patrones en los datos de un usuario, llegando a crear perfiles de individuos a través del procesamiento probabilístico de sus datos personales. Esto puede llevar implicaciones éticas serias como por ejemplo que se elaboren estádisticas o gráficos de información acerca del comportamiento de un individuo y se le muestre a un juez como prueba en un juicio: El desconocimiento del funcionamiento de las tecnologías de Machine Learning o IA pueden llevar a una toma de conclusiones muy sesgada e inválida.
-
-# Conclusiones
-
 
 # Referencias
 
