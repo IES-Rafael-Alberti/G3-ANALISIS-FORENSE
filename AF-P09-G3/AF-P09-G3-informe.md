@@ -1,22 +1,26 @@
 ## Índice
 
-1. [Juramento de causa](#apartado-1---juramento-de-causa)
-2. [Glosario de Palabras clave](#apartado-2---glosario-de-palabras-clave)
-3. [Índice de figuras](#apartado-3---índice-de-figuras)
-4. [Resumen ejecutivo](#apartado-4---resumen-ejecutivo)
-5. [Introducción](#5---introducción)
-    - [5.1 - Antecedentes](#51---antecedentes)
-    - [5.2 - Objetivos](#52---objetivos)
-6. [Fuentes de información](#6---fuentes-de-información)
-    - [6.1 - Adquisición de evidencias](#61---adquisición-de-evidencias)
-7. [Análisis](#7---análisis)
-    - [7.1 - Herramientas usadas](#71---herramientas-usadas)
-    - [7.2 - Procesos](#72---procesos)
-        - [7.2.1 - Análisis de xxx](#721---análisis-de-xxx)
-        - [7.2.2 - Análisis de yyy](#722---análisis-de-yyy)
-8. [Limitaciones](#8---limitaciones)
-9. [Conclusiones](#9---conclusiones)
-10. [Anexos](#anexos)
+- [1. Juramento de causa](#1-juramento-de-causa)
+  - [1.1 Declaración de abstención y tachas](#11-declaración-de-abstención-y-tachas)
+  - [1.2 Juramento de Promesa](#12-juramento-de-promesa)
+- [2. Glosario de Palabras clave](#2-glosario-de-palabras-clave)
+- [3. Índice de figuras](#3-índice-de-figuras)
+- [4. Resumen ejecutivo](#4-resumen-ejecutivo)
+- [5. Introducción](#5-introducción)
+  - [5.1 - Antecedentes](#51---antecedentes)
+  - [5.2 Objetivos](#52-objetivos)
+- [6. Fuentes de información](#6-fuentes-de-información)
+- [6.1 Adquisición de evidencias](#61-adquisición-de-evidencias)
+- [7. Análisis](#7-análisis)
+  - [7.1 Herramientas usadas](#71-herramientas-usadas)
+  - [7.2 Procesos](#72-procesos)
+    - [7.2.1 Análisis del móvil del marido de la víctima](#721-análisis-del-móvil-del-marido-de-la-víctima)
+    - [7.2.2 Análisis del móvil encontrado (FI.)](#722-análisis-del-móvil-encontrado-fi)
+    - [7.2.3 Timeline](#723-timeline)
+- [8. Limitaciones](#8-limitaciones)
+- [9. Conclusiones](#9-conclusiones)
+- [Anexos](#anexos)
+- [Referencias](#referencias)
 
 # 1. Juramento de causa
 
@@ -64,15 +68,15 @@ A las 15:50, la policía comenzó a interrogar al conserje y al marido de la ví
 
 El marido colaboró y permitió el acceso a todos los dispositivos, identificando la pulsera inteligente y el teléfono móvil como pertenencias de la víctima. Sin embargo, aseguró desconocer las contraseñas de dichos dispositivos. La contraseña de la red Wi-Fi del hogar era "*iot14306*", se declara también la existencia de una red de invitados con la contraseña "*iot14305*".
 
-## 5.2 - Objetivos
+## 5.2 Objetivos
 
 En base a los antecedentes y las fuentes de información aportadas, en calidad de peritos forenses hemos decidido establecer los siguientes objetivos
 
-- Confirmar que las horas de las declaraciones aportadas en los antecedentes son coherentes y resultan correctas.
-- Confirmar que efectivamente los auriculares estaban encendidos o tienen registros coherentes con la hora en la que se declara en los antecedentes por el marido.
-- Confirmar que las contraseñas aportadas del router WiFi son correctas.
-- Confirmar que el smartphone encontrado junto a al víctima es efectivamente propiedad de la misma.
-- Localizar datos anómalos en 
+1. Estudiar y confirmar que las horas de las declaraciones aportadas en los antecedentes son coherentes y resultan correctas.
+2. Confirmar que efectivamente los auriculares estaban encendidos o tienen registros coherentes con la hora en la que se declara en los antecedentes por el marido.
+3. Confirmar que las contraseñas aportadas del router WiFi son correctas.
+4. Confirmar que el smartphone encontrado junto a al víctima es efectivamente propiedad de la misma.
+5. Realizar análisis profundos de las fuentes de informacicón para intentar encontrar anomalías, incoherencias o hallazgos significativos que puedan aportar a la investigación.
 
 # 6. Fuentes de información
 
@@ -93,17 +97,52 @@ Estas fuentes de evidencias se referenciaran utilizando el siguiente formato: FI
 11. Sensor en la puerta del dormitorio.
 12. Smartphone en posesión del marido de la víctima.
 
+
+
 # 6.1 Adquisición de evidencias
 (Cómo se adquirieron las evidencias)
 
 # 7. Análisis
-A continuación en esta sección se procede a exponer los análsis de las fuentes de información proporcionadas con una sección individual para cada
+A continuación en esta sección se procede a exponer los análsis de las fuentes de información proporcionadas.
  
 ## 7.1 Herramientas usadas
+
+
+
 ## 7.2 Procesos
-(El informe debe ser reproducible, poner pasos necesarios para conseguir algo, decir con qué herramienta lo hiciste)
+En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos). Lo único destacable que podemos encontrar es, en el proceso de investigación de los mismos se revisaron las conexiones bluetooth, y de ello podemos extraer la dirección MAC del dispositivo la cual es `b8:ad:3e:01:5b:6a`.
+
+![bluetooth-mac-cascos](./img/bluetooth-bt_config.png)
+*Fig 1.1*
+
+Continuando con el estudio del [*Objetivo 1*](#52---objetivos), se realiza el análisis de la fuente de información [FI.9](#6-fuentes-de-información) debido a que en los antecedentes se declara que se estaba visualizando una película con auriculares en las horas circundantes a los hechos. Durante el análisis del disco con la herramienta FTK Imager, se realiza el hallazgo de la aplicación "*Kodi*", instalada el dispositivo del que se extrae la [FI.9](#6-fuentes-de-información), la cual se utiliza para reproducir contenidos multimedia, entre ellos series o películas.
+
+Es por ello que se profundiza más en este hallazgo y se realiza el hallazgo de la base de datos de los contenidos visualizados en el dispositivo. Se focaliza el enfoque la investigación en las horas relacionadas con el caso y se encuentra que en ese marco horario se visualizaron dos vídeos cuyas marcas de tiempo indican las **2:07:30** y **2:19:37** ambas del día **17 de Julio de 2017**, estos dos datos se verán reflejados en la [*Timeline*](#723-timeline) adjunta en las siguientes secciones.
+
+![kodi-myvideos107](./img/myvideos107.png)
+*Fig 1.2*
+
+> [!NOTE]  
+> Los dispositivos como raspberryPi, del cuál se ha extraído la FI.9, consisten en términos muy simples en un ordenador de sobremesa pero con un tamaño de bolsillo, que utiliza Linux o una variante del mismo llamada distribución para operar.
+
+Se ha podido constatar que estas horas se encuentran en un horario diferente, viniendo definidas por la zona horaria "*America/New_York*" del sistema operativo *Linux*, la cual se puede verificar mediante la comprobación del archivo de configuración ubicado en el directorio `/etc/timezone` por defecto en este tipo de sistema operativo.
+
+![timezone](./img/timezone.png)
+*Fig 1.3*
+
+Por lo tanto las horas resultantes tras los ajustes del ajuste horario aportado en los antecedentes de **UTC+9** y la zona horaria de "*America/New_York*" que corresponde a **UTC-4** serían **15:07:30** y el segundo a las **15:19:37**.
+
+En el mismo análisis de la [FI.9](#6-fuentes-de-información), ya que se dispone de la MAC de los auriculares 
+
+Se observa cierta anomalía de la que se considera relevante dejar constancia en este informe, y es que, mediante el análisis de la [FI.5](#6-fuentes-de-información), se encuentra un registro que indica al dispositivo Alexa que apague la televisión. En la [FI.5](#6-fuentes-de-información) se incluyen junto a las grabaciones de las órdenes recibidas un archivo en formato `.json` que contiene datos acerca de esa misma orden. Concretamente, el archivo de orden de apagado al que nos referimos es el `3.wav` junto a su archivo de datos `3.json`, en el que puede verificarse que la orden se ejecutó con éxito
+
+![alt text](image.png)
+*Fig 1.4*
+
+
 ### 7.2.1 Análisis del móvil del marido de la víctima
 ### 7.2.2 Análisis del móvil encontrado (FI.)
+### 7.2.3 Timeline
 
 # 8. Limitaciones
 (Los objetivos no cumplidos y lo que no se ha conseguido)
