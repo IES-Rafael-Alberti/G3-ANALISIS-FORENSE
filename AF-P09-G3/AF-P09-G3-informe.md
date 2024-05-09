@@ -251,6 +251,8 @@ Luego se ha comprobado los dispositivos bluetooth que se han conectado a la Smar
 
 ### 7.2.6 Tráfico de red
 
+Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hemos encontrado ninguna información relevante para el caso.
+
 ### 7.2.7 Timeline
 
 # 8. Limitaciones
