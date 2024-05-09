@@ -112,7 +112,9 @@ A continuación en esta sección se procede a exponer los análsis de las fuente
 
 
 ## 7.2 Procesos
-En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos). Lo único destacable que podemos encontrar ha sido en el móvil del marido de la victima, en el proceso de investigación de los mismos se revisaron las conexiones bluetooth, y del ya mencionado, podemos extraer una dirección MAC la cual es `b8:ad:3e:01:5b:6a` y el nombre de un dispositivo.
+En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos).
+
+ Lo único destacable que podemos encontrar ha sido en el móvil del marido de la victima, en el proceso de investigación del mismo se revisaron las conexiones bluetooth, y del ya mencionado, podemos extraer una dirección MAC la cual es `b8:ad:3e:01:5b:6a` y el nombre de un dispositivo.
 
 ![bluetooth-mac-cascos](./img/bluetooth-bt_config.png)
 *Fig 1.1*
@@ -150,11 +152,43 @@ Se observa cierta anomalía de la que se considera relevante dejar constancia en
 
 
 ### 7.2.1 Análisis del móvil del marido de la víctima
+
+Se ha extraido con 7zip el archivo zip recibido y se ha extraido con 7zip también todos los distintos `.mdf` encontrados.
+
+Mirando en cada uno de los `.mdf`, en el justamente llamado `SHV-E250S_Physical_20170718_USERDATA.mdf` se ha encontrado en una ruta de directorios siendo esta la `/USERDATA/misc/bluedroid/` se ha encontrado varios archivos. Solo uno ha sido interesante siendo este el llamado `bt_config.xml`.
+
 ### 7.2.2 Análisis del móvil encontrado (FI.)
+
 ### 7.2.3 Alexa
+
+Primero se han revisado las imagenes `first page.png` y `history second page.png` para comprobar el historial de peticiones a Alexa y comparado con los audios recibidos de las mismas peticiones. Los más interesantes encontrados han sido los mencionados en [7.2](#72-procesos).
+
 ### 7.2.4 Smart Tv
+
+Se ha utilizado Autopsy para analizar la imagen recibida del almacenamiento del dispositivo IoT. 
+
+Analizando dichos ficheros, se ha encontrado en `/home/osmc/` un directorio llamado .kodi el cual coincide con una aplicación que como se ha mencionado en [7.2](#72-procesos) sirve para visualizar videos como por ejemplo, peliculas.
+
+Investigando los directorios dentro de .kodi se ha encontrado un directorio plugins en cual contiene un directorio siendo la ruta completa `/home/osmc/.kodi/addons/plugin.video.youtube` que nos indica que el dispositivo tiene instalado en Kodi un plugin que permite visualizar videos de Youtube.
+
+Se ha seguido buscando información interesante y como se ha mencionado en [7.2](#72-procesos) se ha encontrado en `/home/osmc/.kodi/userdata/Database/` un fichero `.db` llamado MyVideos107.db.
+
+Con la herramienta DB Browser for SQlite se ha analizado dicha base de datos y en la tabla files se ha encontrado una serie de videos que analizando las fechas, dos de ellos coincidian en la fecha del asesinato.
+
+Se ha buscado para determinar la zona horaria ya que no coincidía con las horas del incidente, algo que nos indicase la zona horaria del dispositivo.
+
+Volviendo a Autopsy y buscando en internet donde se guarda este fichero en Ubuntu ya que como podemos visualizar en [7.2](#72-procesos) la organización de los directorios son como en Ubuntu.
+
+En el fichero `/etc/timezone` encontramos la zona horaria y tras ello se ha cambiado a UTC+9 los videos de Youtube mencionados.
+
+Se han comprobado la duración de los videos copiando el ID de cada video y añadiendolo a un enlace de Youtube.
+
+Luego se ha comprobado los dispositivos bluetooth que se han conectado a la Smart Tv, para ello en el propio Autopsy se ha analizado la ruta `/var/lib/bluetooth/B8:27:EB:E6:8D:79/cache/` y encontrado dos ficheros que indican la MAC de los dispositivos Bluetooth que se han conectado a la Smart Tv y se han comparado con la MAC de los cascos encontrados en el móvil del marido de la victima.
+
 ### 7.2.5 Google on Hub
+
 ### 7.2.6 Tráfico de red
+
 ### 7.2.7 Timeline
 
 # 8. Limitaciones
