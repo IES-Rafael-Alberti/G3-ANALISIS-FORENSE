@@ -160,7 +160,7 @@ En el mismo análisis de la [FI.9](#6-fuentes-de-información), ya que se dispon
 
 Se observa cierta anomalía de la que se considera relevante dejar constancia en este informe, y es que, mediante el análisis de la [FI.5](#6-fuentes-de-información), se encuentra un registro que indica al dispositivo Alexa que apague la televisión. En la [FI.5](#6-fuentes-de-información) se incluyen junto a las grabaciones de las órdenes recibidas un archivo en formato `.json` que contiene datos acerca de esa misma orden. Concretamente, el archivo de orden de apagado al que nos referimos es el `3.wav` junto a su archivo de datos `3.json`, en el que puede verificarse que la orden se ejecutó con éxito
 
-![alt text](image.png)
+![alt text](./img/image.png)
 *Fig 1.6*
 
 ### 7.2.1 Análisis del móvil del marido de la víctima
@@ -256,6 +256,8 @@ Después de revisar el código encontrado en el informe de diagnóstico de Googl
 Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hemos encontrado ninguna información relevante para el caso.
 
 ### 7.2.7 Timeline
+
+![alt text](./img/image-1.png)
 
 # 8. Limitaciones
 (Los objetivos no cumplidos y lo que no se ha conseguido)
