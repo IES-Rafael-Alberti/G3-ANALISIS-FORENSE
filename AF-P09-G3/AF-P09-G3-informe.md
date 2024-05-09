@@ -64,6 +64,12 @@ Que lo expresado y reflejado en el presente informe o dictamen pericial está ba
 
 # 5. Introducción
 
+En este documento se detallan los hallazgos encontrados a través del análisis de las adquisiciones dadas de los dos móviles recibidos, el historial y grabaciones de Alexa, la imagen de disco de la Smart Tv, Google on hub y el tráfico de red.
+
+Se incluyen además una serie de anexos que hace referencia a los hallazgos que se han encontrado, la cadena de custodia y los hashes sobre la integridad de las adquisiciones que se nos ha suministrado.
+
+También incluye la metodología utilizada y una línea temporal de los hallazgos encontrados que nos permite con mayor certeza y claridad el incidente.
+
 ## 5.1 - Antecedentes
 
 El presente informe se realiza en relación a los hechos acontecidos el 17 de julio de 2017, a las 15:31, día en el que se recibió una llamada en el número de emergencias 112 por parte de un conserje, quien afirmó que uno de los vecinos le había informado que su mujer había sido atacada en su hogar. Ese mismo día la policía llegó al lugar a las 15:40 y encontró al conserje y al marido de la víctima en la escena del crimen. Tras asegurar la zona, se pudo comprobar que la mujer se encontraba sin signos vitales en el salón de la vivienda. El examen traumatólogico inicial sugiere que la víctima murió a causa de múltiples puñaladas. Los servicios médicos confirmaron el fallecimiento.
@@ -108,8 +114,14 @@ Estas fuentes de evidencias se referenciaran utilizando el siguiente formato: FI
 A continuación en esta sección se procede a exponer los análsis de las fuentes de información proporcionadas.
  
 ## 7.1 Herramientas usadas
+En este punto se especifican las herramientas utilizadas y sus versiones.
 
-
+| Nombre de la herramienta | Versión    |
+|--------------------------|------------|
+| Autopsy      | 3.2.10     |
+| DB Browser for SQLite  | 3.12.2   |
+| 7zip  |    23.01   |
+| Notepad++  |   8.5.4    |
 
 ## 7.2 Procesos
 
@@ -210,6 +222,8 @@ En cuanto a los hallazgos de hardware, se descubrió la dirección MAC Bluetooth
 ### 7.2.3 Alexa
 
 Primero se han revisado las imagenes `first page.png` y `history second page.png` para comprobar el historial de peticiones a Alexa y comparado con los audios recibidos de las mismas peticiones. Los más interesantes encontrados han sido los mencionados en [7.2](#72-procesos).
+
+También se han analizado las imagenes encontradas en la ruta `/Alexa/Alexa Screenshot/Music Video and Books/Music Video and Books/` la imagen llamada 2017-07-17_17h03_29.png para comprobar que tipos de servicios existen de tipo Música y encontrandose en ella un servicio llamado Pandora.
 
 ### 7.2.4 Smart Tv
 
