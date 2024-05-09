@@ -215,9 +215,7 @@ Además, en la Base de Datos **locksettings.db**, se observaron configuraciones 
 
 ![locksettings_victima.png](img/locksettings_victima.png)
 
-En cuanto a los hallazgos de hardware, se descubrió la dirección MAC Bluetooth `1C:AF:05:9E:19:74`, lo que podría ser útil para identificar dispositivos asociados o conexiones Bluetooth previas. También se encontró información sobre la versión de hardware (*hw_ver*) y el número de serie (*serial_no*) del dispositivo. 
-
-
+En cuanto a los hallazgos de hardware, se descubrió la dirección MAC Bluetooth `1C:AF:05:9E:19:74`. Además, se obtuvo información sobre la versión de hardware (hw_ver), identificada como **E25.07**, y el número de serie del dispositivo (serial_no), que se registró como **R33DB09VR9,20131113,7J211329**. 
 
 ### 7.2.3 Alexa
 
