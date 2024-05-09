@@ -108,10 +108,14 @@ A continuación en esta sección se procede a exponer los análsis de las fuente
 
 
 ## 7.2 Procesos
-En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos). Lo único destacable que podemos encontrar es, en el proceso de investigación de los mismos se revisaron las conexiones bluetooth, y de ello podemos extraer la dirección MAC del dispositivo la cual es `b8:ad:3e:01:5b:6a` y el nombre del dispositivo.
+En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos). Lo único destacable que podemos encontrar ha sido en el móvil del marido de la victima, en el proceso de investigación de los mismos se revisaron las conexiones bluetooth, y del ya mencionado, podemos extraer una dirección MAC la cual es `b8:ad:3e:01:5b:6a` y el nombre de un dispositivo.
 
 ![bluetooth-mac-cascos](./img/bluetooth-bt_config.png)
 *Fig 1.1*
+
+Encontrar el nombre del dispositivo nos ha posibilitado buscarlo en internet y hallar el tipo de dispositivo conectado a ese móvil.
+![cascos-bluetooth](./img/cascos-bluetooth.png)
+*Fig 2.2*
 
 Continuando con el estudio del [*Objetivo 1*](#52---objetivos), se realiza el análisis de la fuente de información [FI.9](#6-fuentes-de-información) debido a que en los antecedentes se declara que se estaba visualizando una película con auriculares en las horas circundantes a los hechos. Durante el análisis del disco con la herramienta FTK Imager, se realiza el hallazgo de la aplicación "*Kodi*", instalada el dispositivo del que se extrae la [FI.9](#6-fuentes-de-información), la cual se utiliza para reproducir contenidos multimedia, entre ellos series o películas.
 
@@ -143,7 +147,10 @@ Se observa cierta anomalía de la que se considera relevante dejar constancia en
 
 ### 7.2.1 Análisis del móvil del marido de la víctima
 ### 7.2.2 Análisis del móvil encontrado (FI.)
-### 7.2.3 Timeline
+### 7.2.3 Alexa
+### 7.2.4 Smart Tv
+### 7.2.5 Google on Hub
+### 7.2.7 Timeline
 
 # 8. Limitaciones
 (Los objetivos no cumplidos y lo que no se ha conseguido)
