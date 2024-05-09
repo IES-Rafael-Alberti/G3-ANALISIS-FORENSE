@@ -112,9 +112,10 @@ A continuación en esta sección se procede a exponer los análsis de las fuente
 
 
 ## 7.2 Procesos
+
 En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos).
 
- Lo único destacable que podemos encontrar ha sido en el móvil del marido de la victima, en el proceso de investigación del mismo se revisaron las conexiones bluetooth, y del ya mencionado, podemos extraer una dirección MAC la cual es `b8:ad:3e:01:5b:6a` y el nombre de un dispositivo.
+Lo único destacable que podemos encontrar ha sido en el móvil del marido de la victima, en el proceso de investigación del mismo se revisaron las conexiones bluetooth, y del ya mencionado, podemos extraer una dirección MAC la cual es `b8:ad:3e:01:5b:6a` y el nombre de un dispositivo.
 
 ![bluetooth-mac-cascos](./img/bluetooth-bt_config.png)
 *Fig 1.1*
@@ -150,7 +151,6 @@ Se observa cierta anomalía de la que se considera relevante dejar constancia en
 ![alt text](image.png)
 *Fig 1.6*
 
-
 ### 7.2.1 Análisis del móvil del marido de la víctima
 
 Se ha extraido con 7zip el archivo zip recibido y se ha extraido con 7zip también todos los distintos `.mdf` encontrados.
@@ -158,6 +158,54 @@ Se ha extraido con 7zip el archivo zip recibido y se ha extraido con 7zip tambi�
 Mirando en cada uno de los `.mdf`, en el justamente llamado `SHV-E250S_Physical_20170718_USERDATA.mdf` se ha encontrado en una ruta de directorios siendo esta la `/USERDATA/misc/bluedroid/` se ha encontrado varios archivos. Solo uno ha sido interesante siendo este el llamado `bt_config.xml`.
 
 ### 7.2.2 Análisis del móvil encontrado (FI.)
+
+Durante el proceso de análisis forense del dispositivo SHV-E250L del 17 de julio de 2017, se encontraron varios hallazgos significativos que proporcionan una visión detallada de su uso y configuración. En la Base de Datos **dmappmgr.db**, específicamente en la tabla **ApplicationControl**, se identificaron registros de aplicaciones junto con sus tiempos de último lanzamiento. 
+
+| **__id** |                    **pkgname**                     | **lastLaunchTime (Epoch Time)** | **lastLaunchTime (GMT+9)** |
+| :------: | :------------------------------------------------: | :-----------------------------: | :------------------------: |
+|  **1**   |             com.android.vending:0              |          1499931548175          |  Jue Jul 13 2017 16:39:08  |
+|  **2**   |                com.wssyncmldm:0                |          1499837592454          |  Mie Jul 12 2017 14:33:12  |
+|  **3**   |    com.sec.android.cloudagent.dropboxoobe:0    |          1499837429525          |  Mie Jul 12 2017 14:30:29  |
+|  **4**   |         com.sec.android.app.launcher:0         |          1500271590519          |  Lun Jul 17 2017 15:06:30  |
+|  **5**   |        com.google.android.setupwizard:0        |          1499837436559          |  Mie Jul 12 2017 14:30:36  |
+|  **6**   |         com.google.android.gsf.login:0         |          1499849304591          |  Mie Jul 12 2017 17:48:24  |
+|  **7**   |              com.kingouser.com:0               |          1500111847472          |  Sab Jul 15 2017 18:44:07  |
+|  **8**   |       com.sec.android.preloadinstaller:0       |          1499836995273          |  Mie Jul 12 2017 14:23:15  |
+|  **9**   |              com.osp.app.signin:0              |          1499837410697          |  Mie Jul 12 2017 14:30:10  |
+|  **10**  |          com.sec.android.fotaclient:0          |          1499837489207          |  Mie Jul 12 2017 14:31:29  |
+|  **11**  |      com.sec.android.app.SecSetupWizard:0      |          1499837435316          |  Mie Jul 12 2017 14:30:35  |
+|  **12**  |             com.android.settings:0             |          1500271255646          |  Lun Jul 17 2017 15:00:55  |
+|  **13**  |        com.android.ahnmobilesecurity:0         |          1499837433157          |  Mie Jul 12 2017 14:30:33  |
+|  **25**  |            com.google.android.gms:0            |          1500271316079          |  Lun Jul 17 2017 15:01:56  |
+|  **26**  |           com.google.android.talk:0            |          1500271408466          |  Lun Jul 17 2017 15:03:28  |
+|  **27**  |               com.android.mms:0                |          1500270559294          |  Lun Jul 17 2017 14:49:19  |
+|  **38**  |   com.google.android.googlequicksearchbox:0    |          1500271701675          |  Lun Jul 17 2017 15:08:21  |
+|  **44**  |             com.android.contacts:0             |          1499927997887          |  Jue Jul 13 2017 15:39:57  |
+|  **57**  |            com.google.android.gm:0             |          1499932048358          |  Jue Jul 13 2017 16:47:28  |
+|  **58**  |             com.android.systemui:0             |          1500270809079          |  Lun Jul 17 2017 14:53:29  |
+|  **72**  |          com.kingoapp.superbattery:0           |          1500271651029          |  Lun Jul 17 2017 15:07:31  |
+|  **74**  |         com.android.packageinstaller:0         |          1499869244206          |  Mie Jul 12 2017 23:20:44  |
+|  **75**  | com.google.android.apps.access.wifi.consumer:0 |          1499933188784          |  Jue Jul 13 2017 17:06:28  |
+|  **76**  |         com.sec.android.app.myfiles:0          |          1499869238426          |  Mie Jul 12 2017 23:20:38  |
+|  **77**  |              com.android.chrome:0              |          1500271652599          |  Lun Jul 17 2017 15:07:32  |
+|  **82**  |               com.nest.android:0               |          1499869220038          |  Mie Jul 12 2017 23:20:20  |
+|  **83**  |              com.amazon.dee.app:0              |          1500271397120          |  Lun Jul 17 2017 15:03:17  |
+|  **85**  |             com.xiaomi.hm.health:0             |          1500270794476          |  Lun Jul 17 2017 14:53:14  |
+|  **86**  |          com.sec.android.fwupgrade:0           |          1499931153732          |  Jue Jul 13 2017 16:32:33  |
+
+La Base de Datos **enterprise.db** proporcionó información importante sobre el dispositivo, especialmente a través de la tabla generic. Se identificó la versión del sistema operativo Android como la **4.4.2**, junto con detalles adicionales sobre la build del SO, que es la **KOT49H**, y la versión del firmware, que es la **E250LKLUKOH4**. Además, se confirmó que el dispositivo es de la marca **Samsung**. 
+
+![generic_victima.png](img/generic_victima.png)
+
+![E250SKSUKOH4](img/E250LKLUKOH4.png)
+
+Además, en la Base de Datos **locksettings.db**, se observaron configuraciones vinculadas a la pantalla de bloqueo del dispositivo, incluyendo opciones como el desbloqueo facial. 
+
+![locksettings_victima.png](img/locksettings_victima.png)
+
+En cuanto a los hallazgos de hardware, se descubrió la dirección MAC Bluetooth `1C:AF:05:9E:19:74`, lo que podría ser útil para identificar dispositivos asociados o conexiones Bluetooth previas. También se encontró información sobre la versión de hardware (*hw_ver*) y el número de serie (*serial_no*) del dispositivo. 
+
+
 
 ### 7.2.3 Alexa
 
