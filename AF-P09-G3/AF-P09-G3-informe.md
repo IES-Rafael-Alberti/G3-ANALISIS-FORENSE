@@ -16,7 +16,11 @@
   - [7.2 Procesos](#72-procesos)
     - [7.2.1 Análisis del móvil del marido de la víctima](#721-análisis-del-móvil-del-marido-de-la-víctima)
     - [7.2.2 Análisis del móvil encontrado (FI.)](#722-análisis-del-móvil-encontrado-fi)
-    - [7.2.3 Timeline](#723-timeline)
+    - [7.2.3 Alexa](#723-alexa)
+    - [7.2.4 Smart Tv](#724-smart-tv)
+    - [7.2.5 Google on Hub](#725-google-on-hub)
+    - [7.2.6 Tráfico de red](#726-tráfico-de-red)
+    - [7.2.7 Timeline](#727-timeline)
 - [8. Limitaciones](#8-limitaciones)
 - [9. Conclusiones](#9-conclusiones)
 - [Anexos](#anexos)
@@ -150,6 +154,7 @@ Se observa cierta anomalía de la que se considera relevante dejar constancia en
 ### 7.2.3 Alexa
 ### 7.2.4 Smart Tv
 ### 7.2.5 Google on Hub
+### 7.2.6 Tráfico de red
 ### 7.2.7 Timeline
 
 # 8. Limitaciones
