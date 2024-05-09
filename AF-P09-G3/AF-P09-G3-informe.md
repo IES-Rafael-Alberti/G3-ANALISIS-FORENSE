@@ -109,7 +109,14 @@ A continuación en esta sección se procede a exponer los análsis de las fuente
  
 ## 7.1 Herramientas usadas
 
+En este punto se especifican las herramientas utilizadas y sus versiones.
 
+| Nombre de la herramienta | Versión    |
+|--------------------------|------------|
+| Autopsy      | 3.2.10     |
+| DB Browser for SQLite  | 3.12.2   |
+| 7zip  |    23.01   |
+| Notepad++  |   8.5.4    |
 
 ## 7.2 Procesos
 En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos).
