@@ -171,7 +171,7 @@ Mirando en cada uno de los `.mdf`, en el justamente llamado `SHV-E250S_Physical_
 
 ### 7.2.2 Análisis del móvil encontrado (FI.)
 
-Durante el proceso de análisis forense del dispositivo SHV-E250L del 17 de julio de 2017, se ha descomprimido y examinado meticulosamente los archivos .mdf recibidos como fuentes de evidencia utilizando 7Zip, asegurando así su accesibilidad y análisis adecuado.
+Durante el proceso de análisis forense del dispositivo SHV-E250L, se ha descomprimido y examinado meticulosamente los archivos .mdf recibidos como fuentes de evidencia utilizando 7Zip, asegurando así su accesibilidad y análisis adecuado.
 
 En la Base de Datos **dmappmgr.db**, específicamente en la tabla **ApplicationControl**, se identificaron registros de aplicaciones junto con sus tiempos de último lanzamiento. 
 
