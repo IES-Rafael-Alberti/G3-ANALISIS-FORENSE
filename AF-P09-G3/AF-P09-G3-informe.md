@@ -97,8 +97,6 @@ Estas fuentes de evidencias se referenciaran utilizando el siguiente formato: FI
 11. Sensor en la puerta del dormitorio.
 12. Smartphone en posesión del marido de la víctima.
 
-
-
 # 6.1 Adquisición de evidencias
 (Cómo se adquirieron las evidencias)
 
@@ -110,7 +108,7 @@ A continuación en esta sección se procede a exponer los análsis de las fuente
 
 
 ## 7.2 Procesos
-En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos). Lo único destacable que podemos encontrar es, en el proceso de investigación de los mismos se revisaron las conexiones bluetooth, y de ello podemos extraer la dirección MAC del dispositivo la cual es `b8:ad:3e:01:5b:6a`.
+En primer lugar se ha procedido a comenzar la investigación revisando los dispositivos móviles para comenzar a intentar completar nuestro [*Objetivo 1*](#52---objetivos). Lo único destacable que podemos encontrar es, en el proceso de investigación de los mismos se revisaron las conexiones bluetooth, y de ello podemos extraer la dirección MAC del dispositivo la cual es `b8:ad:3e:01:5b:6a` y el nombre del dispositivo.
 
 ![bluetooth-mac-cascos](./img/bluetooth-bt_config.png)
 *Fig 1.1*
@@ -120,7 +118,7 @@ Continuando con el estudio del [*Objetivo 1*](#52---objetivos), se realiza el an
 Es por ello que se profundiza más en este hallazgo y se realiza el hallazgo de la base de datos de los contenidos visualizados en el dispositivo. Se focaliza el enfoque la investigación en las horas relacionadas con el caso y se encuentra que en ese marco horario se visualizaron dos vídeos cuyas marcas de tiempo indican las **2:07:30** y **2:19:37** ambas del día **17 de Julio de 2017**, estos dos datos se verán reflejados en la [*Timeline*](#723-timeline) adjunta en las siguientes secciones.
 
 ![kodi-myvideos107](./img/myvideos107.png)
-*Fig 1.2*
+*Fig 1.3*
 
 > [!NOTE]  
 > Los dispositivos como raspberryPi, del cuál se ha extraído la FI.9, consisten en términos muy simples en un ordenador de sobremesa pero con un tamaño de bolsillo, que utiliza Linux o una variante del mismo para operar.
@@ -128,19 +126,19 @@ Es por ello que se profundiza más en este hallazgo y se realiza el hallazgo de 
 Se ha podido constatar que estas horas se encuentran en un horario diferente, viniendo definidas por la zona horaria "*America/New_York*" del sistema operativo *Linux*, la cual se puede verificar mediante la comprobación del archivo de configuración ubicado en el directorio `/etc/timezone` por defecto en este tipo de sistema operativo.
 
 ![timezone](./img/timezone.png)
-*Fig 1.3*
+*Fig 1.4*
 
 Por lo tanto las horas resultantes tras los ajustes del ajuste horario aportado en los antecedentes de **UTC+9** y la zona horaria de "*America/New_York*" que corresponde a **UTC-4** serían **15:07:30** y el segundo a las **15:19:37**.
 
 En el mismo análisis de la [FI.9](#6-fuentes-de-información), ya que se dispone de la MAC de los auriculares, se comprueba el registro de conexiones bluetooth en el archivo `/var/bluetooth` y no se encuentran conexiones coincidentes con la dirección MAC encontrada.
 
 ![smartv-bluetooth](./img/bluetooth-raspberry.png)
-*Fig 1.4*
+*Fig 1.5*
 
 Se observa cierta anomalía de la que se considera relevante dejar constancia en este informe, y es que, mediante el análisis de la [FI.5](#6-fuentes-de-información), se encuentra un registro que indica al dispositivo Alexa que apague la televisión. En la [FI.5](#6-fuentes-de-información) se incluyen junto a las grabaciones de las órdenes recibidas un archivo en formato `.json` que contiene datos acerca de esa misma orden. Concretamente, el archivo de orden de apagado al que nos referimos es el `3.wav` junto a su archivo de datos `3.json`, en el que puede verificarse que la orden se ejecutó con éxito
 
 ![alt text](image.png)
-*Fig 1.5*
+*Fig 1.6*
 
 
 ### 7.2.1 Análisis del móvil del marido de la víctima
