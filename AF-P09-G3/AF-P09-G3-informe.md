@@ -123,7 +123,7 @@ Es por ello que se profundiza más en este hallazgo y se realiza el hallazgo de 
 *Fig 1.2*
 
 > [!NOTE]  
-> Los dispositivos como raspberryPi, del cuál se ha extraído la FI.9, consisten en términos muy simples en un ordenador de sobremesa pero con un tamaño de bolsillo, que utiliza Linux o una variante del mismo llamada distribución para operar.
+> Los dispositivos como raspberryPi, del cuál se ha extraído la FI.9, consisten en términos muy simples en un ordenador de sobremesa pero con un tamaño de bolsillo, que utiliza Linux o una variante del mismo para operar.
 
 Se ha podido constatar que estas horas se encuentran en un horario diferente, viniendo definidas por la zona horaria "*America/New_York*" del sistema operativo *Linux*, la cual se puede verificar mediante la comprobación del archivo de configuración ubicado en el directorio `/etc/timezone` por defecto en este tipo de sistema operativo.
 
@@ -132,12 +132,15 @@ Se ha podido constatar que estas horas se encuentran en un horario diferente, vi
 
 Por lo tanto las horas resultantes tras los ajustes del ajuste horario aportado en los antecedentes de **UTC+9** y la zona horaria de "*America/New_York*" que corresponde a **UTC-4** serían **15:07:30** y el segundo a las **15:19:37**.
 
-En el mismo análisis de la [FI.9](#6-fuentes-de-información), ya que se dispone de la MAC de los auriculares 
+En el mismo análisis de la [FI.9](#6-fuentes-de-información), ya que se dispone de la MAC de los auriculares, se comprueba el registro de conexiones bluetooth en el archivo `/var/bluetooth` y no se encuentran conexiones coincidentes con la dirección MAC encontrada.
+
+![smartv-bluetooth](./img/bluetooth-raspberry.png)
+*Fig 1.4*
 
 Se observa cierta anomalía de la que se considera relevante dejar constancia en este informe, y es que, mediante el análisis de la [FI.5](#6-fuentes-de-información), se encuentra un registro que indica al dispositivo Alexa que apague la televisión. En la [FI.5](#6-fuentes-de-información) se incluyen junto a las grabaciones de las órdenes recibidas un archivo en formato `.json` que contiene datos acerca de esa misma orden. Concretamente, el archivo de orden de apagado al que nos referimos es el `3.wav` junto a su archivo de datos `3.json`, en el que puede verificarse que la orden se ejecutó con éxito
 
 ![alt text](image.png)
-*Fig 1.4*
+*Fig 1.5*
 
 
 ### 7.2.1 Análisis del móvil del marido de la víctima
