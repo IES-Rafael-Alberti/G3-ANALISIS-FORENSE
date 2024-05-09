@@ -249,6 +249,8 @@ Luego se ha comprobado los dispositivos bluetooth que se han conectado a la Smar
 
 ### 7.2.5 Google on Hub
 
+Después de revisar el código encontrado en el informe de diagnóstico de Google OnHub, hemos descubierto detalles sobre la red, aunque no hemos encontrado ninguna información relevante para el caso en cuestión. El análisis del código se realizó utilizando el software Visual Studio Code 1.89.0.
+
 ### 7.2.6 Tráfico de red
 
 Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hemos encontrado ninguna información relevante para el caso.
