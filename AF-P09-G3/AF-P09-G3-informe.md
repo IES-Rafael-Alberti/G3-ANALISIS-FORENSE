@@ -272,7 +272,11 @@ Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hem
 
 - Anexo 2 - Cadena de custodia
 
+
+
 - Anexo 3 - Índice de hallazgos
+
+
 
 # Referencias
 
