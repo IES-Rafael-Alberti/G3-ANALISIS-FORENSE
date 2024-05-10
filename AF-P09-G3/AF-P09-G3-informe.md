@@ -269,10 +269,9 @@ Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hem
 
 - [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P09-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
 
-- Anexo 2 - Sumas de verificación
+- Anexo 2 - Cadena de custodia
 
-- Anexo 3 - Otras necesidades
-(Ejemplo de nombre, puede no ser necesario)
+- Anexo 3 - Índice de hallazgos
 
 # Referencias
 
