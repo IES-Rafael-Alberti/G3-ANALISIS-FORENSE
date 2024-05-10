@@ -1,4 +1,4 @@
-## Índice
+# Índice
 
 - [1. Juramento de causa](#1-juramento-de-causa)
   - [1.1 Declaración de abstención y tachas](#11-declaración-de-abstención-y-tachas)
