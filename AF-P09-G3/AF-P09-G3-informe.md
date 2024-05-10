@@ -60,6 +60,13 @@ Que lo expresado y reflejado en el presente informe o dictamen pericial está ba
 
 # 3. Índice de figuras
 
+- [Fig 1.1](#fig-11)
+- [Fig 1.2](#fig-12)
+- [Fig 1.3](#fig-13)
+- [Fig 1.4](#fig-14)
+- [Fig 1.5](#fig-15)
+- [Fig 1.6](#fig-16)
+
 # 4. Resumen ejecutivo
 
 # 5. Introducción
@@ -131,18 +138,18 @@ En primer lugar se ha procedido a comenzar la investigación revisando los dispo
 Lo único destacable que podemos encontrar ha sido en el móvil del marido de la victima, en el proceso de investigación del mismo se revisaron las conexiones bluetooth, y del ya mencionado, podemos extraer una dirección MAC la cual es `b8:ad:3e:01:5b:6a` y el nombre de un dispositivo.
 
 ![bluetooth-mac-cascos](./img/bluetooth-bt_config.png)
-*Fig 1.1*
+###### Fig 1.1
 
 Encontrar el nombre del dispositivo nos ha posibilitado buscarlo en internet y hallar el tipo de dispositivo conectado a ese móvil.
 ![cascos-bluetooth](./img/cascos-bluetooth.png)
-*Fig 2.2*
+###### Fig 2.2
 
 Continuando con el estudio del [*Objetivo 1*](#52---objetivos), se realiza el análisis de la fuente de información [FI.9](#6-fuentes-de-información) debido a que en los antecedentes se declara que se estaba visualizando una película con auriculares en las horas circundantes a los hechos. Durante el análisis del disco con la herramienta FTK Imager, se realiza el hallazgo de la aplicación "*Kodi*", instalada el dispositivo del que se extrae la [FI.9](#6-fuentes-de-información), la cual se utiliza para reproducir contenidos multimedia, entre ellos series o películas.
 
 Es por ello que se profundiza más en este hallazgo y se realiza el hallazgo de la base de datos de los contenidos visualizados en el dispositivo. Se focaliza el enfoque la investigación en las horas relacionadas con el caso y se encuentra que en ese marco horario se visualizaron dos vídeos cuyas marcas de tiempo indican las **2:07:30** y **2:19:37** ambas del día **17 de Julio de 2017**, estos dos datos se verán reflejados en la [*Timeline*](#723-timeline) adjunta en las siguientes secciones.
 
 ![kodi-myvideos107](./img/myvideos107.png)
-*Fig 1.3*
+###### Fig 1.3
 
 > [!NOTE]  
 > Los dispositivos como raspberryPi, del cuál se ha extraído la FI.9, consisten en términos muy simples en un ordenador de sobremesa pero con un tamaño de bolsillo, que utiliza Linux o una variante del mismo para operar.
@@ -150,19 +157,19 @@ Es por ello que se profundiza más en este hallazgo y se realiza el hallazgo de 
 Se ha podido constatar que estas horas se encuentran en un horario diferente, viniendo definidas por la zona horaria "*America/New_York*" del sistema operativo *Linux*, la cual se puede verificar mediante la comprobación del archivo de configuración ubicado en el directorio `/etc/timezone` por defecto en este tipo de sistema operativo.
 
 ![timezone](./img/timezone.png)
-*Fig 1.4*
+###### Fig 1.4
 
 Por lo tanto las horas resultantes tras los ajustes del ajuste horario aportado en los antecedentes de **UTC+9** y la zona horaria de "*America/New_York*" que corresponde a **UTC-4** serían **15:07:30** y el segundo a las **15:19:37**.
 
 En el mismo análisis de la [FI.9](#6-fuentes-de-información), ya que se dispone de la MAC de los auriculares, se comprueba el registro de conexiones bluetooth en el archivo `/var/bluetooth` y no se encuentran conexiones coincidentes con la dirección MAC encontrada.
 
 ![smartv-bluetooth](./img/bluetooth-raspberry.png)
-*Fig 1.5*
+###### Fig 1.5
 
 Se observa cierta anomalía de la que se considera relevante dejar constancia en este informe, y es que, mediante el análisis de la [FI.5](#6-fuentes-de-información), se encuentra un registro que indica al dispositivo Alexa que apague la televisión. En la [FI.5](#6-fuentes-de-información) se incluyen junto a las grabaciones de las órdenes recibidas un archivo en formato `.json` que contiene datos acerca de esa misma orden. Concretamente, el archivo de orden de apagado al que nos referimos es el `3.wav` junto a su archivo de datos `3.json`, en el que puede verificarse que la orden se ejecutó con éxito
 
 ![alt text](./img/image.png)
-*Fig 1.6*
+###### Fig 1.6
 
 ### 7.2.1 Análisis del móvil del marido de la víctima
 
