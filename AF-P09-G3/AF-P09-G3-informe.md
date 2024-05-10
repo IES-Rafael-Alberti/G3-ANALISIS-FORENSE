@@ -56,7 +56,15 @@ Que lo expresado y reflejado en el presente informe o dictamen pericial está ba
 
 
 # 2. Glosario de Palabras clave
-(Solo las palabras que aparecen en el resumen jurídico o conclusiones)
+
+- **Dispositivos IoT:** Dispositivos de Internet de las cosas, que incluyen objetos cotidianos equipados con tecnología para conectarse a internet y recopilar y compartir datos.
+- **Capturas de tráfico de red:** Registros de datos transmitidos y recibidos a través de una red, utilizados para analizar el comportamiento de dispositivos y aplicaciones.
+- **Imagen del disco:** Copia exacta de todo el contenido almacenado en un dispositivo de almacenamiento, utilizada para investigar y recuperar datos de manera forense.
+- **User Agent:** Identificador enviado por un navegador web o una aplicación para indicar su tipo y versión, utilizado para identificar el dispositivo o software utilizado para acceder a servicios en línea.
+- **MAC Address:** Dirección única asignada a una interfaz de red para identificar de manera única un dispositivo en una red.
+- **Aplicación Kodi:** Software de código abierto utilizado para la reproducción de contenido multimedia, como videos, música y podcasts.
+- **Plugin:** Módulo de software que agrega funcionalidad adicional a una aplicación existente, en este caso, un complemento para la reproducción de videos de YouTube en la aplicación Kodi.
+- **Zona horaria:** Configuración que define el desfase horario con respecto al Tiempo Universal Coordinado (UTC), utilizada para establecer la hora local en dispositivos y sistemas informáticos.
 
 # 3. Índice de figuras
 
