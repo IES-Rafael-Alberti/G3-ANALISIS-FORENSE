@@ -282,7 +282,20 @@ Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hem
 No se ha conseguido determinar que ha ocurrido entre los minutos que han pasado desde el primer al segundo video y que ha ocurrido en el tiempo después de apagar la Smart Tv.
 
 # 9. Conclusiones
-(Respuestas a los objetivos, judicialmente numeradas y lo que no se ha conseguido)
+
+En base a la investigación realizada, los hallazgos realizados y el contexto aportado por la interrelación de los elementos mencionados en la sección de investigación para finalizar este informe se llega a las siguientes conclusiones:
+
+1. Se encontraron registros de conexiones Bluetooth en el dispositivo móvil del marido de la víctima, indicando la presencia de unos auriculares con una dirección MAC específica.
+
+2. Se identificó la reproducción de vídeos en el dispositivo de la víctima a través de la aplicación Kodi, durante el período relevante para la investigación, aunque ajustando las horas según la zona horaria correspondiente.
+
+3. No se encontraron registros de conexión Bluetooth entre los auriculares y el dispositivo de la víctima.
+
+4. Se hallaron vestigios de la presencia de la aplicación Kodi en el Smart TV, así como la instalación de un plugin para visualizar videos de YouTube.
+
+5. Se identificaron ciertos videos reproducidos en el Smart TV en momentos cercanos al incidente, aunque las horas registradas no coincidían con la zona horaria relevante.
+
+6. A pesar de los análisis realizados, no se encontraron detalles adicionales que contribuyeran significativamente a la investigación desde el informe de diagnóstico de Google OnHub ni desde el tráfico de red capturado.
 
 # Anexos
 
