@@ -278,13 +278,9 @@ No se ha conseguido determinar que ha ocurrido entre los minutos que han pasado 
 
 - [Anexo 1 - Integridad de los datos y testigos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P09-G3/Anexos/Anexo%201%20-%20Integridad%20de%20los%20datos%20y%20testigos.xlsx)
 
-- Anexo 2 - Cadena de custodia
+- [Anexo 2 - Registro Cadena de custodia](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P09-G3/Anexos/Anexo%202%20-%20Registro%20de%20cadena%20de%20custodia.xlsx)
 
-
-
-- Anexo 3 - Índice de hallazgos
-
-
+- [Anexo 3 - Índice de hallazgos](https://github.com/IES-Rafael-Alberti/G3-ANALISIS-FORENSE/blob/main/AF-P09-G3/Anexos/Anexo%203%20-%20%C3%8Dndice%20de%20hallazgos.md)
 
 # Referencias
 
