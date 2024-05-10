@@ -261,7 +261,8 @@ Hemos analizado el tráfico de red con el software Wireshark v4.2.4, pero no hem
 ![alt text](./img/image-1.png)
 
 # 8. Limitaciones
-(Los objetivos no cumplidos y lo que no se ha conseguido)
+
+No se ha conseguido determinar que ha ocurrido entre los minutos que han pasado desde el primer al segundo video y que ha ocurrido en el tiempo después de apagar la Smart Tv.
 
 # 9. Conclusiones
 (Respuestas a los objetivos, judicialmente numeradas y lo que no se ha conseguido)
