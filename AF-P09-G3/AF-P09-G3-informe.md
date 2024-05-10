@@ -122,6 +122,7 @@ En este punto se especifican las herramientas utilizadas y sus versiones.
 | DB Browser for SQLite  | 3.12.2   |
 | 7zip  |    23.01   |
 | Notepad++  |   8.5.4    |
+| Wireshark |  4.2.4    |
 
 ## 7.2 Procesos
 
