@@ -69,6 +69,16 @@ Que lo expresado y reflejado en el presente informe o dictamen pericial está ba
 
 # 4. Resumen ejecutivo
 
+En este informe se presentan los resultados del análisis forense realizado por Netmancer Inc. sobre diversas fuentes de datos relacionadas con la víctima y su marido, como los dispositivos IoT de su hogar. Se examinaron las capturas del tráfico de red del SmartHome, la imagen del disco del Raspberry Pi, el informe de diagnóstico de Google OnHub, los datos de Amazon Echo Alexa y  las adquisiciones de ambos dispositivos móviles, tanto el de la víctima como el de su marido.
+
+Durante el proceso de análisis, en el dispositivo móvil del marido de la víctima, se encontraron registros de conexiones Bluetooth, que revelaron la presencia de un dispositivo con una dirección MAC específica, la cual se reveló que pertenecía a unos auriculares. Además, se descubrió que se reprodujeron vídeos en el dispositivo de la víctima, utilizando la aplicación Kodi, durante el mismo período de tiempo, aunque ajustando las horas según la zona horaria correspondiente. Sin embargo, no se encontraron registros de conexión Bluetooth entre los auriculares y el dispositivo de la víctima.
+
+En el análisis del dispositivo móvil de la víctima, se reveló información valiosa sobre las aplicaciones utilizadas, la versión del sistema operativo y detalles del hardware. Se descubrió una dirección MAC Bluetooth diferente, pero no se encontraron conexiones coincidentes en los registros. Asimismo, se identificó la presencia de una pantalla de bloqueo con opciones de desbloqueo facial.
+
+En cuanto al dispositivo Smart TV, se encontró indicios de la aplicación Kodi, así como la instalación de un plugin para visualizar videos de YouTube. Se analizó una base de datos asociada a Kodi, que reveló la visualización de ciertos videos en momentos cercanos al incidente. Sin embargo, al igual que en el caso del dispositivo móvil de la víctima, las horas registradas no coincidían con la zona horaria relevante. Además, se verificaron las conexiones Bluetooth del Smart TV, pero no se encontraron coincidencias con los auriculares del marido de la víctima.
+
+A pesar de los exhaustivos análisis realizados en el informe de diagnóstico de Google OnHub y en el tráfico de red capturado, no se encontraron detalles relevantes para el caso en cuestión.
+
 # 5. Introducción
 
 En este documento se detallan los hallazgos encontrados a través del análisis de las adquisiciones dadas de los dos móviles recibidos, el historial y grabaciones de Alexa, la imagen de disco de la Smart Tv, Google on hub y el tráfico de red.
